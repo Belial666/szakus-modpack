@@ -1,0 +1,328 @@
+﻿<!-- Plik konfiguracyjny statystyk po bitwie YasenKrasen-->
+<!-- Аutor: Vslav666 	Tłumaczenie: Google ;) -->
+
+<!-- WAŻNE! Plik ServiceChannelPage.xml należy edytować programem, który obsługuje kodowanie UTF-8, np. Notepad, Notepad ++ -->
+<!-- UWAGA! WordPad nie obsługuje takiego kodowania co może zepsuć plik konfiguracyjny. -->
+
+<!-- [] - możliwe wartości do wpisania znajdują się w tych nawiasach -->
+<!-- true (tak) - aktywuje zmienną -->
+<!-- false (nie) - wyłącza zmienną -->
+<!-- n (liczba) - liczba całkowita (ułamki powodują zawieszenie modyfikacji -->
+<!-- s (tekst) - bez znaków specjalnych -->
+<!-- c (znak)- jeden znak -->
+<!-- #ffffff - kolor zapisany w kodzie 16-tkowym, można znaleźć na stronie http://html-color-codes.info -->
+
+<config>
+	<Version>1.0</Version>	<!-- НЕ ИСПРАВЛЯТЬ!!! Неправильная версия XML-конфига приведет к повисанию клиента -->
+	
+	<TypeMod>3</TypeMod>									<!-- [1|2|3|4] Typ modyfikacji (?) -->
+	
+	<PremiumAccount>false</PremiumAccount>					<!-- [true|false] Konto premium -->
+															<!-- true (prawda) = Konto premium, false (zaprzeczenie) = Konto standardowe -->
+	<SeparatorGroupsOfDigits>space</SeparatorGroupsOfDigits><!-- [c|space|.] Separator liczb dziesiętnych ("space" - spacja, "." - kropka, c - dowolny jeden znak -->
+																
+	<TotalBattle>		<!-- SEKCJA KOMUNIKATÓW PO BITWIE -->
+		<StartPos>0</StartPos>								<!-- [n] Wcięcie od lewego marginesu w pikselach  [11] [40]-->
+		<Repair>		<!-- SEKCJA NAPRAW -->
+			<Visible>true</Visible>							<!-- [true|false] Wyświetlać (tak/nie) -->
+			<Title>Naprawa</Title>							<!-- [s] Tekst wyświetlany -->
+			<Bold>false</Bold>								<!-- [true|false] Pogrubienie -->
+			<FontSize>12</FontSize>							<!-- [n] Wielkość czcionki -->
+			<Color>#A3966E</Color>							<!-- [#ffffff] Kolor zapisany w kodzie 16-tkowym #CDC673 -->
+			<Credit>		<!-- KWOTA KOSZTÓW NAPRAWY-->
+				<Bold>false</Bold>							<!-- [true|false] Pogrubienie -->
+				<FontSize>12</FontSize>						<!-- [n] WIelkość czcionki -->
+				<Color>#FFFFFF</Color>						<!-- [#ffffff] Kolor zapisany w kodzie 16-tkowym -->
+				<Icon>1</Icon>								<!-- [0|1|2] Ikona kredytów: 0-nie wyświetlać, 1-wyświetlać przed kwotą, 2-wyświetlać za kwotą -->
+			</Credit>
+		</Repair>
+		<Ammunition>		<!-- SEKCJA AMUNICJI -->
+			<Visible>true</Visible>							<!-- [true|false] Wyświetlać (tak/nie) -->
+			<Title>Amunicja</Title>							<!-- [s] Tekst wyświetlany -->
+			<Bold>false</Bold>								<!-- [true|false] Pogrubienie -->
+			<FontSize>12</FontSize>							<!-- [n] Wielkość czcionki -->
+			<Color>#A3966E</Color>							<!-- [#ffffff] Kolor zapisany w kodzie 16-tkowym #CDC673 -->
+			<Credit>		<!-- KWOTA KOSZTÓW AMUNICJI (kredyty)-->
+				<Bold>false</Bold>							<!-- [true|false] Pogrubienie -->
+				<FontSize>12</FontSize>						<!-- [n] Wielkość czcionki -->
+				<Color>#FFFFFF</Color>						<!-- [#ffffff] Kolor zapisany w kodzie 16-tkowym -->
+				<Icon>1</Icon>								<!-- [0|1|2] Ikona kredytów: 0-nie wyświetlać, 1-wyświetlać przed kwotą, 2-wyświetlać za kwotą -->
+			</Credit>
+			<Gold>			<!-- KWOTA KOSZTÓW AMUNICJI (złoto) -->
+				<Bold>false</Bold>							<!-- [true|false] Pogrubienie -->
+				<FontSize>12</FontSize>						<!-- [n] Wielkość czcionki -->
+				<Color>#FFE769</Color>						<!-- [#ffffff] Kolor zapisany w kodzie 16-tkowym -->
+				<Icon>1</Icon>								<!-- [0|1|2] Ikona złota: 0-nie wyświetlać, 1-wyświetlać przed kwotą, 2-wyświetlać za kwotą -->
+			</Gold>
+		</Ammunition>
+		<Equipment>		<!-- SEKCJA WYPOSAŻENIA -->
+			<Visible>true</Visible>							<!-- [true|false] Wyświetlać (tak/nie) -->
+			<Title>Sprzęt</Title>							<!-- [s] Tekst wyświetlany -->
+			<Bold>false</Bold>								<!-- [true|false] Pogrubienie -->
+			<FontSize>12</FontSize>							<!-- [n] Wielkość czcionki -->
+			<Color>#A3966E</Color>							<!-- [#ffffff] Kolor zapisany w kodzie 16-tkowym #CDC673 -->
+			<Credit>		<!-- KWOTA KOSZTÓW WYPOSAŻENIA (kredyty) -->
+				<Bold>false</Bold>							<!-- [true|false] Pogrubienie -->
+				<FontSize>12</FontSize>						<!-- [n] Wielkość czcionki-->
+				<Color>#FFFFFF</Color>						<!-- [#ffffff] Kolor zapisany w kodzie 16-tkowym -->
+				<Icon>1</Icon>								<!-- [0|1|2] Ikona kredytów: 0-nie wyświetlać, 1-wyświetlać przed kwotą, 2-wyświetlać za kwotą -->
+			</Credit>
+			<Gold>			<!-- KWOTA KOSZTÓW WYPOSAŻENIA (złoto) -->
+				<Bold>false</Bold>							<!-- [true|false] Pogrubienie -->
+				<FontSize>12</FontSize>						<!-- [n] Wielkość czcionki -->
+				<Color>#FFE769</Color>						<!-- [#ffffff] Kolor zapisany w kodzie 16-tkowym -->
+				<Icon>1</Icon>								<!-- [0|1|2] Ikona złota: 0-nie wyświetlać, 1-wyświetlać przed kwotą, 2-wyświetlać za kwotą -->
+			</Gold>
+		</Equipment>
+		<Total>			<!-- SEKCJA CAłKOWITEGO ZAROBKU -->
+			<Visible>true</Visible>							<!-- [true|false] Wyświetlać (tak/nie) -->
+			<Title>Zarobiono</Title>						<!-- [s] Tekst wyświetlany -->
+			<Bold>false</Bold>								<!-- [true|false] Pogrubienie -->
+			<FontSize>12</FontSize>							<!-- [n] Wielkość czcionki -->
+			<Color>#A3966E</Color>							<!-- [#ffffff] Kolor zapisany w kodzie 16-tkowym #CDC673 -->
+			<Credit>		<!-- KWOTA ZAROBKU (kredyty) -->
+				<Bold>true</Bold>							<!-- [true|false] Pogrubienie -->
+				<FontSize>12</FontSize>						<!-- [n] Wielkość czcionki -->
+				<ColorPlus>#66CC66</ColorPlus>				<!-- [#ffffff] Kolor, gdy liczba dodatnia -->
+				<ColorMinus>#F38B8B</ColorMinus>			<!-- [#ffffff] Kolor, gdy liczba ujemna -->
+				<Icon>1</Icon>								<!-- [0|1|2] Ikona kredytów: 0-nie wyświetlać, 1-wyświetlać przed kwotą, 2-wyświetlać za kwotą -->
+			</Credit>
+			<Gold>			<!-- KWOTA ZAROBKU (złoto) -->
+				<Bold>true</Bold>							<!-- [true|false] Pogrubienie -->
+				<FontSize>12</FontSize>						<!-- [n] Wielkość czcionki -->
+				<ColorPlus>#66CC66</ColorPlus>				<!-- [#ffffff] Kolor, gdy liczba dodatnia -->
+				<ColorMinus>#F38B8B</ColorMinus>			<!-- [#ffffff] Kolor, gdy liczba ujemna -->
+				<Icon>1</Icon>								<!-- [0|1|2] Ikona złota: 0-nie wyświetlać, 1-wyświetlać przed kwotą, 2-wyświetlać za kwotą -->
+			</Gold>			
+		</Total>
+		<ExperienceAction>					<!-- Опыт по акции -->
+			<Visible>true</Visible>							<!-- [true|false] Wyświetlać (tak/nie) -->
+			<Title>Акция:</Title>							<!-- [s] текст заголовка -->
+			<Bold>false</Bold>								<!-- [true|false] Жирный шрифт -->
+			<FontSize>12</FontSize>							<!-- [n] Размер шрифта -->
+			<Color>#00FFFF</Color>							<!-- [#ffffff] Цвет в 16-ричной системе исчисления -->
+			<Experience>						<!-- Опыт -->
+				<Bold>false</Bold>							<!-- [true|false] Жирный шрифт -->
+				<FontSize>12</FontSize>						<!-- [n] Размер шрифта -->
+				<Color>#1E90FF</Color>						<!-- [#ffffff] Цвет в 16-ричной системе исчисления -->
+				<Icon>2</Icon>								<!-- [0|1|2] Иконка: 0-не отображать, 1-перед, 2-после (работает только для TypeMod 2 или 3) -->															
+			</Experience>
+		</ExperienceAction>
+	</TotalBattle>		
+	<Statistics>		<!-- SEKCJA OKIENKA STATYSTYK -->
+		<Color>yellow</Color>								<!-- [green|yellow|red|grey|lightGrey|action] Kolor tła dla okna (zielony,zółty,czerwony,szary,jasnoszary,specjany) -->
+		<Battle>		<!-- LINIA OBLICZANIA ILOŚCI BITEW -->
+			<Visible>true</Visible>							<!-- [true|false] Wyświetlać (tak/nie) -->
+			<Title>Wygrane (Bitwy):</Title>						<!-- [s] Tekst wyświetlany -->
+			<Bold>false</Bold>							<!-- [true|false] Pogrubienie-->
+			<FontSize>12</FontSize>							<!-- [n] Wielkość czcionki-->
+			<Color>#929290</Color>							<!-- [#ffffff] Kolor zapisany w kodzie 16-tkowym -->
+			<BattleVictory>		<!-- LICZBA WYGRANYCH -->
+				<Bold>true</Bold>							<!-- [true|false] Pogrubienie -->
+				<FontSize>12</FontSize>							<!-- [n] Wielkość czcionki -->
+				<Percent>50</Percent>							<!-- [n] Granica procentowa, przy której zmieniać kolor -->
+				<ColorPlus>#66CC66</ColorPlus>						<!-- [#ffffff] Kolor, gdy procent większy niż zdefiniowany powyżej -->
+				<ColorMinus>#F38B8B</ColorMinus>					<!-- [#ffffff] Kolor, gdy procent poniżej zdefiniowanego powyżej -->
+			</BattleVictory>
+			<BattleDrawGame>				<!-- Колво ничьих -->
+				<Visible>true</Visible>						<!-- [true|false] Видимость (колва ничьих) -->
+				<Bold>true</Bold>							<!-- [true|false] Жирный шрифт -->
+				<FontSize>12</FontSize>						<!-- [n] Размер шрифта -->
+				<Color>#EE00EE</Color>						<!-- [#ffffff] Цвет в 16-ричной системе исчисления -->
+			</BattleDrawGame>
+			<BattleTotal>		<!-- LICZBA WSZYSTKICH BITEW -->
+				<Bold>false</Bold>							<!-- [true|false] Pogrubienie -->
+				<FontSize>12</FontSize>							<!-- [n] Wielkość czcionki -->
+				<Color>#FAFA88</Color>							<!-- [#ffffff] Kolor zapisany w kodzie 16-tkowym -->
+			</BattleTotal>
+			<VictoryPercent>	<!-- PROCENT  -->
+				<Bold>true</Bold>							<!-- [true|false] Pogrubienie -->
+				<FontSize>12</FontSize>							<!-- [n] Wielkość czcionki -->
+				<Rounding>2</Rounding>						<!-- [0...100] Точность процента побед, кол-во знаков после разделителя -->
+				<Percent>50</Percent>							<!-- [n] Granica procentowa, przy której zmieniać kolor -->
+				<ColorPlus>#66CC66</ColorPlus>						<!-- [#ffffff] Kolor, gdy procent większy niż zdefiniowany powyżej -->
+				<ColorMinus>#F38B8B</ColorMinus>					<!-- [#ffffff] Kolor, gdy procent poniżej zdefiniowanego powyżej -->
+			</VictoryPercent>
+		</Battle>
+		<Experience>		<!-- LINIA DOŚWIADCZENIA -->
+			<Visible>true</Visible>							<!-- [true|false] Wyświetlać (tak/nie) -->
+			<Title>Doświadczenie:</Title>						<!-- [s] Tekst wyświetlany -->
+			<Bold>false</Bold>							<!-- [true|false] Pogrubienie -->
+			<FontSize>12</FontSize>							<!-- [n] Wielkość czcionki -->
+			<Color>#929290</Color>							<!-- [#ffffff] Kolor zapisany w kodzie 16-tkowym -->
+			<ExperienceAverage>	<!-- LICZBA ŚREDNIEGO DOŚWIADCZENIA -->
+				<Bold>true</Bold>							<!-- [true|false] Pogrubienie -->
+				<FontSize>12</FontSize>							<!-- [n] Wielkość czcionki -->			
+				<Color>#8FDCFD</Color>							<!-- [#ffffff] Kolor zapisany w kodzie 16-tkowym -->
+			</ExperienceAverage>
+			<BattleExperience>	<!-- LICZBA CAłKOWITEGO DOŚWIADCZENIA -->
+				<Bold>false</Bold>							<!-- [true|false] Pogrubienie -->
+				<FontSize>12</FontSize>							<!-- [n] Wielkość czcionki -->			
+				<Color>#8FDCFD</Color>							<!-- [#ffffff] Kolor zapisany w kodzie 16-tkowym -->
+			</BattleExperience>
+		</Experience>
+		<ExperienceX1>		<!-- LINIA DOŚWIADCZENIA X1 (bez bonusów pierwszego dnia, itp) -->
+			<Visible>true</Visible>						<!-- [true|false] Wyświetlać (tak/nie) -->
+			<Title>Doświadczenie (x1):</Title>					<!-- [s] Tekst wyświetlany -->
+			<Bold>false</Bold>							<!-- [true|false] Pogrubienie -->
+			<FontSize>12</FontSize>							<!-- [n] Wielkość czcionki -->
+			<Color>#929290</Color>							<!-- [#ffffff] Kolor zapisany w kodzie 16-tkowym -->
+			<ExperienceAverage>	<!-- LICZBA ŚREDNIEGO DOŚWIADCZENIA X1 -->
+				<Bold>true</Bold>							<!-- [true|false] Pogrubienie -->
+				<FontSize>12</FontSize>							<!-- [n] Wielkość czcionki -->			
+				<Color>#8FDCFD</Color>							<!-- [#ffffff] Kolor zapisany w kodzie 16-tkowym -->
+			</ExperienceAverage>
+			<BattleExperience>	<!-- LICZBA CAłKOWITEGO DOŚWIADCZENIA X1 -->
+				<Bold>false</Bold>							<!-- [true|false] Pogrubienie -->
+				<FontSize>12</FontSize>							<!-- [n] Wielkość czcionki -->			
+				<Color>#8FDCFD</Color>							<!-- [#ffffff] Kolor zapisany w kodzie 16-tkowym -->
+			</BattleExperience>
+		</ExperienceX1>
+		<FreeExperience>	<!-- LINIA WOLNEGO DOŚWIADCZENIA -->
+			<Visible>true</Visible>						<!-- [true|false] Wyświetlać (tak/nie) -->
+			<Title>Wolne doświadczenie:</Title>					<!-- [s] Tekst wyświetlany -->
+			<Bold>false</Bold>							<!-- [true|false] Pogrubienie -->
+			<FontSize>12</FontSize>							<!-- [n] Wielkość czcionki -->
+			<Color>#929290</Color>							<!-- [#ffffff] Kolor zapisany w kodzie 16-tkowym -->
+			<Battle>		<!-- LICZBA WOLNEGO DOŚWIADCZENIA Z OSTATNIEJ BITWY -->
+				<Bold>true</Bold>							<!-- [true|false] Pogrubienie -->
+				<FontSize>12</FontSize>							<!-- [n] Wielkość czcionki -->			
+				<Color>#CD853F</Color>							<!-- [#ffffff] Kolor zapisany w kodzie 16-tkowym -->
+			</Battle>
+			<Total>			<!-- LICZBA CAłKOWITEGO WOLNEGO DOŚWIADCZENIA -->
+				<Bold>false</Bold>							<!-- [true|false] Pogrubienie -->
+				<FontSize>12</FontSize>							<!-- [n] Wielkość czcionki -->			
+				<Color>#CD853F</Color>							<!-- [#ffffff] Kolor zapisany w kodzie 16-tkowym -->
+			</Total>
+		</FreeExperience>
+		<Credit>		<!-- LINIA OPERACJI NA KREDYTACH-->
+			<Visible>true</Visible>							<!-- [true|false] Wyświetlać (tak/nie) -->
+			<Title>Całkowity zarobek:</Title>					<!-- [s] Tekst wyświetlany -->
+			<Bold>false</Bold>							<!-- [true|false] Pogrubienie -->
+			<FontSize>12</FontSize>							<!-- [n] Wielkość czcionki -->
+			<Color>#929290</Color>							<!-- [#ffffff] Kolor zapisany w kodzie 16-tkowym -->
+			<CreditTotal>		<!-- LICZBA W SESJI -->
+				<Bold>true</Bold>							<!-- [true|false] Pogrubienie -->
+				<FontSize>12</FontSize>							<!-- [n] Wielkość czcionki -->			
+				<ColorPlus>#66CC66</ColorPlus>						<!-- [#ffffff] Kolor, gdy liczba dodatnia -->
+				<ColorMinus>#F38B8B</ColorMinus>					<!-- [#ffffff] Kolor, gdy liczba ujemna -->
+			</CreditTotal>
+			<CreditBattle>		<!-- LICZBA W SESJI (BITWY) -->
+				<Visible>true</Visible>							<!-- [true|false] Wyświetlać (tak/nie) (BITWY) -->
+				<Bold>false</Bold>							<!-- [true|false] Pogrubienie -->
+				<FontSize>12</FontSize>							<!-- [n] Wielkość czcionki -->			
+				<Color>#DDDDD8</Color>							<!-- [#ffffff] Kolor zapisany w kodzie 16-tkowym -->
+			</CreditBattle>
+			<CreditBuySale>		<!-- LICZBA W SESJI (TRANSAKCJE KUPIĘ/SPRZEDAM) -->
+				<Visible>false</Visible>						<!-- [true|false] Wyświetlać (tak/nie) (TRANSAKCJE KUPIĘ/SPRZEDAM) -->
+				<Bold>false</Bold>							<!-- [true|false] Pogrubienie -->
+				<FontSize>12</FontSize>							<!-- [n] Wielkość czcionki -->			
+				<Color>#DDDDD8</Color>							<!-- [#ffffff] Kolor zapisany w kodzie 16-tkowym -->
+			</CreditBuySale>
+		</Credit>
+		<Gold>			<!-- LINIA OPERACJI NA ZłOCIE -->
+			<Visible>true</Visible>							<!-- [true|false] Wyświetlać (tak/nie) -->
+			<Title>Złoto:</Title>							<!-- [s] Tekst wyświetlany -->
+			<Bold>false</Bold>							<!-- [true|false] Pogrubienie -->
+			<FontSize>12</FontSize>							<!-- [n] Wielkość czcionki -->
+			<Color>#929290</Color>							<!-- [#ffffff] Kolor zapisany w kodzie 16-tkowym -->
+			<GoldTotal>		<!-- LICZBA W SESJI (ZłOTO) -->
+				<Bold>true</Bold>							<!-- [true|false] Pogrubienie -->
+				<FontSize>12</FontSize>							<!-- [n] Wielkość czcionki -->			
+				<ColorPlus>#66CC66</ColorPlus>						<!-- [#ffffff] Kolor, gdy liczba dodatnia -->
+				<ColorMinus>#F38B8B</ColorMinus>					<!-- [#ffffff] Kolor, gdy liczba ujemna -->
+			</GoldTotal>		
+			<GoldBattle>		<!-- LICZBA W SESJI (Z BITEW) -->
+				<Visible>true</Visible>							<!-- [true|false] Wyświetlać (tak/nie) (Z BITEW) -->
+				<Bold>false</Bold>							<!-- [true|false] Pogrubienie -->
+				<FontSize>12</FontSize>							<!-- [n] Wielkość czcionki -->			
+				<Color>#FFE769</Color>							<!-- [#ffffff] Kolor zapisany w kodzie 16-tkowym -->
+			</GoldBattle>
+			<GoldBuySale>		<!-- LICZBA W SESJI (TRANSAKCJE KUPIĘ/SPRZEDAM) -->
+				<Visible>true</Visible>							<!-- [true|false] Wyświetlać (tak/nie) (TRANSAKCJE KUPIĘ/SPRZEDAM) -->
+				<Bold>false</Bold>							<!-- [true|false] Pogrubienie -->
+				<FontSize>12</FontSize>							<!-- [n] Wielkość czcionki -->			
+				<Color>#FFE769</Color>							<!-- [#ffffff] Kolor zapisany w kodzie 16-tkowym -->
+			</GoldBuySale>
+		</Gold>
+	</Statistics>
+	<SysMessage>			<!-- WYŚWIETLANIE WSZYSTKICH KOMUNIKATÓW SYSTEMOWYCH (Z WYJĄTKIEM PO BITWIE) -->
+		<Error>true</Error>															<!-- [true|false] Ошибки -->
+		<Warning>true</Warning>														<!-- [true|false] Предупреждения -->
+		<Information>true</Information>							<!-- [true|false] Komunikaty informacyjne -->
+		<GameGreeting>true</GameGreeting>						<!-- [true|false] Powitanie na początku gry -->
+		<PowerLevel>true</PowerLevel>							<!-- [true|false] Komunikaty dotyczące badań -->
+		<PurchaseForCredits>true</PurchaseForCredits>					<!-- [true|false] Zakupy (za kredyty) -->
+		<PurchaseForGold>true</PurchaseForGold>						<!-- [true|false] Zakupy (za złoto) -->
+		<DismantlingForGold>true</DismantlingForGold>					<!-- [true|false] Demontaż (za złoto) -->
+		<Selling>true</Selling>								<!-- [true|false] Sprzedaż -->
+		<Repair>true</Repair>								<!-- [true|false] Naprawy -->
+		<FinancialTransactionWithCredits>true</FinancialTransactionWithCredits>		<!-- [true|false] Podsumowania operacji na kredytach -->
+		<FinancialTransactionWithGold>true</FinancialTransactionWithGold>		<!-- [true|false] Podsumowania operacji na złocie  -->
+		<CustomizationForCredits>true</CustomizationForCredits>				<!-- [true|false] Kamuflaż/Modyfikacje za kredyty -->
+		<CustomizationForGold>true</CustomizationForGold>				<!-- [true|false] Kamuflaż/Modyfikacje za złoto -->		
+		<ActionBegin>true</ActionBegin>												<!-- [true|false] О начале акции -->
+		<ActionEnd>true</ActionEnd>													<!-- [true|false] Об окончании акции -->
+	</SysMessage>
+	<SysMessageBattle>			<!-- WYŚWIETLANIE KOMUNIKATÓW PO BITWIE -->
+		<Repair>false</Repair>									<!-- [true|false] Naprawy (wyświetlane po bitwie) -->
+		<PurchaseForCredits>false</PurchaseForCredits>						<!-- [true|false] Zakupy (za kredyty) (wyświetlane po bitwie) -->
+		<PurchaseForGold>false</PurchaseForGold>						<!-- [true|false] Zakupy (za złoto) (wyświetlane po bitwie) -->	
+	</SysMessageBattle>
+	
+	<ExperienceOfAction>		<!-- Опыт получаемый по акции за достижения. Для корректировки расчета Свободного опыта и Опыта, приведенного к X1 -->
+		<Action1>
+			<Use>false</Use>															<!-- [true|false] Включено/выключено -->
+			<Title>Specjalista/Воин</Title>														<!-- [s] Название достижения в вашем клиенте игры -->
+			<Experience>1500</Experience>											<!-- [n] Значение опыта по данному достижению -->
+		</Action1>
+		<Action2>
+			<Use>false</Use>														<!-- [true|false] Включено/выключено -->
+			<Title>Okupant/Захватчик</Title>												<!-- [s] Название достижения в вашем клиенте игры -->
+			<Experience>1000</Experience>											<!-- [n] Значение опыта по данному достижению -->
+		</Action2>
+		<Action3>
+			<Use>false</Use>														<!-- [true|false] Включено/выключено -->
+			<Title>Snajper/Снайпер</Title>													<!-- [s] Название достижения в вашем клиенте игры -->
+			<Experience>550</Experience>											<!-- [n] Значение опыта по данному достижению -->
+		</Action3>
+		<Action4>
+			<Use>false</Use>															<!-- [true|false] Включено/выключено -->
+			<Title>Obrońca/Защитник</Title>													<!-- [s] Название достижения в вашем клиенте игры -->
+			<Experience>1250</Experience>											<!-- [n] Значение опыта по данному достижению -->
+		</Action4>
+		<Action5>
+			<Use>false</Use>														<!-- [true|false] Включено/выключено -->
+			<Title>Stalowa ściana</Title>											<!-- [s] Название достижения в вашем клиенте игры -->
+			<Experience>650</Experience>											<!-- [n] Значение опыта по данному достижению -->
+		</Action5>		
+		<Action6>
+			<Use>false</Use>														<!-- [true|false] Включено/выключено -->
+			<Title>Wsparcie/Поддержка</Title>												<!-- [s] Название достижения в вашем клиенте игры -->
+			<Experience>750</Experience>											<!-- [n] Значение опыта по данному достижению -->
+		</Action6>
+		<Action7>
+			<Use>false</Use>														<!-- [true|false] Включено/выключено -->
+			<Title>Zwiadowca/Разведчик</Title>												<!-- [s] Название достижения в вашем клиенте игры -->
+			<Experience>300</Experience>											<!-- [n] Значение опыта по данному достижению -->
+		</Action7>
+		<Action8>
+			<Use>false</Use>														<!-- [true|false] Включено/выключено -->
+			<Title>Służba patrolowa/Дозорный</Title>													<!-- [s] Название достижения в вашем клиенте игры -->
+			<Experience>2000</Experience>											<!-- [n] Значение опыта по данному достижению -->
+		</Action8>
+		<Action9>
+			<Use>false</Use>														<!-- [true|false] Включено/выключено -->
+			<Title>Резерв</Title>													<!-- [s] Название достижения в вашем клиенте игры -->
+			<Experience>1500</Experience>											<!-- [n] Значение опыта по данному достижению -->
+		</Action9>
+	</ExperienceOfAction>
+	
+	<test> 						<!-- для тестов, НЕ ИСПОЛЬЗОВАТЬ -->
+		<TestMode>false</TestMode>							<!-- не надо ставить true, а потом задавать мне глупые вопросы, почему не работает :) -->
+		<StatisticsBattleVictory>4</StatisticsBattleVictory>
+		<StatisticsBattleDrawGame>2</StatisticsBattleDrawGame>
+		<StatisticsBattleTotal>11</StatisticsBattleTotal>
+	</test>
+</config>
+

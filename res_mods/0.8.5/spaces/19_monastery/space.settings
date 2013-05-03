@@ -1,0 +1,71 @@
+<space.settings>
+  <timeOfDay>system/data/sky19_monastery.xml</timeOfDay>
+  <skyGradientDome>system/data/sky19_monastery.xml</skyGradientDome>
+  <flora>spaces/19_monastery/flora.xml</flora>
+  <bounds>
+    <minX>	-6	</minX>
+    <maxX>	5	</maxX>
+    <minY>	-6	</minY>
+    <maxY>	5	</maxY>
+  </bounds>
+  <terrain>
+    <version>	200	</version>
+    <lodMapSize>	256	</lodMapSize>
+    <aoMapSize>	256	</aoMapSize>
+    <heightMapSize>	64	</heightMapSize>
+    <normalMapSize>	256	</normalMapSize>
+    <holeMapSize>	64	</holeMapSize>
+    <shadowMapSize>	128	</shadowMapSize>
+    <blendMapSize>	256	</blendMapSize>
+    <lodInfo>
+      <startBias>	0.800000	</startBias>
+      <endBias>	0.990000	</endBias>
+      <lodTextureStart>	1000.000000	</lodTextureStart>
+      <lodTextureDistance>	800.000000	</lodTextureDistance>
+      <blendPreloadDistance>	1000.000000	</blendPreloadDistance>
+      <bumpFadingStart>	1000.000000	</bumpFadingStart>
+      <bumpFadingDistance>	800.000000	</bumpFadingDistance>
+      <lodNormalStart>	800.000000	</lodNormalStart>
+      <lodNormalDistance>	1000.000000	</lodNormalDistance>
+      <normalPreloadDistance>	1000.000000	</normalPreloadDistance>
+      <defaultHeightMapLod>	0	</defaultHeightMapLod>
+      <detailHeightMapDistance>	1900.000000	</detailHeightMapDistance>
+      <lodDistances>
+        <distance0>	300.000000	</distance0>
+        <distance1>	500.000000	</distance1>
+        <distance2>	700.000000	</distance2>
+        <distance3>	900.000000	</distance3>
+        <distance4>	1100.000000	</distance4>
+        <distance5>	900.000000	</distance5>
+      </lodDistances>
+      <server>
+        <heightMapLod>	0	</heightMapLod>
+      </server>
+    </lodInfo>
+    <soundOcclusion>
+      <directOcclusion>	0.000000	</directOcclusion>
+      <reverbOcclusion>	0.000000	</reverbOcclusion>
+    </soundOcclusion>
+  </terrain>
+  <skyDomePartition>	0	</skyDomePartition>
+  <windSpeed>	0.000000 0.000000	</windSpeed>
+  <windGustiness>	0.000000	</windGustiness>
+  <floraWindFactor>	0.500000	</floraWindFactor>
+  <skyWorld>
+    <row0>	0.989349 0.000000 0.145565	</row0>
+    <row1>	0.000000 1.000000 0.000000	</row1>
+    <row2>	-0.145565 0.000000 0.989349	</row2>
+    <row3>	0.000000 0.000000 0.000000	</row3>
+  </skyWorld>
+  <decals>
+    <fadeStart>	150.000000	</fadeStart>
+    <fadeEnd>	250.000000	</fadeEnd>
+  </decals>
+  <skyDome>maps/skyboxes/19_monastery_sky/skydome/skybox.visual</skyDome>
+  <farPlane>
+    <max>	2500.000000	</max>
+    <high>	2000.000000	</high>
+    <medium>	1000.000000	</medium>
+    <low>	600.000000	</low>
+  </farPlane>
+</space.settings>
