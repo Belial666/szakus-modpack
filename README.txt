@@ -1,5 +1,7 @@
 Moja aktualna paczka modów
-Pozdro Szakus
+Pozdrawiam Szakus
+
+
 
 Changelog:
 
@@ -15,7 +17,7 @@ Changelog:
 - poprawione pozycjonowanie ikon klanow
 
 0.8.5v1
-- baza modpack rufiozo: ftp://swiebodzice.org/Mod%20Pack%20Rufiozo/
+- bazuje na paczce Rufioza
 -- ostatnia znana pozycja czołgu
 -- skasowana mgła
 -- kolorowe statystyki z bitew w grze 
