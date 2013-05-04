@@ -23,7 +23,7 @@
     "showPostmortemTips": true,                 // false - Disable pop-up panel at the bottom after death. True by default.
     "removePanelsModeSwitcher": false,          // true - Remove the Players Panel mode switcher (buttons for changing size)
     "highlightVehicleIcon": true,               // false - disable highlighting of selected vehicle icon and squad
-    "clockFormat": "H:N",                       // Show the clock on the Debug Panel (near FPS). Format: Y:year, M:month, D:day, H:hour, N:minutes, S:seconds. "" - remove clock.
+    "clockFormat": "",                       // Show the clock on the Debug Panel (near FPS). Format: Y:year, M:month, D:day, H:hour, N:minutes, S:seconds. "" - remove clock.
     "useStandardMarkers": false,                // true - use standard client vehicle markers
     "clanIconsFolder": "../../../clanicons"     // path to clan icons folder relative to res_mods/[GAME VERSION]/gui/flash
   },
@@ -130,8 +130,8 @@
     "groupHitsByPlayer": true,
     "deadMarker": "<font face='Wingdings'>N</font>",
     "blowupMarker": "<font face='Wingdings'>M</font>",
-    "defaultHeader": "<font color='#FFFFFF'>Damage(w/o blind shots)</font> <font size='14'></font>",
-    "x": 230,
+    "defaultHeader": "<font color='#FFFFFF'>Dmg w/o blind shots</font> <font size='14'></font>",
+    "x": 340,
     "formatHeader": "<font color='#FFFFFF'>Damage:</font> <font size='14'></font> <font size='1{{nick}}'><b><font color='#fd0000'>{{dmg-total}}</font></b>  <font color='#FFFFFF'>Dmg. hits:</font> <font color='#00FF00'><b>{{n}}</b></font></font>",
     "visible": true,
     "formatHistory": "<textformat leading='-4' tabstops='[20,50,90,130]'><font size='12'>×{{n-player}}:</font><tab>{{dmg-player}}<tab>| <font color='{{c:dmg-kind}}'>-{{dmg}}</font><tab> <font color='#FFFFFF'>({{dmg-kind}})</font><tab>| <font color='{{c:vtype}}'>{{vehicle}} {{dead}}</font></textformat>",
