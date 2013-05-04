@@ -308,8 +308,9 @@
     "circles": { // Круги дальности. Дистанция только в реальных метрах карты. Только для своей техники.
         "enabled": true,
         "major": [ // Основные круги. thickness - толщина. 445 метров - максимальная дистанция засвета.
-            { "enabled": true, "distance": 445, "thickness": 0.3, "alpha": 65, "color": "0xFF1111" },
-            { "enabled": true, "distance": 50, "thickness": 1, "alpha": 50, "color": "0xFFFFFF" }
+            { "enabled": true, "distance": 445, "thickness": 0.3, "alpha": 65, "color": "0xFF1111" }
+			//,
+            //{ "enabled": true, "distance": 50, "thickness": 1, "alpha": 50, "color": "0xFFFFFF" }
         ],
         // Специальные круги, зависящие от модели техники.
         // Несколько строк для одной техники делают несколько кругов.
@@ -662,13 +663,14 @@
        // "inmeters": true  - дистанция отрезка в метрах реальной карты.
        // "inmeters": false - дистанция отрезка в точках миникарты. Сторона миникарты 211 точек.
        "vehicle": [ // Направление корпуса своей техники.
-         { "enabled": true, "from": -50,  "to": 1463, "inmeters": true, "thickness": 1.2,   "alpha": 65, "color": "0xFFFFFF"}
+         { "enabled": true, "from": 0,  "to": 1463, "inmeters": true, "thickness": 1.2,   "alpha": 65, "color": "0xFFFFFF"}
        ],
        "camera": [ // Направление камеры от своей техники.
          { "enabled": true, "from":  50,  "to": 1463, "inmeters": true, "thickness": 0.8, "alpha": 65, "color": "0xFF0000"}
-       ],
-       "traverseAngle": [ // Углы горизонтальной наводки. Срабатывают только, если углы есть.
-         { "enabled": true, "from": 50,  "to": 1463, "inmeters": true, "thickness": 0.5,   "alpha": 65, "color": "0xFFFFFF"}
+       ]
+	   //wyłączony wychył działa na minimapie dla TD i arty
+	   ,"traverseAngle": [ // Углы горизонтальной наводки. Срабатывают только, если углы есть.
+         { "enabled": false, "from": 50,  "to": 1463, "inmeters": true, "thickness": 0.5,   "alpha": 65, "color": "0xFFFFFF"}
        ]
     }
   },
