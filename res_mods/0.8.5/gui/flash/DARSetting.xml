@@ -1,0 +1,14 @@
+﻿<mmms>
+  <config>
+    <strategic>
+      <m2pix>8.5</m2pix>	<!-- the ratio of the distance and pixels, default 1 m = 8.5 pixels -->
+      <angle>true</angle>	<!-- Elevation angel panel on/off -->
+      <maxDistance>true</maxDistance>	<!-- Maximium firing range panel on/off -->
+      <extraInfo>false</extraInfo>	<!-- Extra info panel on/off (Gun model, shell model, shell speed/gravity) -->
+      <circle>24</circle>	<!-- Target's speed thresholds. According to this value, the inner circles will be drawn to assist you to aim moving targets at this speed. -->
+      <circle>48</circle>	<!-- You can add as many circle as you want -->
+      <reticleColor>0x88ccff</reticleColor>	<!-- Reticle color. Quick template: blue 0x00066ff; black 0x000000; white 0xffffff; green 0x00ff00. -->
+      <circleColor>0x9999ff</circleColor>	<!-- Speed threshold circle color. -->
+    </strategic>
+  </config>
+</mmms>
