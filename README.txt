@@ -1,6 +1,7 @@
 Zapraszam do pobierania i testowania mojej paczki modów. (dostępne 3 wersje lite, normal i max)
 
-- Nowy XVM (wymagana biblioteka http://htcclub.pl/wot/DokanInstall_0.6.0.exe) (kolorki jak w modpacku Rajdera)
+Mody:
+- Nowy XVM (kolorki jak w modpacku Rajdera)
 - Minimapa z dodatkowymi informacjami
 -- Ostatnia pozycja czołgu przed zniknięciem, nazwy czołgów
 -- Niebieskie koło zasięg spotowania, czerwone koło 500 m rysowanie czołgów
@@ -18,12 +19,16 @@ Zapraszam do pobierania i testowania mojej paczki modów. (dostępne 3 wersje li
 - Ikonki pod 0.8.5 z grubością pancerza mirtankov.net/infoicons/6058-tank-icons-for-wot.html
 
 Wersje (Branche):
-- lite - mniej informacji na minimapie, ikonki druids bez grubości pancerza
-- normal - wersja normalna 
+- lite - mniej informacji na minimapie, ikonki druids bez grubości pancerza, wyświetlanie %wygranych pod altem
+- normal - wersja normalna, wyświetlanie effa pod altem
 - max - celowniki "Pricel future 0.8.5", dodatkowe linie na minimapie dla td i arty
 
+Instalacja:
+-- Dokan Library (http://htcclub.pl/wot/DokanInstall_0.6.0.exe)
+-- Skopiuj folder res_mods i pliki xvm-stat.exe oraz xvm-stat.config z paczki do katalogu gry
+-- Uruchom grę przez xvm-stat.exe
 
-Pozdrawiam Szakus
+Pozdrawiam Szakus [-7TP-]
 
 
 
