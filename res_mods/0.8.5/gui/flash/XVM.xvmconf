@@ -47,8 +47,8 @@
       "w": 16
     },
     "formatRight": "<font face='Comic Sans MS' size='11'><font color='{{c:t-battles}}'>{{t-battles:4}}</font> <font color='{{c:t-rating}}'>{{t-rating:3}}</font></font> | <font face='Comic Sans MS'><font face='Comic Sans MS' size='11'><font color='{{c:rating}}'>{{rating}}</font> <font color='{{c:eff}}'>{{eff}}</font> <font color='{{c:kb}}'>{{kb}}</font></font>",
-    "showChances": true,
-    "showChancesExp": true,
+    "showChances": false,
+    "showChancesExp": false,
     "removeSquadIcon": false,
     "clockFormat": "H:N:S   config - Shalfey"
   },
@@ -66,8 +66,8 @@
       "w": 16
     },
     "formatRight": "<font face='Comic Sans MS' size='11'><font color='{{c:t-battles}}'>{{t-battles:4}}</font> <font color='{{c:t-rating}}'>{{t-rating:3}}</font></font> | <font face='Comic Sans MS' size='11'><font color='{{c:rating}}'>{{rating}}</font> <font color='{{c:eff}}'>{{eff}}</font> <font color='{{c:kb}}'>{{kb}}</font></font> ",
-    "showChances": true,
-    "showChancesExp": true,
+    "showChances": false,
+    "showChancesExp": false,
     "removeSquadIcon": false
   },
   // Parameters of the Players Panels
@@ -127,28 +127,30 @@
   },
   // Hit log (my hits calculator)
   "hitLog": {
-    "groupHitsByPlayer": true,
+    "enabled": true,      // on/off switch
+    "x": 340,             // X position (negative values - bind to right side of screen)
+    "y": 5,               // Y position (negative values - bind to bottom side of screen)
+    "w": 500,             // Width
+    "h": 1000,            // Height
+    "lines": 0,           // Number of lines. Old lines will be pushed out
+    "direction": "down",  // Log direction: up - lines will be added from up to down, down - from down to up.
+    "insertOrder": "end", // Insert order: begin - insert new values to begin, end - add to end
+    "groupHitsByPlayer": true, // group hits by players name
+    // Substitution for {{dead}} macro when tank is dead
     "deadMarker": "<font face='Wingdings'>N</font>",
     "blowupMarker": "<font face='Wingdings'>M</font>",
-    "defaultHeader": "<font color='#FFFFFF'>Dmg w/o blind shots</font> <font size='14'></font>",
-    "x": 340,
-    "formatHeader": "<font color='#FFFFFF'>Damage:</font> <font size='14'></font> <font size='1{{nick}}'><b><font color='#fd0000'>{{dmg-total}}</font></b>  <font color='#FFFFFF'>Dmg. hits:</font> <font color='#00FF00'><b>{{n}}</b></font></font>",
-    "visible": true,
-    "formatHistory": "<textformat leading='-4' tabstops='[20,50,90,130]'><font size='12'>×{{n-player}}:</font><tab>{{dmg-player}}<tab>| <font color='{{c:dmg-kind}}'>-{{dmg}}</font><tab> <font color='#FFFFFF'>({{dmg-kind}})</font><tab>| <font color='{{c:vtype}}'>{{vehicle}} {{dead}}</font></textformat>",
-    "y": 6,
-    "w": 500,
-    "h": 200,
-    "lines": 10,
-    "insertOrder": "end",
-    "shadow": {
-      "size": 1.5,
-      "angle": 45,
-      "color": "0x000000",
-      "strength": 100,
-      "alpha": 100,
-      "distance": 0
-    },
-    "direction": "down"
+    // Hits header format, including last hit (macros allowed, see readme-en.txt)
+    "formatHeader":  "<font color='#FFFFFF'>Hits:</font> <font size='13'>#{{n}}</font> <font size='0{{vehicle}}'><b>{{dmg-total}}</b>  <font color='#FFFFFF'>Last:</font> <font color='{{c:dmg-kind}}'><b>{{dmg}}</b> {{dead}}</font></font>",
+    // List of hits format (macros allowed, see readme-en.txt)
+    "formatHistory": "<textformat leading='-4' tabstops='[20,50,90,150]'><font size='12'>\u00D7{{n-player}}:</font><tab>{{dmg-player}}<tab>| <font color='{{c:dmg-kind}}'>{{dmg}}</font><tab>| <font color='{{c:dmg-kind}}'>{{dmg-kind}}</font><tab>| <font color='{{c:vtype}}'>{{vehicle}} {{dead}}</font></textformat>",
+    "shadow": {                       //   Shadow options
+      "alpha": 100,                   //     Opacity
+      "color": "0x000000",            //     Color
+      "angle": 45,                    //     Offset angle
+      "distance": 0,                  //     Offset distance
+      "size": 5,                      //     Size
+      "strength": 150                 //     Intensity
+    }
   },
   // Capture bar
   "captureBar": {
@@ -306,7 +308,7 @@
       }
     },
     "circles": { // Круги дальности. Дистанция только в реальных метрах карты. Только для своей техники.
-        "enabled": true,
+        "enabled": false,
         "major": [ // Основные круги. thickness - толщина. 445 метров - максимальная дистанция засвета.
             { "enabled": true, "distance": 445, "thickness": 0.3, "alpha": 65, "color": "0xFF1111" }
 			//,
@@ -663,10 +665,10 @@
        // "inmeters": true  - дистанция отрезка в метрах реальной карты.
        // "inmeters": false - дистанция отрезка в точках миникарты. Сторона миникарты 211 точек.
        "vehicle": [ // Направление корпуса своей техники.
-         { "enabled": true, "from": 0,  "to": 1463, "inmeters": true, "thickness": 1.2,   "alpha": 65, "color": "0xFFFFFF"}
+         { "enabled": false, "from": 0,  "to": 1463, "inmeters": true, "thickness": 1.2,   "alpha": 65, "color": "0xFFFFFF"}
        ],
        "camera": [ // Направление камеры от своей техники.
-         { "enabled": true, "from":  50,  "to": 1463, "inmeters": true, "thickness": 0.8, "alpha": 65, "color": "0xFF0000"}
+         { "enabled": true, "from":  0,  "to": 1463, "inmeters": true, "thickness": 0.4, "alpha": 65, "color": "0xFF0000"}
        ]
 	   //wyłączony wychył działa na minimapie dla TD i arty
 	   ,"traverseAngle": [ // Углы горизонтальной наводки. Срабатывают только, если углы есть.
@@ -915,8 +917,8 @@
                 "angle": 45
               },
               "y": -48,
-              "name": "Overall rating for all appliances",
-              "color": "{{c:eff}}",
+              "name": "Global Win Rate",
+              "color": "{{c:rating}}",
               "font": {
                 "italic": false,
                 "size": 11,
@@ -924,7 +926,7 @@
                 "align": "center",
                 "bold": true
               },
-              "format": "{{eff}}",
+              "format": "{{rating}}",
               "alpha": 100,
               "visible": true
             }
@@ -1484,8 +1486,8 @@
                 "angle": 45
               },
               "y": -48,
-              "name": "Overall rating for all appliances",
-              "color": "{{c:eff}}",
+              "name": "Global Win Rate",
+              "color": "{{c:rating}}",
               "font": {
                 "italic": false,
                 "size": 11,
@@ -1493,7 +1495,7 @@
                 "align": "center",
                 "bold": true
               },
-              "format": "{{eff}}",
+              "format": "{{rating}}",
               "alpha": 100,
               "visible": true
             }
