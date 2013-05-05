@@ -668,9 +668,9 @@
        "camera": [ // Направление камеры от своей техники.
          { "enabled": true, "from":  50,  "to": 1463, "inmeters": true, "thickness": 0.8, "alpha": 65, "color": "0xFF0000"}
        ]
-	   //wyłączony wychył działa na minimapie dla TD i arty
+	   //włączony wychył działa na minimapie dla TD i arty
 	   ,"traverseAngle": [ // Углы горизонтальной наводки. Срабатывают только, если углы есть.
-         { "enabled": false, "from": 50,  "to": 1463, "inmeters": true, "thickness": 0.5,   "alpha": 65, "color": "0xFFFFFF"}
+         { "enabled": true, "from": 50,  "to": 1463, "inmeters": true, "thickness": 0.5,   "alpha": 65, "color": "0xFFFFFF"}
        ]
     }
   },

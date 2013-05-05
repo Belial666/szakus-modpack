@@ -1,0 +1,572 @@
+﻿<mmps>
+  <config>
+    <enableEffArmor>true</enableEffArmor>    <!-- Displays effective armor calculation. ** only when armor values are present in "vehiclesData" section. -->
+    <enableRulerWhenTD>true</enableRulerWhenTD>    <!-- Displays GunArc Critical Angle Ruler for TD's. -->
+    <enableRulerWhenSPG>true</enableRulerWhenSPG>    <!-- Displays GunArc Critical Angle Ruler for SPG's. -->
+    <minimapEx>true</minimapEx>    <!-- Enables MiniMap Enhancement. -->
+    <damagePanelEx>true</damagePanelEx>  <!-- Enables Damage Panel Enhancement. (Displays time to repair). -->
+    <bigMapKey>17</bigMapKey>    <!-- Key to zoom MiniMap, default 20(CapsLock), can be changed to 17(Ctrl). -->
+    <bigMapSize>600</bigMapSize>   <!-- Size of MiniMap zoom in pixels. -->
+    <ordinateWhenTank>0.90</ordinateWhenTank>    <!-- Vertical placement of Effective armor calculation ( In percentage of lower half vertical screen resolution ). -->
+    <ordinateWhenTD>0.87</ordinateWhenTD>    <!-- Vertical placement of TD GunArc Ruler ( where 0 is screen center and 1 its bottom ). -->
+    <ordinateWhenSPG>0</ordinateWhenSPG>    <!-- Vertical placement of SPG GunArc Ruler. -->
+    <timeOrange>180</timeOrange> <!--Time after with (in seconds) battle timer in uper right corner flashes with orange alert. -->
+    <m2pix>8.2</m2pix>    <!-- Distance to Pixels ratio, Default is 1m = 8.2px. -->
+    <xSpacing>0</xSpacing> <!-- GunArc Ruler degre dash'es spacing, default is 0 adaptive. Recommended setting for fixed spacing is 16 or 32. -->
+    <enableClock>true</enableClock> <!-- Displays in-game realtime clock. -->
+    <circle>445</circle> <!-- View Range Circle Settings. View Range circle size, any meter range as value of viewrange. -->
+  </config>
+  <vehiclesData>
+    <!-- If GunArc Rulers behavior are incorect or You want them to display diffrent, define it here. -->
+    <!-- "name" Vehicle name. Ingame-name of player's vehicle icon - refer to included "Vehicle_Names.txt" or names in "VEHICLE NAME" section -->
+    <!-- "type" Vehicle type tags: Tank/TD/SPG, ** type="0" to not display GunArc Ruler. -->
+    <!-- "leftArc" Gun left angle limit. -->
+    <!-- "rightArc" Gun right angle limit. -->
+    <!-- "front" Thickness of front armor plate. -->
+    <!-- "arc" Front armor plate inclination in relation to horizontal plane, If vehicle front armor have lance shape with two angles - mark "arc2". -->
+    <!-- "arc2" (if exist). Front armor plate inclination in relation to vertical plane of prolonged "Z" axis of Vehicle. -->
+    <!-- "arc3" (if exist). Use to simulate minor "roundings" of frontal plates (by Example vehicles like: French - AMX40 or US - M7) -->
+    <!-- "side" Thickness of side armor without truck's. -->
+    <!-- USSR -->
+    <!-- ARTY -->
+    <vehicle name="ussr_SU_8" type="SPG" leftArc="12" rightArc="5"/>
+    <vehicle name="ussr_S_51" type="SPG" leftArc="6" rightArc="6"/>
+    <vehicle name="ussr_SU_14" type="SPG" leftArc="5" rightArc="5"/>
+    <vehicle name="ussr_Object_212" type="SPG" leftArc="6" rightArc="6"/>
+    <vehicle name="ussr_Object_261" type="SPG" leftArc="5" rightArc="5"/>
+    <!-- T5 -->
+    <vehicle name="ussr_Churchill_LL" front="88" arc="0" side="76"/>
+    <vehicle name="ussr_KV1" front="75" arc="25" side="75"/>
+    <vehicle name="ussr_T_34" front="45" arc="60" side="45"/>
+    <vehicle name="ussr_SU_85" type="TD" leftArc="15" rightArc="15" front="45" arc="50" side="45"/>
+    <vehicle name="ussr_T_50_2" front="37" arc="50" side="37"/>
+    <!-- T6 -->
+    <vehicle name="ussr_KV2" front="75" arc="25" side="75"/>
+    <vehicle name="ussr_KV_1s" front="60" arc="25" side="60"/>
+    <vehicle name="ussr_T150" front="90" arc="25" side="90"/>
+    <vehicle name="ussr_T_34_85" front="45" arc="60" side="45"/>
+    <vehicle name="ussr_SU100Y" type="TD" leftArc="10" rightArc="10" front="60" arc2="43" side="60"/>
+    <vehicle name="ussr_SU_100" type="TD" leftArc="12" rightArc="12" front="75" arc="50" side="45"/>
+    <!-- T7 -->
+    <vehicle name="ussr_KV_3" front="120" arc="30" side="90"/>
+    <vehicle name="ussr_IS" front="100" arc="25" side="90"/>
+    <vehicle name="ussr_T_43" front="75" arc="50" side="75"/>
+    <vehicle name="ussr_KV_13" front="100" arc="37" side="85"/>
+    <vehicle name="ussr_SU100M1" type="TD" leftArc="8" rightArc="8" front="90" arc="55" side="75"/>
+    <vehicle name="ussr_SU122_44" type="TD" leftArc="8" rightArc="8" front="90" arc="60" side="75"/>
+    <vehicle name="ussr_SU_152" type="TD" leftArc="8" rightArc="8" front="60" arc="25" side="60"/>
+    <!-- T8 -->
+    <vehicle name="ussr_IS_3" front="110" arc="56" arc2="43" side="120"/>
+    <vehicle name="ussr_KV4" front="160" arc="25" side="150"/>
+    <vehicle name="ussr_KV_5" front="180" arc="30" side="150"/>
+    <vehicle name="ussr_Object_261" front="100" arc="65" side="100"/>
+    <vehicle name="ussr_T_44" front="90" arc="60" side="75"/>
+    <vehicle name="ussr_SU_101" type="TD" leftArc="7" rightArc="7" front="90" arc="65" side="90"/>
+    <vehicle name="ussr_ISU_152" type="TD" leftArc="8" rightArc="8" front="90" arc="30" side="75"/>
+    <!-- T9 -->
+    <vehicle name="ussr_IS8" front="120" arc="55" arc2="40" side="80"/>
+    <vehicle name="ussr_ST_I" front="140" arc="61" side="140"/>
+    <vehicle name="ussr_T_54" front="120" arc="60" side="80"/>
+    <vehicle name="ussr_Object_704" type="TD" leftArc="11" rightArc="11" front="120" arc="50" side="90"/>
+    <vehicle name="ussr_SU122_54" type="TD" leftArc="8" rightArc="8" front="100" arc="50" side="80"/>
+    <!-- T10 -->
+    <vehicle name="ussr_IS_4" front="140" arc="61" side="160"/>
+    <vehicle name="ussr_IS_7" front="150" arc="60" arc2="37" side="150"/>
+    <vehicle name="ussr_T62A" front="102" arc="60" side="75"/>
+    <vehicle name="ussr_Object268" type="TD" leftArc="6" rightArc="6" front="120" arc="56" arc2="43" side="90"/>
+    <vehicle name="ussr_Object263" type="TD" leftArc="7" rightArc="7" front="250" arc="45" side="80"/>
+    <!-- USA -->
+    <vehicle name="usa_M3_Grant" type="TD" leftArc="15" rightArc="15" front="51" arc="30" side="38"/>
+    <!-- ARTY -->
+    <vehicle name="usa_M41" type="SPG" leftArc="17" rightArc="21"/>
+    <vehicle name="usa_M12" type="SPG" leftArc="14" rightArc="14"/>
+    <vehicle name="usa_M40M43" type="SPG" leftArc="18" rightArc="18"/>
+    <vehicle name="usa_T92" type="SPG" leftArc="12" rightArc="12"/>
+    <!-- T5 -->
+    <vehicle name="usa_M7_med" front="38" arc="55" side="32"/>
+    <vehicle name="usa_T49" type="TANK" front="21.8" arc="55" side="19"/>  
+    <vehicle name="usa_M10_Wolverine" type="TANK" front="51" arc="55" side="25"/>
+    <vehicle name="usa_T1_hvy" front="83" arc="20" side="44"/>
+    <vehicle name="usa_T14" front="50.8" arc="62" side="63.5"/>
+    <vehicle name="usa_Ram_II" front="76.2" arc="50" side="63"/>
+    <vehicle name="usa_M4A2E4" front="64" arc="56" side="38"/>
+    <!-- T6 -->
+    <vehicle name="usa_M36_Slagger" type="TANK" front="60" arc="55" side="25"/>
+    <vehicle name="usa_M18_Hellcat" type="TANK" front="13" arc="50" side="13"/>
+    <vehicle name="usa_M6" front="83" arc="20" side="44"/>
+    <vehicle name="usa_M4A3E8_Sherman" front="64" arc="56" side="38"/>
+    <vehicle name="usa_Sherman_Jumbo" front="102" arc="56" side="76"/>
+    <!-- T7 -->
+    <vehicle name="usa_T29" front="88" arc="54" side="76"/>
+    <vehicle name="usa_T25_AT" type="TD" leftArc="10" rightArc="10" front="88.9" arc="46" side="63.5"/>
+    <vehicle name="usa_T20" front="64" arc="46" side="51"/>
+    <vehicle name="usa_T25_2" type="TANK" front="76" arc="46" side="51"/>
+    <!-- T8 -->
+    <vehicle name="usa_T34_hvy" front="88" arc="54" side="76"/>
+    <vehicle name="usa_M6A2E1" front="191" arc="20" side="44"/>
+    <vehicle name="usa_T26_E4_SuperPershing" front="190" arc="52" side="76"/>
+    <vehicle name="usa_Pershing" front="102" arc="52" side="76"/>
+    <vehicle name="usa_T32" front="112" arc="54" side="76"/>
+    <vehicle name="usa_T28" type="TD" leftArc="11" rightArc="10" arc="30" front="203.2" side="50.8"/>
+    <vehicle name="usa_T28_Prototype" type="TANK" leftArc="143" rightArc="143" front="203.2" arc="30" side="50.8"/>
+    <vehicle name="usa_T69" front="101.6" arc="55" side="50"/>
+    <!-- T9 -->
+    <vehicle name="usa_T54E1" front="102" arc="58" arc3="14" side="63"/>
+    <vehicle name="usa_M46_Patton" front="102" arc="52" side="76"/>
+    <vehicle name="usa_M103" front="114" arc="54" arc3="22" side="51"/>
+    <vehicle name="usa_T95" type="TD" leftArc="11" rightArc="10" front="305" arc="10" side="152"/>
+    <vehicle name="usa_T30" type="TANK" front="88" arc="54" side="76"/>
+    <!-- T10 -->
+    <vehicle name="usa_M48A1" front="102" arc="50" arc3="18" side="76"/>
+    <vehicle name="usa_T110" front="130" arc="64" arc3="20" side="76"/>
+    <vehicle name="usa_T57_58" front="114" arc="50" arc3="16" side="51"/>
+    <vehicle name="usa_T110E4" type="TANK" leftArc="90" rightArc="90" front="130" arc="64" arc3="20" side="100"/>
+    <vehicle name="usa_T110E3" type="TD" leftArc="8" rightArc="8" front="172" arc="64" arc3="22" side="76"/>
+    <!-- UK -->
+    <vehicle name="uk_GB57_Alecto" type="TD" leftArc="15" rightArc="15" front="10" arc="30" side="10"/>
+    <!-- T5 -->
+    <vehicle name="uk_GB08_Churchill_I" front="76" arc="15" side="64"/>
+    <vehicle name="uk_GB73_AT2" type="TD" leftArc="13" rightArc="13" front="76" arc="70" side="102"/>
+    <vehicle name="uk_GB68_Matilda_Black_Prince" front="75" arc="0" side="70"/>
+    <!-- T6 -->
+    <vehicle name="uk_GB21_Cromwell" front="57" arc="20" side="46"/>
+    <vehicle name="uk_GB09_Churchill_VII" front="139" arc="20" side="82"/>
+    <vehicle name="uk_GB63_TOG_II" front="76" arc="40" side="64"/>
+    <vehicle name="uk_GB40_Gun_Carrier_Churchill" type="TD" leftArc="5" rightArc="5" front="89" arc="3" side="64"/>
+    <vehicle name="uk_GB74_AT8" type="TD" leftArc="7.5" rightArc="7.5" front="203" arc="7" side="102"/>
+    <!-- T7 -->
+    <vehicle name="uk_GB75_AT7" type="TD" leftArc="7.5" rightArc="7.5" front="203" arc="0" side="102"/>
+    <vehicle name="uk_GB71_AT_15A" type="TD" leftArc="25" rightArc="25" front="76" arc="64" side="152"/>
+    <vehicle name="uk_GB22_Comet" front="76" arc="0" side="32"/>
+    <vehicle name="uk_GB10_Black_Prince" front="139" arc="20" side="82"/>
+    <!-- T8 -->
+    <vehicle name="uk_GB11_Caernarvon" front="130" arc="64" side="51"/>
+    <vehicle name="uk_GB23_Centurion" front="76" arc="55" side="51"/>
+    <vehicle name="uk_GB72_AT15" type="TD" leftArc="25" rightArc="25" front="127" arc="64" side="152"/>
+    <!-- T9 -->
+    <vehicle name="uk_GB12_Conqueror" front="130" arc="60" side="51"/>
+    <vehicle name="uk_GB24_Centurion_Mk3" front="121" arc="55" side="51"/>
+    <vehicle name="uk_GB32_Tortoise" type="TD" leftArc="20" rightArc="20" front="172" arc="45" side="152"/>
+    <!-- T10 -->
+    <vehicle name="uk_GB13_FV215b" front="152" arc="60" side="59"/>
+    <vehicle name="uk_GB70_FV4202_105" front="121" arc="70" side="59"/>
+    <vehicle name="uk_GB48_FV215b_183" type="TANK" leftArc="45" rightArc="45" front="152" arc="55" side="59"/>
+    <!-- GER -->
+    <!-- ARTY -->
+    <vehicle name="germany_Hummel" type="SPG" leftArc="15" rightArc="15"/>
+    <vehicle name="germany_G_Panther" type="SPG" leftArc="26" rightArc="26"/>
+    <vehicle name="germany_G_Tiger" type="SPG" leftArc="5" rightArc="5"/>
+    <vehicle name="germany_G_E" type="SPG" leftArc="6" rightArc="6"/>
+    <!-- T5 -->
+    <vehicle name="germany_PzIV" front="80" arc="10" side="30"/> 
+    <vehicle name="germany_PzIV_Hydro" front="50" arc="10" side="30"/> 
+    <vehicle name="germany_T_25" front="50" arc="45" side="45"/> 
+    <vehicle name="germany_PzIII_IV" front="60" arc="40" side="60"/> 
+    <vehicle name="germany_StuGIII" type="TD" leftArc="15" rightArc="15" front="80" arc="10" side="30"/> 
+    <!-- T6 -->
+    <vehicle name="germany_VK2801" front="50" arc="55" side="30"/>
+    <vehicle name="germany_VK3601H" front="100" arc="10" side="60"/>
+    <vehicle name="germany_VK3001P" front="75" arc="10" side="60"/>
+    <vehicle name="germany_VK3001H" front="50" arc="10" side="30"/>
+    <vehicle name="germany_PzV_PzIV" front="85" arc="55" side="50"/>
+    <vehicle name="germany_PzV_PzIV_ausf_Alfa" front="85" arc="55" side="50"/>
+    <vehicle name="germany_PzIV_schmalturm" front="50" arc="10"  side="30"/> 
+    <vehicle name="germany_DickerMax" type="TD" leftArc="8" rightArc="8" front="50" arc="10" side="20"/> 
+    <vehicle name="germany_JagdPzIV" type="TD" leftArc="10" rightArc="10" front="80" arc="50" side="40"/> 
+    <!-- T7 -->
+    <vehicle name="germany_VK3002DB" front="80" arc="60" side="45"/>
+    <vehicle name="germany_PzVI" front="100" arc="10" side="80"/>
+    <vehicle name="germany_PzVI_Tiger_P" front="200" arc="10" side="80"/>
+    <vehicle name="germany_PzV" front="85" arc="55" side="50"/>
+    <vehicle name="germany_Panther_M10" front="85" arc="55" side="50"/>
+    <vehicle name="germany_JagdPanther" type="TD" leftArc="13" rightArc="13" front="80" arc="55" side="50"/> 
+    <!-- T8 -->
+    <vehicle name="germany_PzVIB_Tiger_II" front="150" arc="50" side="80"/>
+    <vehicle name="germany_VK4502A" front="120" arc="55" side="80"/>
+    <vehicle name="germany_Lowe" front="120" arc="55" side="80"/>
+    <vehicle name="germany_Panther_II" front="100" arc="55" side="60"/>
+    <vehicle name="germany_JagdPantherII" front="100" arc="55" side="60"/> 
+    <vehicle name="germany_Ferdinand" front="200" arc="10" side="80"/>
+    <vehicle name="germany_JagdTiger_SdKfz_185" front="150" arc="50" side="80"/> 
+    <!-- T9 -->
+    <vehicle name="germany_E_75" front="130" arc="60" side="120"/>
+    <vehicle name="germany_VK4502P" front="150" arc="50" side="100"/>
+    <vehicle name="germany_E_50" front="120" arc="60" side="80"/>
+    <vehicle name="germany_JagdTiger" front="120" arc="50" side="80"/>
+    <!-- T10 -->
+    <vehicle name="germany_E_100" front="150" arc="50" side="190"/>
+    <vehicle name="germany_Maus" front="200" arc="42" side="185"/> 
+    <vehicle name="germany_E50_Ausf_M" front="120" arc="60" side="80"/>
+    <vehicle name="germany_JagdPz_E100" front="150" arc="50" side="150"/>
+    <!-- FR -->
+    <!-- ARTY -->
+    <vehicle name="france__105_leFH18B2" type="SPG" leftArc="15" rightArc="15"/>
+    <vehicle name="france_AMX_13F3AM" type="SPG" leftArc="30" rightArc="5"/>
+    <vehicle name="france_Lorraine155_50" type="SPG" leftArc="12" rightArc="12"/>
+    <vehicle name="france_Lorraine155_51" type="SPG" leftArc="15" rightArc="15"/>
+    <!-- T5 -->
+    <vehicle name="france_BDR_G1B" front="60" arc="47" side="40"/>
+    <vehicle name="france_S_35CA" type="TD" leftArc="29" rightArc="15" front="36" arc="20" side="35"/>
+    <vehicle name="france_ELC_AMX" type="TD" leftArc="15" rightArc="15"/>   
+    <!-- T6 -->
+    <vehicle name="france_ARL_V39" type="TD" leftArc="7" rightArc="7" front="60" arc="46" side="40"/>
+    <vehicle name="france_ARL_44" front="120" arc="50" side="50"/>
+    <!-- T7 -->
+    <vehicle name="france_AMX_AC_Mle1946" type="TD" leftArc="10" rightArc="7" front="120" arc="45" side="40"/>
+    <vehicle name="france_AMX_M4_1945" front="90" arc="50" side="40"/>
+    <!-- T8 -->
+    <vehicle name="france_AMX_AC_Mle1948" type="TD" leftArc="10" rightArc="10" front="150" arc="55" side="40"/>
+    <vehicle name="france_AMX_50_100" front="90" arc="50" side="35"/>
+    <vehicle name="france_FCM_50t" front="120" arc="35" side="80"/>
+    <!-- T9 -->
+    <vehicle name="france_AMX50_Foch" type="TD" leftArc="10" rightArc="10" front="180" arc="55" side="50"/>
+    <vehicle name="france_Lorraine40t" front="40" arc="50" arc2="43" side="40"/>
+    <vehicle name="france_AMX_50_120" front="90" arc="50" arc2="30" side="80"/>
+    <!-- T10 -->
+    <vehicle name="france_Bat_Chatillon25t" front="50" arc="65" side="40"/>
+    <vehicle name="france_AMX_50Fosh_155" type="TD" leftArc="6" rightArc="6" front="180" arc="55" side="50"/>
+    <vehicle name="france_F10_AMX_50B" front="100" arc="64" arc2="22" side="50"/>
+    <!-- CHI -->
+    <!-- T5 -->
+    <vehicle name="china_Ch21_T34" front="45" arc="60" side="45"/>
+    <!-- T6 -->
+    <vehicle name="china_Ch20_Type58" front="45" arc="60" side="45"/>
+    <!-- T7 -->
+    <vehicle name="china_Ch04_T34_1" front="60" arc="55" side="45"/>
+    <vehicle name="china_Ch10_IS2" front="100" arc="35" side="90"/>
+    <!-- T8 -->
+    <vehicle name="china_Ch05_T34_2" front="70" arc="62" side="45"/>
+    <vehicle name="china_Ch01_Type59" front="100" arc="60" side="80"/>
+    <vehicle name="china_Ch01_Type59_gold" front="100" arc="60" side="80"/>
+    <vehicle name="china_Ch11_110" front="120" arc="53" arc2="52" side="90"/>
+    <vehicle name="china_Ch03_WZ_111" front="120" arc="62" arc2="40" side="90"/>
+    <!-- T9 -->
+    <vehicle name="china_Ch12_111_1_2_3" front="120" arc="55" arc2="40" side="90"/>
+    <vehicle name="china_Ch18_WZ_120" front="120" arc="62" side="80"/>
+    <!-- T10 -->
+    <vehicle name="china_Ch19_121" front="120" arc="62" side="80"/>
+    <vehicle name="china_Ch22_113" front="120" arc="68" side="90"/>
+  </vehiclesData>
+</mmps>
+
+<!-- 
+VEHICLE NAME:
+
+CHINA: 
+china-Ch01_Type59
+china-Ch02_Type62
+china-Ch03_WZ-111
+china-Ch04_T34_1
+china-Ch05_T34_2
+china-Ch06_Renault_NC31
+china-Ch07_Vickers_MkE_Type_BT26
+china-Ch08_Type97_Chi_Ha
+china-Ch09_M5
+china-Ch10_IS2
+china-Ch11_110
+china-Ch12_111_1_2_3
+china-Ch15_59_16
+china-Ch16_WZ_131
+china-Ch17_WZ131_1_WZ132
+china-Ch18_WZ-120
+china-Ch19_121
+china-Ch20_Type58
+china-Ch21_T34
+china-Ch22_113
+
+FRANCE:
+france-AMX38
+france-AMX40
+france-AMX50_Foch
+france-AMX_105AM
+france-AMX_12t
+france-AMX_13F3AM
+france-AMX_13_75
+france-AMX_13_90
+france-AMX_50Fosh_155
+france-AMX_50_100
+france-AMX_50_120
+france-AMX_AC_Mle1946
+france-AMX_AC_Mle1948
+france-AMX_M4_1945
+france-ARL_44
+france-ARL_V39
+france-B1
+france-Bat_Chatillon155
+france-Bat_Chatillon25t
+france-BDR_G1B
+france-D1
+france-D2
+france-ELC_AMX
+france-F10_AMX_50B
+france-FCM_36Pak40
+france-FCM_50t
+france-Hotchkiss_H35
+france-Lorraine155_50
+france-Lorraine155_51
+france-Lorraine39_L_AM
+france-Lorraine40t
+france-RenaultBS
+france-RenaultFT
+france-RenaultFT_AC
+france-RenaultUE57
+france-Somua_Sau_40
+france-S_35CA
+france-_105_leFH18B2
+
+GERMANY:
+germany-Auf_Panther
+germany-B-1bis_captured
+germany-Bison_I
+germany-DickerMax
+germany-E-100
+germany-E-50
+germany-E-75
+germany-E50_Ausf_M
+germany-Ferdinand
+germany-G20_Marder_II
+germany-Grille
+germany-G_E
+germany-G_Panther
+germany-G_Tiger
+germany-H39_captured
+germany-Hetzer
+germany-Hummel
+germany-Indien_Panzer
+germany-JagdPanther
+germany-JagdPantherII
+germany-JagdPzIV
+germany-JagdPz_E100
+germany-JagdTiger
+germany-JagdTiger_SdKfz_185
+germany-Leopard1
+germany-Lowe
+germany-Ltraktor
+germany-Maus
+germany-Panther_II
+germany-Panther_M10
+germany-PanzerJager_I
+germany-Pro_Ag_A
+germany-Pz35t
+germany-Pz38t
+germany-Pz38_NA
+germany-PzI
+germany-PzII
+germany-PzIII
+germany-PzIII_A
+germany-PzIII_IV
+germany-PzIII_training
+germany-PzII_J
+germany-PzII_Luchs
+germany-PzIV
+germany-PzIV_Hydro
+germany-PzIV_schmalturm
+germany-PzI_ausf_C
+germany-PzV
+germany-PzVI
+germany-PzVIB_Tiger_II
+germany-PzVIB_Tiger_II_training
+germany-PzVI_Tiger_P
+germany-PzV_PzIV
+germany-PzV_PzIV_ausf_Alfa
+germany-PzV_training
+germany-Pz_II_AusfG
+germany-Pz_IV_AusfGH
+germany-S35_captured
+germany-StugIII
+germany-Sturmpanzer_II
+germany-T-15
+germany-T-25
+germany-VK1602
+germany-VK2001DB
+germany-VK2801
+germany-VK3001H
+germany-VK3001P
+germany-VK3002DB
+germany-VK3002DB_V1
+germany-VK3601H
+germany-VK4502A
+germany-VK4502P
+germany-VK7201
+germany-Wespe
+germany_E50_Ausf.M
+
+UK:
+uk-GB01_Medium_Mark_I
+uk-GB03_Cruiser_Mk_I
+uk-GB04_Valentine
+uk-GB05_Vickers_Medium_Mk_II
+uk-GB06_Vickers_Medium_Mk_III
+uk-GB07_Matilda
+uk-GB08_Churchill_I
+UK-GB09_Churchill_VII
+uk-GB10_Black_Prince
+uk-GB11_Caernarvon
+uk-GB12_Conqueror
+uk-GB13_FV215b
+uk-GB20_Crusader
+uk-GB21_Cromwell
+uk-GB22_Comet
+uk-GB23_Centurion
+uk-GB24_Centurion_Mk3
+uk-GB32_Tortoise
+uk-GB39_Universal_CarrierQF2
+uk-GB40_Gun_Carrier_Churchill
+uk-GB42_Valentine_AT
+uk-GB48_FV215b_183
+uk-GB51_Excelsior
+uk-GB57_Alecto
+uk-GB58_Cruiser_Mk_III
+uk-GB59_Cruiser_Mk_IV
+uk-GB60_Covenanter
+uk-GB63_TOG_II
+uk-GB68_Matilda_Black_Prince
+uk-GB69_Cruiser_Mk_II
+uk-GB70_FV4202_105
+uk-GB71_AT_15A
+uk-GB72_AT15
+uk-GB73_AT2
+uk-GB74_AT8
+uk-GB75_AT7
+uk-GB78_Sexton_I
+
+USA:
+usa-A74_T1_E6
+usa-M103
+usa-M10_Wolverine
+usa-M12
+usa-M18_Hellcat
+usa-M22_Locust
+usa-M24_Chaffee
+usa-M2_lt
+usa-M2_med
+usa-M36_Slagger
+usa-M37
+usa-M3_Grant
+usa-M3_Stuart
+usa-M40M43
+usa-M41
+usa-M46_Patton
+usa-M48A1
+usa-M4A2E4
+usa-M4A3E8_Sherman
+usa-M4_Sherman
+usa-M5_Stuart
+usa-M6
+usa-M60
+usa-M6A2E1
+usa-M7_med
+usa-M7_Priest
+usa-M8A1
+usa-MTLS-1G14
+usa-Pershing
+usa-Ram-II
+usa-Sherman_Jumbo
+usa-T110
+usa-T110E3
+usa-T110E4
+usa-T14
+usa-T18
+usa-T1_Cunningham
+usa-T1_E6
+usa-T1_hvy
+usa-T20
+usa-T21
+usa-T25_2
+usa-T25_AT
+usa-T26_E4_SuperPershing
+usa-T28
+usa-T28_Prototype
+usa-T29
+usa-T2_lt
+usa-T2_med
+usa-T30
+usa-T32
+usa-T34_hvy
+usa-T40
+usa-T49
+usa-T54E1
+usa-T57
+usa-T57_58
+usa-T69
+usa-T71
+usa-T82
+usa-T92
+usa-T95
+
+USSR:
+ussr-62A
+ussr-A-20
+ussr-A-32
+ussr-AT-1
+ussr-BT-2
+ussr-BT-7
+ussr-BT-SV
+ussr-Churchill_LL
+ussr-GAZ-74b
+ussr-IS-3
+ussr-IS-4
+ussr-IS-7
+ussr-IS
+ussr-IS8
+ussr-ISU-152
+ussr-KV-13
+ussr-KV-1s
+ussr-KV-220
+ussr-KV-220_action
+ussr-KV-3
+ussr-KV-5
+ussr-KV
+ussr-KV1
+ussr-KV2
+ussr-KV4
+ussr-M3_Stuart_LL
+ussr-Matilda_II_LL
+ussr-MS-1
+ussr-Object252
+ussr-Object263
+ussr-Object268
+ussr-Object_212
+ussr-Object_261
+ussr-Object_704
+ussr-Object_907
+ussr-Observer
+ussr-R80_KV1
+ussr-S-51
+ussr-ST_I
+ussr-SU-100
+ussr-SU-101
+ussr-SU-14
+ussr-SU-152
+ussr-SU-18
+ussr-SU-26
+ussr-SU-5
+ussr-SU-76
+ussr-SU-8
+ussr-SU-85
+ussr-SU100M1
+ussr-SU100Y
+ussr-SU101
+ussr-SU122_44
+ussr-SU122_54
+ussr-SU_85I
+ussr-T-127
+ussr-T-26
+ussr-T-28
+ussr-T-34-85
+ussr-T-34
+ussr-T-43
+ussr-T-44
+ussr-T-46
+ussr-T-50
+ussr-T-54
+ussr-T-60
+ussr-T-70
+ussr-T150
+ussr-T62A
+ussr-T80
+ussr-Tetrarch_LL
+ussr-T_50_2
+ussr-Valentine_LL 
+
+-->

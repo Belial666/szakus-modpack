@@ -1,0 +1,26 @@
+﻿<mmms>
+  <config>
+    <arcade>
+      <degree2pix>16</degree2pix>  <!-- Pixels to angle degre ratio, default is: 1' = 16px -->
+      <viewRangeMultiple>1.00</viewRangeMultiple>  <!-- View Range multipler, used to calculate color of view range display -->
+      <reloadMultiple>0.875</reloadMultiple>  <!-- Target Reload Time multipler, used to compensate default target reload time, *default reload time is affected by Rammer and Crew Skill's -->
+      <reticle>36</reticle>  <!-- Target's speed threshold 1. According to this value, the inner circle will be drawn to assist you to aim moving targets at this speed level. -->
+      <reticle>72</reticle>  <!-- Target's speed threshold 2. According to this value, the outer circle will be drawn to assist you to aim moving targets at this speed level. -->
+    </arcade>
+    <sniper>
+      <reticle>36</reticle>  <!-- Target's speed threshold 1. According to this value, the inner circle will be drawn to assist you to aim moving targets at this speed level. -->
+      <reticle>72</reticle>  <!-- Target's speed threshold 2. According to this value, the outer circle will be drawn to assist you to aim moving targets at this speed level. -->
+    </sniper>
+    <strategic>
+      <m2pix>8.5</m2pix>  <!-- Pixels to distance ratio, default is: 1m = 8.2px -->
+      <angle>true</angle>  <!-- Elevation angle panel display: ON = true / OFF = false-->
+      <maxDistance>true</maxDistance>  <!-- Max distance panel display: ON = true / OFF = false -->
+      <extraInfo>true</extraInfo>  <!-- Extra info panel display: ON = true / OFF = false -->
+      <center>false</center>  <!-- Central marker display ON: = true / OFF = false -->
+      <circle>24</circle>  <!-- Target's speed threshold. According to this value, the circles will be drawn to assist you to aim moving targets at this speed levels. -->
+      <circle>48</circle>  <!-- Size of circles being drawn in strategic mode is now dependent on the size of the map and the current zoom level of the Camera. --> 
+    </strategic>
+  </config>
+  <gundata>
+  </gundata>
+</mmms>

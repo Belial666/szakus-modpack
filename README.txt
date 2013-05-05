@@ -1,11 +1,31 @@
-Moja aktualna paczka modów
+Zapraszam do pobierania i testowania mojej paczki modów. (dostępne 3 wersje lite, normal i max)
 
-Branche:
-- normal - linie i koła spotowania na minimapie, celowniki J1mB0_s
-- max - linie wychyłu działa na minimapie dla td i arty, celowniki z dodatkowymi informacjami
+- Nowy XVM (wymagana biblioteka http://htcclub.pl/wot/DokanInstall_0.6.0.exe) (kolorki jak w modpacku Rajdera)
+- Minimapa z dodatkowymi informacjami
+-- Ostatnia pozycja czołgu przed zniknięciem, nazwy czołgów
+-- Niebieskie koło zasięg spotowania, czerwone koło 500 m rysowanie czołgów
+-- Biała linia przedłużenie kadłuba, czerwona linia kierunek patrzenia
+- Garaż na 9 maja 
+- Kolorowe statystyki z bitew w garażu
+- Zoom Mod dla czołgów i arty
+- Skasowana mgła
+- Statystyki uszkodzeń/otrzymanych obrażeń w grze 
+- Celownik snajperski dla arty (uruchamia klawisz T, wyłącza klawisz L)
+- Skasowane Intro przy uruchamianiu gry
+- Nowa mapa taktyczna
+- Białe wraki czołgów
+- Celownik J1mB0_s_Crosshair_Mod_v1.25
+- Ikonki pod 0.8.5 z grubością pancerza mirtankov.net/infoicons/6058-tank-icons-for-wot.html
+
+Wersje (Branche):
+- lite - mniej informacji na minimapie, ikonki druids bez grubości pancerza
+- normal - wersja normalna 
+- max - celowniki "Pricel future 0.8.5", dodatkowe linie na minimapie dla td i arty
 
 
 Pozdrawiam Szakus
+
+
 
 
 
@@ -41,3 +61,5 @@ Changelog:
 - mod celownik J1mB0_s_Crosshair_Mod_v1.25
 - mod specjalny garaż na 9 maja + Polskie flagi
 - mod "zoom mod"
+- wyświetlanie "hit countera", 
+- mod "otrzymane obrażenia"

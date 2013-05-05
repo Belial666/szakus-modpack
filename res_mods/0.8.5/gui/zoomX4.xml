@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<zoomX4.xml>
+
+    <!--
+    "True" - turns sniper zoom to x4… 
+
+    "False" - sniper zoom to normal (x3)
+
+    for standard install in res_mods/0.8.x/gui/zoomX4.xml with "<zoomX4>False</zoomX4"
+    -->
+
+    <zoomX4>True</zoomX4>
+
+
+    <!--
+    set zoom levels <zooms></zooms> in gui/avatar_input_handler.xml
+    to allow 4 levels (2,4,6,10) set <zoomX4>True</zoomX4>
+    -->
+
+    <zooms>2 4 8 16</zooms>
+
+</zoomX4.xml>
