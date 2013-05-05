@@ -19,7 +19,7 @@ Mody:
 - Ikonki pod 0.8.5 z grubością pancerza mirtankov.net/infoicons/6058-tank-icons-for-wot.html
 
 Wersje (Branche):
-- lite - mniej informacji na minimapie, ikonki druids bez grubości pancerza, wyświetlanie %wygranych pod altem
+- lite - mniej informacji na minimapie, kompaktowy panel zadanych obrażeń (1 linia), ikonki druids bez grubości pancerza, ukryte szanse na zwycięstwo, wyświetlanie procent wygranych pod altem
 - normal - wersja normalna, wyświetlanie effa pod altem
 - max - celowniki "Pricel future 0.8.5", dodatkowe linie na minimapie dla td i arty
 
