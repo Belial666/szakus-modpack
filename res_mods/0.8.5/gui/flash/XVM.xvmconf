@@ -10,7 +10,7 @@
   "editorVersion": "0.15",  // Version of the editor.
   // Common config options. All settings information in the mod not being used.
   "definition": {
-    "author": "sirmax2",                        // Config author
+    "author": "Szakus/sirmax2",                        // Config author
     "description": "Default settings for XVM",  // Config description
     "url": "http://code.google.com/p/wot-xvm/", // Address to config updates
     "date": "12.10.2012",                       // Config last modified
