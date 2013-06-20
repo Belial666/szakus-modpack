@@ -1,31 +1,26 @@
 Zapraszam do pobierania i testowania mojej paczki modów. (dostępne 3 wersje lite, normal i max)
 
 Mody:
-- Nowy XVM (kolorki jak w modpacku Rajdera)
-- Minimapa z dodatkowymi informacjami
--- Ostatnia pozycja czołgu przed zniknięciem, nazwy czołgów
--- Niebieskie koło zasięg spotowania, czerwone koło 500 m rysowanie czołgów
--- Biała linia przedłużenie kadłuba, czerwona linia kierunek patrzenia
-- Garaż na 9 maja 
-- Kolorowe statystyki z bitew w garażu
-- Zoom Mod dla czołgów i arty
-- Skasowana mgła
-- Statystyki uszkodzeń/otrzymanych obrażeń w grze 
-- Celownik snajperski dla arty (uruchamia klawisz T, wyłącza klawisz L)
-- Skasowane Intro przy uruchamianiu gry
-- Nowa mapa taktyczna
-- Białe wraki czołgów
-- Celownik J1mB0_s_Crosshair_Mod_v1.25
-- Ikonki pod 0.8.5 z grubością pancerza mirtankov.net/infoicons/6058-tank-icons-for-wot.html
+- Nowy XVM 4.0
+- Specjalny garaż 0.8.6
+- Kolorowe statystyki z bitew w garażu 0.8.6
+- Zoom Mod dla czołgów i arty 0.8.6
+- Skasowana mgła 0.8.6
+- Statystyki uszkodzeń/otrzymanych obrażeń w grze 0.8.6
+- Skasowane Intro przy uruchamianiu gry 0.8.6
+- Nowa mapa taktyczna 0.8.5
+- Białe wraki czołgów 0.8.5
+- Celownik J1mB0_s_Crosshair_Mod_v1.25 0.8.5
+- Ikonki pod 0.8.6 NikodemskyContourMod_v2.5-086-MF.zip
 
 Wersje (Branche):
-- lite - mniej informacji na minimapie, mniejszy panel zadanych obrażeń (1 linia), ikonki druids bez grubości pancerza, ukryte szanse na zwycięstwo, wyświetlanie procent wygranych pod altem
-- normal - wersja normalna, wyświetlanie effa pod altem
-- max - celowniki "Pricel future 0.8.5", dodatkowe linie na minimapie dla td i arty
+- lite - wersja Rufioza
+- normal - wersja normalna, ikony 0.8.6, zmienione kolorki więcej informacji na minimapie
 
 Instalacja:
 -- Dokan Library (http://htcclub.pl/wot/DokanInstall_0.6.0.exe)
 -- Skopiuj folder res_mods i pliki xvm-stat.exe oraz xvm-stat.config z paczki do katalogu gry
+-- Skopiuj pliki z Katalogu res_mods/Fonts do C:\Windows\Fonts
 -- Uruchom grę przez xvm-stat.exe
 
 Pozdrawiam Szakus [-7TP-]
@@ -35,6 +30,13 @@ Pozdrawiam Szakus [-7TP-]
 
 
 Changelog:
+0.8.6
+- baza paczka rufioza
++ tank carousel
++ max farplane 
++ garaż
++ ikony
+
 0.8.5v4 
 - mod "no intro video"
 - poprawione wyświetlanie ikon pojazdów w bitwach treningowych i w szczegółach załogi
