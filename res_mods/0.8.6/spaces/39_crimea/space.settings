@@ -1,0 +1,73 @@
+<space.settings>
+  <timeOfDay>system/data/sky39_crimea.xml</timeOfDay>
+  <skyGradientDome>system/data/sky39_crimea.xml</skyGradientDome>
+  <flora>spaces/39_crimea/flora.xml</flora>
+  <bounds>
+    <minX>	-6	</minX>
+    <maxX>	5	</maxX>
+    <minY>	-6	</minY>
+    <maxY>	5	</maxY>
+  </bounds>
+  <terrain>
+    <version>	200	</version>
+    <lodMapSize>	256	</lodMapSize>
+    <aoMapSize>	256	</aoMapSize>
+    <heightMapSize>	64	</heightMapSize>
+    <normalMapSize>	256	</normalMapSize>
+    <holeMapSize>	64	</holeMapSize>
+    <shadowMapSize>	256	</shadowMapSize>
+    <blendMapSize>	256	</blendMapSize>
+    <lodInfo>
+      <startBias>	0.800000	</startBias>
+      <endBias>	0.990000	</endBias>
+      <lodTextureStart>	600.000000	</lodTextureStart>
+      <lodTextureDistance>	200.000000	</lodTextureDistance>
+      <blendPreloadDistance>	200.000000	</blendPreloadDistance>
+      <bumpFadingStart>	600.000000	</bumpFadingStart>
+      <bumpFadingDistance>	200.000000	</bumpFadingDistance>
+      <lodNormalStart>	800.000000	</lodNormalStart>
+      <lodNormalDistance>	100.000000	</lodNormalDistance>
+      <normalPreloadDistance>	100.000000	</normalPreloadDistance>
+      <defaultHeightMapLod>	0	</defaultHeightMapLod>
+      <detailHeightMapDistance>	900.000000	</detailHeightMapDistance>
+      <lodDistances>
+        <distance0>	150.000000	</distance0>
+        <distance1>	350.000000	</distance1>
+        <distance2>	850.000000	</distance2>
+        <distance3>	1400.000000	</distance3>
+        <distance4>	1800.000000	</distance4>
+        <distance5>	1400.000000	</distance5>
+      </lodDistances>
+      <server>
+        <heightMapLod>	0	</heightMapLod>
+      </server>
+    </lodInfo>
+    <soundOcclusion>
+      <directOcclusion>	0.000000	</directOcclusion>
+      <reverbOcclusion>	0.000000	</reverbOcclusion>
+    </soundOcclusion>
+  </terrain>
+  <skyDomePartition>	0	</skyDomePartition>
+  <windSpeed>	0.000000 0.000000	</windSpeed>
+  <windGustiness>	0.000000	</windGustiness>
+  <floraWindFactor>	1.000000	</floraWindFactor>
+  <skyWorld>
+    <row0>	0.810757 0.000000 -0.585382	</row0>
+    <row1>	0.000000 1.000000 0.000000	</row1>
+    <row2>	0.585382 0.000000 0.810757	</row2>
+    <row3>	0.000000 0.000000 0.000000	</row3>
+  </skyWorld>
+  <decals>
+    <fadeStart>	200.000000	</fadeStart>
+    <fadeEnd>	350.000000	</fadeEnd>
+  </decals>
+  <startPosition>	-356.281700 15.030600 36.407930	</startPosition>
+  <startDirection>	0.000000 0.070000 1.340000	</startDirection>
+  <skyDome>maps/skyboxes/39_Crimea_sky/skydome/skybox.visual</skyDome>
+  <farPlane>
+    <max>	2500.000000	</max>
+    <high>	2000.000000	</high>
+    <medium>	1000.000000	</medium>
+    <low>	600.000000	</low>
+  </farPlane>
+</space.settings>

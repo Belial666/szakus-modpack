@@ -1,0 +1,3342 @@
+﻿{
+  "markers": {
+    "enemy": {
+      "alive": {
+        "extended": {
+          "contourIcon": {
+            "amount": 0,
+            "y": -65,
+            "x": 6,
+            "alpha": 100,
+            "color": null,
+            "visible": false
+          },
+          "healthBar": {
+            "lcolor": null,
+            "x": -41,
+            "border": {
+              "color": "0x000000",
+              "alpha": 30,
+              "size": 1
+            },
+            "width": 80,
+            "damage": {
+              "fade": 1,
+              "color": null,
+              "alpha": 80
+            },
+            "height": 12,
+            "y": -33,
+            "fill": {
+              "alpha": 30
+            },
+            "color": null,
+            "alpha": 100,
+            "visible": true
+          },
+          "damageText": {
+            "speed": 2,
+            "shadow": {
+              "strength": 200,
+              "distance": 0,
+              "alpha": 100,
+              "color": "0x000000",
+              "size": 6,
+              "angle": 45
+            },
+            "blowupMessage": "==BooM==",
+            "y": -67,
+            "damageMessage": "{{dmg}}",
+            "font": {
+              "italic": false,
+              "bold": false,
+              "name": "Palatino Linotype",
+              "size": 22,
+              "align": "center"
+            },
+            "x": 0,
+            "maxRange": 40,
+            "alpha": 100,
+            "color": null,
+            "visible": true
+          },
+          "actionMarker": {
+            "x": 0,
+            "alpha": 100,
+            "y": -67,
+            "visible": true
+          },
+          "textFields": [
+            {
+              "x": 0,
+              "shadow": {
+                "color": "0x000000",
+                "strength": 200,
+                "distance": 0,
+                "alpha": 100,
+                "size": 6,
+                "angle": 45
+              },
+              "y": -36,
+              "format": "{{nick}}",
+              "font": {
+                "align": "center",
+                "bold": false,
+                "name": "Palatino Linotype",
+                "size": 13,
+                "italic": false
+              },
+              "color": null,
+              "alpha": 100,
+              "visible": true
+            },
+            {
+              "x": 0,
+              "shadow": {
+                "color": "0x000000",
+                "strength": 100,
+                "distance": 0,
+                "alpha": 100,
+                "size": 4,
+                "angle": 45
+              },
+              "y": -20,
+              "format": "{{hp-ratio}}\u0025",
+              "font": {
+                "align": "center",
+                "bold": true,
+                "name": "Palatino Linotype",
+                "size": 11,
+                "italic": false
+              },
+              "color": "0xFCFCFC",
+              "alpha": 100,
+              "visible": true
+            },
+            {
+              "x": 0,
+              "shadow": {
+                "color": "0x000000",
+                "strength": 200,
+                "distance": 0,
+                "alpha": 100,
+                "size": 6,
+                "angle": 45
+              },
+              "y": -46,
+              "name": "STATS",
+              "format": "<font color='{{c:kb}}'>{{kb:3}}</font> <font color='{{c:eff}}'>{{eff:4}}</font> <font color='{{c:rating}}'>{{rating}}</font>",
+              "font": {
+                "align": "center",
+                "bold": true,
+                "name": "Palatino Linotype",
+                "size": 11,
+                "italic": false
+              },
+              "color": "{{c:rating}}",
+              "alpha": 100,
+              "visible": true
+            }
+          ],
+          "vehicleIcon": {
+            "x": 0,
+            "shadow": {
+              "strength": 200,
+              "distance": 0,
+              "alpha": 100,
+              "color": "0x000000",
+              "size": 6,
+              "angle": 45
+            },
+            "scaleX": 0,
+            "showSpeaker": true,
+            "scaleY": 16,
+            "maxScale": 100,
+            "y": -16,
+            "color": null,
+            "alpha": 100,
+            "visible": true
+          },
+          "levelIcon": {
+            "x": 0,
+            "alpha": 100,
+            "y": -21,
+            "visible": false
+          },
+          "clanIcon": {
+            "h": 16,
+            "y": -67,
+            "x": 0,
+            "alpha": 100,
+            "w": 16,
+            "visible": true
+          }
+        },
+        "normal": {
+          "contourIcon": {
+            "amount": 0,
+            "y": -65,
+            "x": 6,
+            "alpha": 100,
+            "color": null,
+            "visible": false
+          },
+          "healthBar": {
+            "lcolor": null,
+            "x": -41,
+            "border": {
+              "color": "0x000000",
+              "alpha": 30,
+              "size": 1
+            },
+            "width": 81,
+            "damage": {
+              "fade": 1,
+              "color": null,
+              "alpha": 80
+            },
+            "height": 12,
+            "y": -33,
+            "fill": {
+              "alpha": 30
+            },
+            "color": null,
+            "alpha": 100,
+            "visible": true
+          },
+          "damageText": {
+            "speed": 2,
+            "shadow": {
+              "strength": 200,
+              "distance": 0,
+              "alpha": 100,
+              "color": "0x000000",
+              "size": 6,
+              "angle": 45
+            },
+            "blowupMessage": "==BooM==",
+            "y": -67,
+            "damageMessage": "{{dmg}}",
+            "font": {
+              "italic": false,
+              "bold": false,
+              "name": "Palatino Linotype",
+              "size": 22,
+              "align": "center"
+            },
+            "x": 0,
+            "maxRange": 40,
+            "alpha": 100,
+            "color": null,
+            "visible": true
+          },
+          "actionMarker": {
+            "x": 0,
+            "alpha": 100,
+            "y": -67,
+            "visible": true
+          },
+          "textFields": [
+            {
+              "x": 0,
+              "shadow": {
+                "alpha": 100,
+                "strength": 200,
+                "distance": 0,
+                "color": "0x000000",
+                "size": 6,
+                "angle": 45
+              },
+              "y": -38,
+              "format": "{{vehicle}}{{turret}}",
+              "font": {
+                "align": "center",
+                "bold": false,
+                "name": "Palatino Linotype",
+                "size": 15,
+                "italic": false
+              },
+              "alpha": 100,
+              "color": null,
+              "visible": true
+            },
+            {
+              "x": 0,
+              "shadow": {
+                "alpha": 100,
+                "strength": 100,
+                "distance": 0,
+                "color": "0x000000",
+                "size": 4,
+                "angle": 45
+              },
+              "y": -20,
+              "format": "{{hp}} / {{hp-max}}",
+              "font": {
+                "align": "center",
+                "bold": true,
+                "name": "Palatino Linotype",
+                "size": 11,
+                "italic": false
+              },
+              "alpha": 100,
+              "color": "0xFCFCFC",
+              "visible": true
+            }
+          ],
+          "vehicleIcon": {
+            "x": 0,
+            "shadow": {
+              "strength": 200,
+              "distance": 0,
+              "alpha": 100,
+              "color": "0x000000",
+              "size": 6,
+              "angle": 45
+            },
+            "scaleX": 0,
+            "showSpeaker": true,
+            "scaleY": 16,
+            "maxScale": 100,
+            "y": -16,
+            "color": null,
+            "alpha": 100,
+            "visible": true
+          },
+          "levelIcon": {
+            "x": 0,
+            "alpha": 100,
+            "y": -21,
+            "visible": false
+          },
+          "clanIcon": {
+            "h": 16,
+            "y": -27,
+            "x": -50,
+            "alpha": 100,
+            "w": 16,
+            "visible": true
+          }
+        }
+      },
+      "dead": {
+        "extended": {
+          "contourIcon": {
+            "amount": 0,
+            "y": -65,
+            "x": 6,
+            "alpha": 100,
+            "color": null,
+            "visible": false
+          },
+          "healthBar": {
+            "lcolor": null,
+            "x": -41,
+            "border": {
+              "color": "0x000000",
+              "alpha": 30,
+              "size": 1
+            },
+            "width": 80,
+            "damage": {
+              "fade": 1,
+              "color": null,
+              "alpha": 80
+            },
+            "height": 12,
+            "y": -33,
+            "fill": {
+              "alpha": 30
+            },
+            "color": null,
+            "alpha": 100,
+            "visible": false
+          },
+          "damageText": {
+            "speed": 2,
+            "shadow": {
+              "strength": 200,
+              "distance": 0,
+              "alpha": 100,
+              "color": "0x000000",
+              "size": 6,
+              "angle": 45
+            },
+            "blowupMessage": "==BooM==",
+            "y": -67,
+            "damageMessage": "{{dmg}}",
+            "font": {
+              "italic": false,
+              "bold": false,
+              "name": "Palatino Linotype",
+              "size": 22,
+              "align": "center"
+            },
+            "x": 0,
+            "maxRange": 40,
+            "alpha": 100,
+            "color": null,
+            "visible": true
+          },
+          "actionMarker": {
+            "x": 0,
+            "alpha": 100,
+            "y": -67,
+            "visible": true
+          },
+          "textFields": [
+            {
+              "x": 0,
+              "shadow": {
+                "alpha": 100,
+                "strength": 200,
+                "distance": 0,
+                "color": "0x000000",
+                "size": 6,
+                "angle": 45
+              },
+              "y": -34,
+              "format": "{{nick}}",
+              "font": {
+                "align": "center",
+                "bold": false,
+                "name": "Palatino Linotype",
+                "size": 13,
+                "italic": false
+              },
+              "alpha": 80,
+              "color": null,
+              "visible": true
+            },
+            {
+              "x": 0,
+              "shadow": {
+                "alpha": 100,
+                "strength": 200,
+                "distance": 0,
+                "color": "0x000000",
+                "size": 6,
+                "angle": 45
+              },
+              "y": -20,
+              "format": "{{vehicle}}",
+              "font": {
+                "align": "center",
+                "bold": false,
+                "name": "Palatino Linotype",
+                "size": 13,
+                "italic": false
+              },
+              "alpha": 80,
+              "color": null,
+              "visible": true
+            }
+          ],
+          "vehicleIcon": {
+            "x": 0,
+            "shadow": {
+              "strength": 200,
+              "distance": 0,
+              "alpha": 100,
+              "color": "0x000000",
+              "size": 6,
+              "angle": 45
+            },
+            "scaleX": 0,
+            "showSpeaker": false,
+            "scaleY": 16,
+            "maxScale": 100,
+            "y": -16,
+            "color": null,
+            "alpha": 100,
+            "visible": true
+          },
+          "levelIcon": {
+            "x": 0,
+            "alpha": 100,
+            "y": -21,
+            "visible": false
+          },
+          "clanIcon": {
+            "h": 16,
+            "y": -67,
+            "x": 0,
+            "alpha": 100,
+            "w": 16,
+            "visible": true
+          }
+        },
+        "normal": {
+          "contourIcon": {
+            "amount": 0,
+            "y": -65,
+            "x": 6,
+            "alpha": 100,
+            "color": null,
+            "visible": false
+          },
+          "healthBar": {
+            "lcolor": null,
+            "x": -41,
+            "border": {
+              "color": "0x000000",
+              "alpha": 30,
+              "size": 1
+            },
+            "width": 80,
+            "damage": {
+              "fade": 1,
+              "color": null,
+              "alpha": 80
+            },
+            "height": 12,
+            "y": -33,
+            "fill": {
+              "alpha": 30
+            },
+            "color": null,
+            "alpha": 100,
+            "visible": false
+          },
+          "damageText": {
+            "speed": 2,
+            "shadow": {
+              "strength": 200,
+              "distance": 0,
+              "alpha": 100,
+              "color": "0x000000",
+              "size": 6,
+              "angle": 45
+            },
+            "blowupMessage": "==BooM==",
+            "y": -67,
+            "damageMessage": "{{dmg}}",
+            "font": {
+              "italic": false,
+              "bold": false,
+              "name": "Palatino Linotype",
+              "size": 22,
+              "align": "center"
+            },
+            "x": 0,
+            "maxRange": 40,
+            "alpha": 100,
+            "color": null,
+            "visible": true
+          },
+          "actionMarker": {
+            "x": 0,
+            "alpha": 100,
+            "y": -67,
+            "visible": true
+          },
+          "textFields": [
+
+          ],
+          "vehicleIcon": {
+            "x": 0,
+            "shadow": {
+              "strength": 200,
+              "distance": 0,
+              "alpha": 100,
+              "color": "0x000000",
+              "size": 6,
+              "angle": 45
+            },
+            "scaleX": 0,
+            "showSpeaker": false,
+            "scaleY": 16,
+            "maxScale": 100,
+            "y": -16,
+            "color": null,
+            "alpha": 100,
+            "visible": true
+          },
+          "levelIcon": {
+            "x": 0,
+            "alpha": 100,
+            "y": -21,
+            "visible": false
+          },
+          "clanIcon": {
+            "h": 16,
+            "y": -67,
+            "x": 0,
+            "alpha": 100,
+            "w": 16,
+            "visible": true
+          }
+        }
+      }
+    },
+    "ally": {
+      "alive": {
+        "extended": {
+          "contourIcon": {
+            "amount": 0,
+            "y": -65,
+            "x": 6,
+            "alpha": 100,
+            "color": null,
+            "visible": false
+          },
+          "healthBar": {
+            "lcolor": null,
+            "x": -41,
+            "border": {
+              "color": "0x000000",
+              "alpha": 30,
+              "size": 1
+            },
+            "width": 80,
+            "damage": {
+              "fade": 1,
+              "color": null,
+              "alpha": 80
+            },
+            "height": 12,
+            "y": -33,
+            "fill": {
+              "alpha": 30
+            },
+            "color": null,
+            "alpha": 100,
+            "visible": true
+          },
+          "damageText": {
+            "speed": 2,
+            "shadow": {
+              "strength": 200,
+              "distance": 0,
+              "alpha": 100,
+              "color": "0x000000",
+              "size": 6,
+              "angle": 45
+            },
+            "blowupMessage": "==BooM==",
+            "y": -67,
+            "damageMessage": "{{dmg}}",
+            "font": {
+              "italic": false,
+              "bold": false,
+              "name": "Palatino Linotype",
+              "size": 22,
+              "align": "center"
+            },
+            "x": 0,
+            "maxRange": 40,
+            "alpha": 100,
+            "color": null,
+            "visible": true
+          },
+          "actionMarker": {
+            "x": 0,
+            "alpha": 100,
+            "y": -67,
+            "visible": true
+          },
+          "textFields": [
+            {
+              "x": 0,
+              "shadow": {
+                "color": "0x000000",
+                "strength": 200,
+                "distance": 0,
+                "alpha": 100,
+                "size": 6,
+                "angle": 45
+              },
+              "y": -36,
+              "format": "{{nick}}",
+              "font": {
+                "align": "center",
+                "bold": false,
+                "name": "Palatino Linotype",
+                "size": 13,
+                "italic": false
+              },
+              "color": null,
+              "alpha": 100,
+              "visible": true
+            },
+            {
+              "x": 0,
+              "shadow": {
+                "color": "0x000000",
+                "strength": 100,
+                "distance": 0,
+                "alpha": 100,
+                "size": 4,
+                "angle": 45
+              },
+              "y": -20,
+              "format": "{{hp-ratio}}\u0025",
+              "font": {
+                "align": "center",
+                "bold": true,
+                "name": "Palatino Linotype",
+                "size": 11,
+                "italic": false
+              },
+              "color": "0xFCFCFC",
+              "alpha": 100,
+              "visible": true
+            },
+            {
+              "x": 0,
+              "shadow": {
+                "color": "0x000000",
+                "strength": 200,
+                "distance": 0,
+                "alpha": 100,
+                "size": 6,
+                "angle": 45
+              },
+              "y": -46,
+              "name": "STATS",
+              "format": "<font color='{{c:kb}}'>{{kb:3}}</font> <font color='{{c:eff}}'>{{eff:4}}</font> <font color='{{c:rating}}'>{{rating}}</font>",
+              "font": {
+                "align": "center",
+                "bold": true,
+                "name": "Palatino Linotype",
+                "size": 11,
+                "italic": false
+              },
+              "color": "{{c:rating}}",
+              "alpha": 100,
+              "visible": true
+            }
+          ],
+          "vehicleIcon": {
+            "x": 0,
+            "shadow": {
+              "strength": 200,
+              "distance": 0,
+              "alpha": 100,
+              "color": "0x000000",
+              "size": 6,
+              "angle": 45
+            },
+            "scaleX": 0,
+            "showSpeaker": true,
+            "scaleY": 16,
+            "maxScale": 100,
+            "y": -16,
+            "color": null,
+            "alpha": 100,
+            "visible": true
+          },
+          "levelIcon": {
+            "x": 0,
+            "alpha": 100,
+            "y": -21,
+            "visible": false
+          },
+          "clanIcon": {
+            "h": 16,
+            "y": -67,
+            "x": 0,
+            "alpha": 100,
+            "w": 16,
+            "visible": true
+          }
+        },
+        "normal": {
+          "contourIcon": {
+            "amount": 0,
+            "y": -65,
+            "x": 6,
+            "alpha": 100,
+            "color": null,
+            "visible": false
+          },
+          "healthBar": {
+            "lcolor": null,
+            "x": -41,
+            "border": {
+              "color": "0x000000",
+              "alpha": 30,
+              "size": 1
+            },
+            "width": 81,
+            "damage": {
+              "fade": 1,
+              "color": null,
+              "alpha": 80
+            },
+            "height": 12,
+            "y": -33,
+            "fill": {
+              "alpha": 30
+            },
+            "color": null,
+            "alpha": 100,
+            "visible": true
+          },
+          "damageText": {
+            "speed": 2,
+            "shadow": {
+              "strength": 200,
+              "distance": 0,
+              "alpha": 100,
+              "color": "0x000000",
+              "size": 6,
+              "angle": 45
+            },
+            "blowupMessage": "==BooM==",
+            "y": -67,
+            "damageMessage": "{{dmg}}",
+            "font": {
+              "italic": false,
+              "bold": false,
+              "name": "Palatino Linotype",
+              "size": 22,
+              "align": "center"
+            },
+            "x": 0,
+            "maxRange": 40,
+            "alpha": 100,
+            "color": null,
+            "visible": true
+          },
+          "actionMarker": {
+            "x": 0,
+            "alpha": 100,
+            "y": -67,
+            "visible": true
+          },
+          "textFields": [
+            {
+              "x": 0,
+              "shadow": {
+                "alpha": 100,
+                "strength": 200,
+                "distance": 0,
+                "color": "0x000000",
+                "size": 6,
+                "angle": 45
+              },
+              "y": -38,
+              "format": "{{vehicle}}{{turret}}",
+              "font": {
+                "align": "center",
+                "bold": false,
+                "name": "Palatino Linotype",
+                "size": 15,
+                "italic": false
+              },
+              "alpha": 100,
+              "color": null,
+              "visible": true
+            },
+            {
+              "x": 0,
+              "shadow": {
+                "alpha": 100,
+                "strength": 100,
+                "distance": 0,
+                "color": "0x000000",
+                "size": 4,
+                "angle": 45
+              },
+              "y": -20,
+              "format": "{{hp}} / {{hp-max}}",
+              "font": {
+                "align": "center",
+                "bold": true,
+                "name": "Palatino Linotype",
+                "size": 11,
+                "italic": false
+              },
+              "alpha": 100,
+              "color": "0xFCFCFC",
+              "visible": true
+            }
+          ],
+          "vehicleIcon": {
+            "x": 0,
+            "shadow": {
+              "strength": 200,
+              "distance": 0,
+              "alpha": 100,
+              "color": "0x000000",
+              "size": 6,
+              "angle": 45
+            },
+            "scaleX": 0,
+            "showSpeaker": true,
+            "scaleY": 16,
+            "maxScale": 100,
+            "y": -16,
+            "color": null,
+            "alpha": 100,
+            "visible": true
+          },
+          "levelIcon": {
+            "x": 0,
+            "alpha": 100,
+            "y": -21,
+            "visible": false
+          },
+          "clanIcon": {
+            "h": 16,
+            "y": -27,
+            "x": -50,
+            "alpha": 100,
+            "w": 16,
+            "visible": true
+          }
+        }
+      },
+      "dead": {
+        "extended": {
+          "contourIcon": {
+            "amount": 0,
+            "y": -65,
+            "x": 6,
+            "alpha": 100,
+            "color": null,
+            "visible": false
+          },
+          "healthBar": {
+            "lcolor": null,
+            "x": -41,
+            "border": {
+              "color": "0x000000",
+              "alpha": 30,
+              "size": 1
+            },
+            "width": 80,
+            "damage": {
+              "fade": 1,
+              "color": null,
+              "alpha": 80
+            },
+            "height": 12,
+            "y": -33,
+            "fill": {
+              "alpha": 30
+            },
+            "color": null,
+            "alpha": 100,
+            "visible": false
+          },
+          "damageText": {
+            "speed": 2,
+            "shadow": {
+              "strength": 200,
+              "distance": 0,
+              "alpha": 100,
+              "color": "0x000000",
+              "size": 6,
+              "angle": 45
+            },
+            "blowupMessage": "==BooM==",
+            "y": -67,
+            "damageMessage": "{{dmg}}",
+            "font": {
+              "italic": false,
+              "bold": false,
+              "name": "Palatino Linotype",
+              "size": 22,
+              "align": "center"
+            },
+            "x": 0,
+            "maxRange": 40,
+            "alpha": 100,
+            "color": null,
+            "visible": true
+          },
+          "actionMarker": {
+            "x": 0,
+            "alpha": 100,
+            "y": -67,
+            "visible": true
+          },
+          "textFields": [
+            {
+              "x": 0,
+              "shadow": {
+                "alpha": 100,
+                "strength": 200,
+                "distance": 0,
+                "color": "0x000000",
+                "size": 6,
+                "angle": 45
+              },
+              "y": -34,
+              "format": "{{nick}}",
+              "font": {
+                "align": "center",
+                "bold": false,
+                "name": "Palatino Linotype",
+                "size": 13,
+                "italic": false
+              },
+              "alpha": 80,
+              "color": null,
+              "visible": true
+            },
+            {
+              "x": 0,
+              "shadow": {
+                "alpha": 100,
+                "strength": 200,
+                "distance": 0,
+                "color": "0x000000",
+                "size": 6,
+                "angle": 45
+              },
+              "y": -20,
+              "format": "{{vehicle}}",
+              "font": {
+                "align": "center",
+                "bold": false,
+                "name": "Palatino Linotype",
+                "size": 13,
+                "italic": false
+              },
+              "alpha": 80,
+              "color": null,
+              "visible": true
+            }
+          ],
+          "vehicleIcon": {
+            "x": 0,
+            "shadow": {
+              "strength": 200,
+              "distance": 0,
+              "alpha": 100,
+              "color": "0x000000",
+              "size": 6,
+              "angle": 45
+            },
+            "scaleX": 0,
+            "showSpeaker": false,
+            "scaleY": 16,
+            "maxScale": 100,
+            "y": -16,
+            "color": null,
+            "alpha": 100,
+            "visible": true
+          },
+          "levelIcon": {
+            "x": 0,
+            "alpha": 100,
+            "y": -21,
+            "visible": false
+          },
+          "clanIcon": {
+            "h": 16,
+            "y": -67,
+            "x": 0,
+            "alpha": 100,
+            "w": 16,
+            "visible": true
+          }
+        },
+        "normal": {
+          "contourIcon": {
+            "amount": 0,
+            "y": -65,
+            "x": 6,
+            "alpha": 100,
+            "color": null,
+            "visible": false
+          },
+          "healthBar": {
+            "lcolor": null,
+            "x": -41,
+            "border": {
+              "color": "0x000000",
+              "alpha": 30,
+              "size": 1
+            },
+            "width": 80,
+            "damage": {
+              "fade": 1,
+              "color": null,
+              "alpha": 80
+            },
+            "height": 12,
+            "y": -33,
+            "fill": {
+              "alpha": 30
+            },
+            "color": null,
+            "alpha": 100,
+            "visible": false
+          },
+          "damageText": {
+            "speed": 2,
+            "shadow": {
+              "strength": 200,
+              "distance": 0,
+              "alpha": 100,
+              "color": "0x000000",
+              "size": 6,
+              "angle": 45
+            },
+            "blowupMessage": "==BooM==",
+            "y": -67,
+            "damageMessage": "{{dmg}}",
+            "font": {
+              "italic": false,
+              "bold": false,
+              "name": "Palatino Linotype",
+              "size": 22,
+              "align": "center"
+            },
+            "x": 0,
+            "maxRange": 40,
+            "alpha": 100,
+            "color": null,
+            "visible": true
+          },
+          "actionMarker": {
+            "x": 0,
+            "alpha": 100,
+            "y": -67,
+            "visible": true
+          },
+          "textFields": [
+
+          ],
+          "vehicleIcon": {
+            "x": 0,
+            "shadow": {
+              "strength": 200,
+              "distance": 0,
+              "alpha": 100,
+              "color": "0x000000",
+              "size": 6,
+              "angle": 45
+            },
+            "scaleX": 0,
+            "showSpeaker": false,
+            "scaleY": 16,
+            "maxScale": 100,
+            "y": -16,
+            "color": null,
+            "alpha": 100,
+            "visible": true
+          },
+          "levelIcon": {
+            "x": 0,
+            "alpha": 100,
+            "y": -21,
+            "visible": false
+          },
+          "clanIcon": {
+            "h": 16,
+            "y": -67,
+            "x": 0,
+            "alpha": 100,
+            "w": 16,
+            "visible": true
+          }
+        }
+      }
+    }
+  },
+  "squad": {
+    "showClan": true,
+    "leftLvlBorder": "",
+    "enabled": false,
+    "romanNumbers": true,
+    "rightLvlBorder": ""
+  },
+  "playersPanel": {
+    "removeSquadIcon": false,
+    "medium": {
+      "formatLeft": "<font color='{{c:eff}}'>{{nick}}</font>",
+      "width": 46,
+      "formatRight": "<font color='{{c:eff}}'>{{nick}}</font>"
+    },
+    "iconAlpha": 100,
+    "enemySpottedMarker": {
+      "Xoffset": -22,
+      "enabled": false,
+      "Yoffset": -2,
+      "format": {
+        "artillery": {
+          "lost": "",
+          "neverSeen": "",
+          "revealed": "",
+          "dead": ""
+        },
+        "lost": "",
+        "neverSeen": "<FONT FACE=\"$FieldFont\" SIZE=\"24\" COLOR=\"#DDDDDD\">*</FONT>",
+        "revealed": "",
+        "dead": ""
+      }
+    },
+    "medium2": {
+      "formatLeft": "<font color='{{c:eff}}'>{{vehicle}}</font>",
+      "width": 65,
+      "formatRight": "<font color='{{c:eff}}'>{{vehicle}}</font>"
+    },
+    "alpha": 60,
+    "clanIcon": {
+      "h": 16,
+      "y": 6,
+      "show": true,
+      "x": 0,
+      "xr": 0,
+      "yr": 6,
+      "alpha": 90,
+      "w": 16
+    },
+    "large": {
+      "nickFormatLeft": "<font color='{{c:rating}}'>{{rating}}</font> {{nick}}",
+      "vehicleFormatRight": "<font color='{{c:eff}}'>{{vehicle}}</font>",
+      "nickFormatRight": "{{nick}} <font color='{{c:rating}}'>{{rating}}</font>",
+      "width": 170,
+      "vehicleFormatLeft": "<font color='{{c:eff}}'>{{vehicle}}</font>"
+    }
+  },
+  "finalStatistic": {
+    "startPage": 1,
+    "showChances": false,
+    "sortColumn": 6,
+    "showChancesExp": false
+  },
+  "captureBar": {
+    "primaryTitleOffset": 7,
+    "ally": {
+      "shadow": {
+        "strength": 3,
+        "alpha": 50,
+        "blur": 15,
+        "color": "0x000000"
+      },
+      "secondaryTitleFormat": "<font size='15' color='#FFFFFF'>{{points}}</font>",
+      "extra": "Capturers: <b><font color='#FFCC66'>{{tanks}}</font></b> Timeleft: <b><font color='#FFCC66'>{{time}}</font><b>",
+      "captureDoneFormat": "<font size='17' color='#FFCC66'>Ally base captured!</font>",
+      "primaryTitleFormat": "<font size='15' color='#FFFFFF'>Ally base capture! {{extra}}</font>"
+    },
+    "enemy": {
+      "shadow": {
+        "strength": 3,
+        "alpha": 50,
+        "blur": 6,
+        "color": "0x000000"
+      },
+      "secondaryTitleFormat": "<font size='15' color='#FFFFFF'>{{points}}</font>",
+      "extra": "Capturers: <b><font color='#FFCC66'>{{tanks}}</font></b> Timeleft: <b><font color='#FFCC66'>{{time}}</font><b>",
+      "captureDoneFormat": "<font size='17' color='#FFCC66'>Enemy base captured!</font>",
+      "primaryTitleFormat": "<font size='15' color='#FFFFFF'>Enemy base capture! {{extra}}</font>"
+    },
+    "appendPlus": true,
+    "enabled": true
+  },
+  "texts": {
+    "vtype": {
+      "SPG": "SPG",
+      "MT": "MT",
+      "TD": "TD",
+      "LT": "LT",
+      "HT": "HT"
+    }
+  },
+  "fragCorrelation": {
+    "hideTeamTextFields": true
+  },
+  "minimap": {
+    "cameraAlpha": 100,
+    "lines": {
+      "traverseAngle": [
+        {
+          "from": 50,
+          "color": "0xCCCCCC",
+          "thickness": 1.5,
+          "inmeters": true,
+          "to": 95,
+          "alpha": 50,
+          "enabled": true
+        },
+        {
+          "from": 100,
+          "color": "0xCCCCCC",
+          "thickness": 1.4,
+          "inmeters": true,
+          "to": 145,
+          "alpha": 48,
+          "enabled": true
+        },
+        {
+          "from": 150,
+          "color": "0xCCCCCC",
+          "thickness": 1.3,
+          "inmeters": true,
+          "to": 196,
+          "alpha": 46,
+          "enabled": true
+        },
+        {
+          "from": 200,
+          "color": "0xCCCCCC",
+          "thickness": 1.2,
+          "inmeters": true,
+          "to": 246,
+          "alpha": 44,
+          "enabled": true
+        },
+        {
+          "from": 250,
+          "color": "0xCCCCCC",
+          "thickness": 1.1,
+          "inmeters": true,
+          "to": 296,
+          "alpha": 42,
+          "enabled": true
+        },
+        {
+          "from": 300,
+          "color": "0xCCCCCC",
+          "thickness": 1,
+          "inmeters": true,
+          "to": 397,
+          "alpha": 40,
+          "enabled": true
+        },
+        {
+          "from": 400,
+          "color": "0xCCCCCC",
+          "thickness": 0.9,
+          "inmeters": true,
+          "to": 497,
+          "alpha": 40,
+          "enabled": true
+        },
+        {
+          "from": 500,
+          "color": "0xCCCCCC",
+          "thickness": 0.75,
+          "inmeters": true,
+          "to": 2000,
+          "alpha": 40,
+          "enabled": true
+        }
+      ],
+      "enabled": true,
+      "vehicle": [
+        {
+          "from": 50,
+          "color": "0x60FF00",
+          "thickness": 1.5,
+          "inmeters": true,
+          "to": 95,
+          "alpha": 45,
+          "enabled": true
+        },
+        {
+          "from": 100,
+          "color": "0x60FF00",
+          "thickness": 1.4,
+          "inmeters": true,
+          "to": 145,
+          "alpha": 40,
+          "enabled": true
+        },
+        {
+          "from": 150,
+          "color": "0x60FF00",
+          "thickness": 1.3,
+          "inmeters": true,
+          "to": 196,
+          "alpha": 35,
+          "enabled": true
+        },
+        {
+          "from": 200,
+          "color": "0x60FF00",
+          "thickness": 1.2,
+          "inmeters": true,
+          "to": 246,
+          "alpha": 33,
+          "enabled": true
+        },
+        {
+          "from": 250,
+          "color": "0x60FF00",
+          "thickness": 1.1,
+          "inmeters": true,
+          "to": 296,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 300,
+          "color": "0x60FF00",
+          "thickness": 1,
+          "inmeters": true,
+          "to": 397,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 400,
+          "color": "0x60FF00",
+          "thickness": 0.9,
+          "inmeters": true,
+          "to": 497,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 500,
+          "color": "0x60FF00",
+          "thickness": 0.75,
+          "inmeters": true,
+          "to": 2000,
+          "alpha": 30,
+          "enabled": true
+        }
+      ],
+      "camera": [
+        {
+          "from": 50,
+          "color": "0xFFCC66",
+          "thickness": 1.3,
+          "inmeters": true,
+          "to": 80,
+          "alpha": 45,
+          "enabled": true
+        },
+        {
+          "from": 120,
+          "color": "0xFFCC66",
+          "thickness": 1.2,
+          "inmeters": true,
+          "to": 180,
+          "alpha": 40,
+          "enabled": true
+        },
+        {
+          "from": 220,
+          "color": "0xFFCC66",
+          "thickness": 1.1,
+          "inmeters": true,
+          "to": 280,
+          "alpha": 35,
+          "enabled": true
+        },
+        {
+          "from": 320,
+          "color": "0xFFCC66",
+          "thickness": 1,
+          "inmeters": true,
+          "to": 380,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 420,
+          "color": "0xFFCC66",
+          "thickness": 0.9,
+          "inmeters": true,
+          "to": 480,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 520,
+          "color": "0xFFCC66",
+          "thickness": 0.8,
+          "inmeters": true,
+          "to": 580,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 620,
+          "color": "0xFFCC66",
+          "thickness": 0.75,
+          "inmeters": true,
+          "to": 680,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 720,
+          "color": "0xFFCC66",
+          "thickness": 0.75,
+          "inmeters": true,
+          "to": 780,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 820,
+          "color": "0xFFCC66",
+          "thickness": 0.75,
+          "inmeters": true,
+          "to": 880,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 920,
+          "color": "0xFFCC66",
+          "thickness": 0.75,
+          "inmeters": true,
+          "to": 980,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 1020,
+          "color": "0xFFCC66",
+          "thickness": 0.75,
+          "inmeters": true,
+          "to": 1080,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 1120,
+          "color": "0xFFCC66",
+          "thickness": 0.75,
+          "inmeters": true,
+          "to": 1180,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 1220,
+          "color": "0xFFCC66",
+          "thickness": 0.75,
+          "inmeters": true,
+          "to": 1280,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 1320,
+          "color": "0xFFCC66",
+          "thickness": 0.75,
+          "inmeters": true,
+          "to": 1380,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 1420,
+          "color": "0xFFCC66",
+          "thickness": 0.75,
+          "inmeters": true,
+          "to": 1480,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 1520,
+          "color": "0xFFCC66",
+          "thickness": 0.75,
+          "inmeters": true,
+          "to": 1580,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 1620,
+          "color": "0xFFCC66",
+          "thickness": 0.75,
+          "inmeters": true,
+          "to": 1680,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 1720,
+          "color": "0xFFCC66",
+          "thickness": 0.75,
+          "inmeters": true,
+          "to": 1780,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 1820,
+          "color": "0xFFCC66",
+          "thickness": 0.75,
+          "inmeters": true,
+          "to": 1880,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 1920,
+          "color": "0xFFCC66",
+          "thickness": 0.75,
+          "inmeters": true,
+          "to": 2000,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 99,
+          "color": "0xFFCC66",
+          "thickness": 2.2,
+          "inmeters": true,
+          "to": 100,
+          "alpha": 45,
+          "enabled": true
+        },
+        {
+          "from": 199,
+          "color": "0xFFCC66",
+          "thickness": 2.1,
+          "inmeters": true,
+          "to": 200,
+          "alpha": 40,
+          "enabled": true
+        },
+        {
+          "from": 299,
+          "color": "0xFFCC66",
+          "thickness": 2,
+          "inmeters": true,
+          "to": 300,
+          "alpha": 35,
+          "enabled": true
+        },
+        {
+          "from": 399,
+          "color": "0xFFCC66",
+          "thickness": 1.9,
+          "inmeters": true,
+          "to": 400,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 499,
+          "color": "0xFFCC66",
+          "thickness": 1.8,
+          "inmeters": true,
+          "to": 500,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 599,
+          "color": "0xFFCC66",
+          "thickness": 1.7,
+          "inmeters": true,
+          "to": 600,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 699,
+          "color": "0xFFCC66",
+          "thickness": 1.6,
+          "inmeters": true,
+          "to": 700,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 799,
+          "color": "0xFFCC66",
+          "thickness": 1.6,
+          "inmeters": true,
+          "to": 800,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 899,
+          "color": "0xFFCC66",
+          "thickness": 1.6,
+          "inmeters": true,
+          "to": 900,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 999,
+          "color": "0xFFCC66",
+          "thickness": 1.6,
+          "inmeters": true,
+          "to": 1000,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 1099,
+          "color": "0xFFCC66",
+          "thickness": 1.6,
+          "inmeters": true,
+          "to": 1100,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 1199,
+          "color": "0xFFCC66",
+          "thickness": 1.6,
+          "inmeters": true,
+          "to": 1200,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 1299,
+          "color": "0xFFCC66",
+          "thickness": 1.6,
+          "inmeters": true,
+          "to": 1300,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 1399,
+          "color": "0xFFCC66",
+          "thickness": 1.6,
+          "inmeters": true,
+          "to": 1400,
+          "alpha": 30,
+          "enabled": true
+        },
+        {
+          "from": 1499,
+          "color": "0xFFCC66",
+          "thickness": 1.6,
+          "inmeters": true,
+          "to": 1500,
+          "alpha": 30,
+          "enabled": true
+        }
+      ]
+    },
+    "zoom": {
+      "centered": true,
+      "pixelsBack": 160
+    },
+    "square": {
+      "artilleryEnabled": false,
+      "color": "0xFFFFFF",
+      "alpha": 40,
+      "enabled": false,
+      "thickness": 0.7
+    },
+    "labels": {
+      "mapSize": {
+        "shadow": {
+          "strength": 3,
+          "blur": 2,
+          "color": "0x000000",
+          "alpha": 80,
+          "enabled": true,
+          "distance": 0,
+          "angle": 0
+        },
+        "width": 100,
+        "format": "<b>{{cellsize}}0 m</b>",
+        "height": 30,
+        "css": "font-size:10px; color:#FFCC66;",
+        "offsetX": 0,
+        "alpha": 80,
+        "enabled": true,
+        "offsetY": 0
+      },
+      "units": {
+        "shadow": {
+          "lost": {
+            "strength": 4,
+            "blur": 6,
+            "color": "0x000000",
+            "alpha": 80,
+            "enabled": true,
+            "distance": 0,
+            "angle": 0
+          },
+          "squad": {
+            "strength": 4,
+            "blur": 3,
+            "color": "0x000000",
+            "alpha": 80,
+            "enabled": true,
+            "distance": 0,
+            "angle": 0
+          },
+          "ally": {
+            "strength": 4,
+            "blur": 3,
+            "color": "0x000000",
+            "alpha": 80,
+            "enabled": true,
+            "distance": 0,
+            "angle": 0
+          },
+          "enemy": {
+            "strength": 4,
+            "blur": 3,
+            "color": "0x000000",
+            "alpha": 80,
+            "enabled": true,
+            "distance": 0,
+            "angle": 0
+          },
+          "oneself": {
+            "strength": 4,
+            "blur": 3,
+            "color": "0x000000",
+            "alpha": 80,
+            "enabled": true,
+            "distance": 0,
+            "angle": 0
+          }
+        },
+        "offset": {
+          "lost": {
+            "y": -10,
+            "x": -6
+          },
+          "squad": {
+            "y": -2,
+            "x": 3
+          },
+          "ally": {
+            "y": -1,
+            "x": 3
+          },
+          "enemy": {
+            "y": -1,
+            "x": 3
+          },
+          "oneself": {
+            "y": 0,
+            "x": 0
+          }
+        },
+        "format": {
+          "lost": "<span class='mm_dot'>•</span><span class='mm_l'><i>{{vehicle}}</i></span>",
+          "squad": "<textformat leading='-1'><span class='mm_s'><i>{{short-nick}}</i>\n{{vehicle}}</span><textformat>",
+          "ally": "<span class='mm_a'>{{vehicle}}</span>",
+          "enemy": "<span class='mm_e'>{{vehicle}}</span>",
+          "oneself": ""
+        },
+        "css": {
+          "lost": ".mm_l{font-family:$FieldFont; font-size:8px; color:#FCA9A4;} .mm_dot{font-family:Arial; font-size:17px; color:#FCA9A4;}",
+          "squad": ".mm_s{font-family:$FieldFont; font-size:8px; color:#FFC099;}",
+          "ally": ".mm_a{font-family:$FieldFont; font-size:8px; color:#C8FFA6;}",
+          "enemy": ".mm_e{font-family:$FieldFont; font-size:8px; color:#FCA9A4;}",
+          "oneself": ".mm_o{font-family:$FieldFont; font-size:8px; color:#FFFFFF;}"
+        },
+        "lostEnemyEnabled": true,
+        "revealedEnabled": true,
+        "alpha": {
+          "lost": 70,
+          "squad": 100,
+          "ally": 100,
+          "enemy": 100,
+          "oneself": 100
+        }
+      },
+      "vehicleclassmacro": {
+        "heavy": "",
+        "medium": "",
+        "td": "",
+        "light": "",
+        "spg": "■",
+        "superh": ""
+      },
+      "nickShrink": 5
+    },
+    "mapBackgroundImageAlpha": 100,
+    "iconScale": 1,
+    "enabled": true,
+    "circles": {
+      "special": [
+        {
+          "su_18": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 552,
+            "alpha": 60
+          }
+        },
+        {
+          "su_26": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 578,
+            "alpha": 60
+          }
+        },
+        {
+          "su_5": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 605,
+            "alpha": 60
+          }
+        },
+        {
+          "su_8": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 920,
+            "alpha": 60
+          }
+        },
+        {
+          "s_51": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 1229,
+            "alpha": 60
+          }
+        },
+        {
+          "su_14": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 1229,
+            "alpha": 60
+          }
+        },
+        {
+          "object_212": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 1229,
+            "alpha": 60
+          }
+        },
+        {
+          "object_261": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 1463,
+            "alpha": 60
+          }
+        },
+        {
+          "bison_i": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 605,
+            "alpha": 60
+          }
+        },
+        {
+          "sturmpanzer_ii": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 605,
+            "alpha": 60
+          }
+        },
+        {
+          "wespe": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 1000,
+            "alpha": 60
+          }
+        },
+        {
+          "grille": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 1210,
+            "alpha": 60
+          }
+        },
+        {
+          "hummel": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 1264,
+            "alpha": 60
+          }
+        },
+        {
+          "g_panther": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 1407,
+            "alpha": 60
+          }
+        },
+        {
+          "g_tiger": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 1172,
+            "alpha": 60
+          }
+        },
+        {
+          "g_e": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 1172,
+            "alpha": 60
+          }
+        },
+        {
+          "t57": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 552,
+            "alpha": 60
+          }
+        },
+        {
+          "m37": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 969,
+            "alpha": 60
+          }
+        },
+        {
+          "m7_priest": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 1047,
+            "alpha": 60
+          }
+        },
+        {
+          "m41": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 1210,
+            "alpha": 60
+          }
+        },
+        {
+          "m12": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 1316,
+            "alpha": 60
+          }
+        },
+        {
+          "m40m43": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 1179,
+            "alpha": 60
+          }
+        },
+        {
+          "t92": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 1248,
+            "alpha": 60
+          }
+        },
+        {
+          "renaultbs": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 450,
+            "alpha": 60
+          }
+        },
+        {
+          "lorraine39_l_am": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 844,
+            "alpha": 60
+          }
+        },
+        {
+          "amx_105am": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 1000,
+            "alpha": 60
+          }
+        },
+        {
+          "_105_lefh18b2": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 1000,
+            "alpha": 60
+          }
+        },
+        {
+          "amx_13f3am": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 1250,
+            "alpha": 60
+          }
+        },
+        {
+          "lorraine155_50": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 1202,
+            "alpha": 60
+          }
+        },
+        {
+          "lorraine155_51": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 1296,
+            "alpha": 60
+          }
+        },
+        {
+          "bat_chatillon155": {
+            "thickness": 1,
+            "color": "0xEE4444",
+            "enabled": true,
+            "distance": 1296,
+            "alpha": 60
+          }
+        }
+      ],
+      "enabled": true,
+      "major": [
+        {
+          "thickness": 0.75,
+          "color": "0xFFCC66",
+          "enabled": true,
+          "distance": 445,
+          "alpha": 35
+        },
+        {
+          "thickness": 1,
+          "color": "0xFFFFFF",
+          "enabled": false,
+          "distance": 50,
+          "alpha": 30
+        }
+      ]
+    },
+    "selfIconAlpha": 100
+  },
+  "vehicleNames": {
+    "germany_E_50": null,
+    "france_AMX_13F3AM": null,
+    "germany_H39_captured": null,
+    "usa_M46_Patton": null,
+    "ussr_Tetrarch_LL": null,
+    "usa_T21": null,
+    "germany_Pro_Ag_A": null,
+    "usa_T54E1": null,
+    "china_Ch15_59_16": null,
+    "germany_Pz35t": null,
+    "ussr_T_34_85": null,
+    "france_AMX_12t": null,
+    "france_Lorraine40t": null,
+    "usa_M2_lt": null,
+    "uk_GB24_Centurion_Mk3": null,
+    "usa_T1_E6": null,
+    "china_Ch18_WZ_120": null,
+    "germany_PzII": null,
+    "germany_VK2801": null,
+    "ussr_T_34_85_training": null,
+    "uk_GB58_Cruiser_Mk_III": null,
+    "germany_PzIV_schmalturm": null,
+    "germany_VK3001H": null,
+    "ussr_ST_I": null,
+    "germany_VK3001P": null,
+    "germany_VK3601H": null,
+    "france_Hotchkiss_H35": null,
+    "germany_VK3002DB_V1": null,
+    "uk_GB03_Cruiser_Mk_I": null,
+    "uk_GB05_Vickers_Medium_Mk_II": null,
+    "ussr_IS8": null,
+    "france_D1": null,
+    "usa_T2_med": null,
+    "germany_VK4502P": null,
+    "germany_E_75": null,
+    "usa_M103": null,
+    "china_Ch07_Vickers_MkE_Type_BT26": null,
+    "usa_Sherman_Jumbo": null,
+    "usa_M4A3E8_Sherman_training": null,
+    "uk_GB21_Cromwell": null,
+    "usa_M4A3E8_Sherman": null,
+    "france_AMX_50_120": null,
+    "germany_PanzerJager_I": null,
+    "ussr_KV_1s": null,
+    "usa_T18": null,
+    "uk_GB12_Conqueror": null,
+    "china_Ch20_Type58": null,
+    "ussr_SU_18": null,
+    "uk_GB39_Universal_CarrierQF2": null,
+    "china_Ch12_111_1_2_3": null,
+    "ussr_Object_704": null,
+    "france_RenaultFT_AC": null,
+    "usa_T57": null,
+    "ussr_T_70": null,
+    "france_RenaultBS": null,
+    "ussr_T150": null,
+    "ussr_AT_1": null,
+    "usa_M6": null,
+    "ussr_SU122_54": null,
+    "germany_JagdTiger": null,
+    "ussr_BT_7": null,
+    "usa_T30": null,
+    "ussr_KV2": null,
+    "germany_Pz38t": null,
+    "usa_T95": null,
+    "germany_Pz_II_AusfG": null,
+    "germany_PzI_ausf_C": null,
+    "france_ARL_44": null,
+    "france_AMX50_Foch": null,
+    "germany_PzIII_A": null,
+    "germany_T_15": null,
+    "usa_M22_Locust": null,
+    "ussr_T62A": null,
+    "uk_GB32_Tortoise": null,
+    "ussr_Object_907": null,
+    "ussr_SU_100": null,
+    "usa_MTLS_1G14": null,
+    "germany_E50_Ausf_M": null,
+    "ussr_SU100Y": null,
+    "germany_Leopard1": null,
+    "usa_M48A1": null,
+    "france_AMX38": null,
+    "usa_M60": null,
+    "uk_GB59_Cruiser_Mk_IV": null,
+    "germany_JagdPzIV": null,
+    "france_Bat_Chatillon25t": null,
+    "germany_DickerMax": null,
+    "uk_GB70_FV4202_105": null,
+    "uk_GB69_Cruiser_Mk_II": null,
+    "china_Ch19_121": null,
+    "uk_GB09_Churchill_VII": null,
+    "ussr_IS_4": null,
+    "usa_M36_Slagger": null,
+    "uk_GB40_Gun_Carrier_Churchill": null,
+    "ussr_IS_7": null,
+    "france_ARL_V39": null,
+    "germany_E_100": null,
+    "germany_S35_captured": null,
+    "ussr_SU_76": null,
+    "uk_GB74_AT8": null,
+    "germany_Maus": null,
+    "ussr_S_51": null,
+    "usa_M18_Hellcat": null,
+    "usa_M3_Stuart": null,
+    "usa_M12": null,
+    "ussr_SU_14": null,
+    "germany_VK7201": null,
+    "germany_G_Panther": null,
+    "usa_T110": null,
+    "usa_T82": null,
+    "usa_T57_58": null,
+    "france_Lorraine155_50": null,
+    "usa_T71": null,
+    "france_RenaultUE57": null,
+    "uk_GB06_Vickers_Medium_Mk_III": null,
+    "germany_Auf_Panther": null,
+    "france_AMX_13_75": null,
+    "france_FCM_36Pak40": null,
+    "ussr_T_46": null,
+    "france_F10_AMX_50B": null,
+    "china_Ch02_Type62": null,
+    "uk_GB42_Valentine_AT": null,
+    "china_Ch16_WZ_131": null,
+    "uk_GB13_FV215b": null,
+    "china_Ch22_113": null,
+    "germany_G20_Marder_II": null,
+    "ussr_Object263": null,
+    "france_D2": null,
+    "ussr_KV_13": null,
+    "ussr_Object268": null,
+    "germany_Wespe": null,
+    "usa_M2_med": null,
+    "ussr_SU_26": null,
+    "germany_PzV_training": null,
+    "ussr_T_43": null,
+    "germany_JagdPz_E100": null,
+    "germany_PzV": null,
+    "france_Lorraine39_L_AM": null,
+    "usa_M37": null,
+    "usa_T110E3": null,
+    "germany_VK3002DB": null,
+    "uk_GB22_Comet": null,
+    "china_Ch04_T34_1": null,
+    "usa_T20": null,
+    "usa_T110E4": null,
+    "ussr_A_20": null,
+    "germany_Pz38_NA": null,
+    "france_AMX_50Fosh_155": null,
+    "china_Ch04_T34_1_training": null,
+    "ussr_KV_3": null,
+    "ussr_IS": null,
+    "uk_GB48_FV215b_183": null,
+    "germany_PzII_Luchs": null,
+    "germany_Bison_I": null,
+    "usa_T2_lt": null,
+    "germany_PzVI": null,
+    "usa_T29": null,
+    "usa_M5_Stuart": null,
+    "germany_PzI": null,
+    "germany_PzVI_Tiger_P": null,
+    "ussr_M3_Stuart_LL": null,
+    "ussr_T_28": null,
+    "ussr_BT_SV": null,
+    "france_AMX_M4_1945": null,
+    "germany_PzII_J": null,
+    "germany_PzIII": null,
+    "ussr_T_127": null,
+    "germany_PzIII_training": null,
+    "Sexton_I": null,
+    "uk_GB10_Black_Prince": null,
+    "uk_GB78_Sexton_I": null,
+    "china_Ch10_IS2": null,
+    "ussr_T_50": null,
+    "ussr_SU100M1": null,
+    "ussr_Valentine_LL": null,
+    "ussr_SU122_44": null,
+    "germany_B_1bis_captured": null,
+    "france_B1": null,
+    "ussr_A_32": null,
+    "ussr_GAZ_74b": null,
+    "france_AMX40": null,
+    "ussr_SU_152": null,
+    "uk_GB04_Valentine": null,
+    "germany_JagdPanther": null,
+    "uk_GB60_Covenanter": null,
+    "usa_T25_2": null,
+    "germany_PzIV_Hydro": null,
+    "usa_M8A1": null,
+    "ussr_Churchill_LL": null,
+    "usa_T25_AT": null,
+    "uk_GB71_AT_15A": null,
+    "france_Somua_Sau_40": null,
+    "ussr_Matilda_II_LL": null,
+    "france_AMX_AC_Mle1946": null,
+    "usa_T14": null,
+    "uk_GB57_Alecto": null,
+    "ussr_KV_220": null,
+    "germany_VK2001DB": null,
+    "ussr_KV_220_action": null,
+    "uk_GB75_AT7": null,
+    "france__105_leFH18B2": null,
+    "ussr_Object_212": null,
+    "usa_M4A2E4": null,
+    "usa_M7_Priest": null,
+    "uk_GB68_Matilda_Black_Prince": null,
+    "ussr_SU_5": null,
+    "uk_GB51_Excelsior": null,
+    "germany_Grille": null,
+    "uk_GB20_Crusader": null,
+    "france_AMX_105AM": null,
+    "france_Lorraine155_51": null,
+    "germany_G_Tiger": null,
+    "ussr_T_50_2": null,
+    "usa_M40M43": null,
+    "usa_M24_Chaffee": null,
+    "china_Ch09_M5": null,
+    "germany_PzV_PzIV": null,
+    "ussr_T_34": null,
+    "germany_PzV_PzIV_ausf_Alfa": null,
+    "france_AMX_13_90": null,
+    "germany_Panther_II": null,
+    "china_Ch17_WZ131_1_WZ132": null,
+    "uk_GB63_TOG_II": null,
+    "ussr_T_44": null,
+    "germany_Panther_M10": null,
+    "ussr_KV_5": null,
+    "germany_T_25": null,
+    "ussr_Object252": null,
+    "germany_Indien_Panzer": null,
+    "usa_T69": null,
+    "usa_Pershing": null,
+    "france_FCM_50t": null,
+    "usa_T23": null,
+    "usa_T26_E4_SuperPershing": null,
+    "usa_M4_Sherman": null,
+    "china_Ch01_Type59": null,
+    "usa_Ram_II": null,
+    "china_Ch01_Type59_gold": null,
+    "uk_GB23_Centurion": null,
+    "ussr_KV4": null,
+    "china_Ch05_T34_2": null,
+    "germany_JagdTiger_SdKfz_185": null,
+    "ussr_IS_3": null,
+    "germany_Lowe": null,
+    "china_Ch21_T34": null,
+    "germany_PzVIB_Tiger_II": null,
+    "ussr_KV1": null,
+    "germany_PzVIB_Tiger_II_training": null,
+    "usa_T1_hvy": null,
+    "germany_VK4502A": null,
+    "france_BDR_G1B": null,
+    "uk_GB08_Churchill_I": null,
+    "usa_M6A2E1": null,
+    "ussr_T80": null,
+    "usa_T32": null,
+    "germany_VK1602": null,
+    "usa_T34_hvy": null,
+    "ussr_SU_85I": null,
+    "france_AMX_50_100": null,
+    "ussr_SU_85": null,
+    "germany_StuGIII": null,
+    "uk_GB11_Caernarvon": null,
+    "uk_GB07_Matilda": null,
+    "china_Ch03_WZ_111": null,
+    "germany_PzIII_IV": null,
+    "china_Ch11_110": null,
+    "ussr_KV": null,
+    "ussr_ISU_152": null,
+    "usa_M10_Wolverine": null,
+    "ussr_MS_1": null,
+    "ussr_SU_101": null,
+    "usa_T49": null,
+    "germany_Ferdinand": null,
+    "germany_JagdPantherII": null,
+    "france_S_35CA": null,
+    "usa_T28": null,
+    "uk_GB73_AT2": null,
+    "germany_Hummel": null,
+    "ussr_SU_8": null,
+    "usa_T28_Prototype": null,
+    "france_AMX_AC_Mle1948": null,
+    "usa_M3_Grant": null,
+    "uk_GB72_AT15": null,
+    "usa_M41": null,
+    "ussr_Object_261": null,
+    "france_ELC_AMX": null,
+    "usa_T40": null,
+    "china_Ch08_Type97_Chi_Ha": null,
+    "uk_GB01_Medium_Mark_I": null,
+    "germany_G_E": null,
+    "germany_Hetzer": null,
+    "usa_T92": null,
+    "germany_Sturmpanzer_II": null,
+    "france_Bat_Chatillon155": null,
+    "germany_PzIV": null,
+    "ussr_BT_2": null,
+    "china_Ch06_Renault_NC31": null,
+    "ussr_T_54": null,
+    "ussr_T_60": null,
+    "france_RenaultFT": null,
+    "germany_Ltraktor": null,
+    "unknown": null,
+    "usa_T1_Cunningham": null,
+    "ussr_T_26": null,
+    "usa_M7_med": null
+  },
+  "alpha": {
+    "kb": [
+      {
+        "alpha": 100,
+        "value": 2
+      },
+      {
+        "alpha": 100,
+        "value": 10
+      },
+      {
+        "alpha": 100,
+        "value": 999
+      }
+    ],
+    "rating": [
+      {
+        "alpha": 100,
+        "value": 49
+      },
+      {
+        "alpha": 100,
+        "value": 53
+      },
+      {
+        "alpha": 100,
+        "value": 101
+      }
+    ],
+    "hp_ratio": [
+      {
+        "alpha": 100,
+        "value": 10
+      },
+      {
+        "alpha": 80,
+        "value": 25
+      },
+      {
+        "alpha": 60,
+        "value": 50
+      },
+      {
+        "alpha": 40,
+        "value": 101
+      }
+    ],
+    "eff": [
+      {
+        "alpha": 100,
+        "value": 900
+      },
+      {
+        "alpha": 100,
+        "value": 1200
+      },
+      {
+        "alpha": 100,
+        "value": 9999
+      }
+    ],
+    "hp": [
+      {
+        "alpha": 100,
+        "value": 200
+      },
+      {
+        "alpha": 80,
+        "value": 400
+      },
+      {
+        "alpha": 60,
+        "value": 1000
+      },
+      {
+        "alpha": 40,
+        "value": 9999
+      }
+    ]
+  },
+  "hotkeys": {
+    "minimapZoom": {
+      "onHold": true,
+      "enabled": false,
+      "keyCode": 17
+    }
+  },
+  "hitLog": {
+    "formatHeader": "<font color='#FFFFFF'>Hits:</font> <font size='13'>#{{n}}</font> <b>{{dmg-total}}</b>  <font color='#FFFFFF'>Last:</font> <font color='{{c:dmg-kind}}'><b>{{dmg}}</b> {{dead}}</font>",
+    "x": 350,
+    "shadow": {
+      "strength": 150,
+      "distance": 0,
+      "alpha": 100,
+      "color": "0x000000",
+      "size": 5,
+      "angle": 45
+    },
+    "formatHistory": "<textformat leading='-4' tabstops='[20,50,90,150]'><font size='12'>×{{n-player}}:</font><tab>{{dmg-player}}<tab>| <font color='{{c:dmg-kind}}'>{{dmg}}</font><tab>| <font color='{{c:dmg-kind}}'>{{dmg-kind}}</font><tab>| <font color='{{c:vtype}}'>{{vehicle}} {{dead}}</font></textformat>",
+    "lines": 0,
+    "direction": "down",
+    "y": 7,
+    "visible": true,
+    "insertOrder": "end",
+    "groupHitsByPlayer": false,
+    "deadMarker": "<font face='Wingdings'>N</font>",
+    "h": 100,
+    "blowupMarker": "<font face='Wingdings'>M</font>",
+    "defaultHeader": "<font color='#FFFFFF'>Hits:</font> <font size='13'>#0</font>",
+    "w": 200
+  },
+  "consts": {
+    "AVG_GWR": 48,
+    "AVG_XVMSCALE": 30,
+    "AVG_BATTLES": 1000,
+    "MAX_EBN": 200
+  },
+  "battle": {
+    "clockFormat": "",
+    "mirroredVehicleIcons": true,
+    "elements": {
+      "damagePanel": {
+        "h": null,
+        "debug": false,
+        "a": null,
+        "y": null,
+        "va": null,
+        "x": null,
+        "ha": null,
+        "w": null
+      },
+      "vehicleMessagesPanel": {
+        "h": null,
+        "debug": false,
+        "a": null,
+        "y": null,
+        "va": null,
+        "x": null,
+        "ha": null,
+        "w": null
+      },
+      "sixthSenseIndicator": {
+        "h": null,
+        "debug": false,
+        "a": null,
+        "y": null,
+        "va": null,
+        "x": null,
+        "ha": null,
+        "w": null
+      },
+      "teamBasesPanel": {
+        "h": null,
+        "debug": false,
+        "a": null,
+        "y": null,
+        "va": null,
+        "x": null,
+        "ha": null,
+        "w": null
+      },
+      "vehicleErrorsPanel": {
+        "h": null,
+        "debug": false,
+        "a": null,
+        "y": null,
+        "va": null,
+        "x": null,
+        "ha": null,
+        "w": null
+      },
+      "messenger": {
+        "h": null,
+        "debug": false,
+        "a": null,
+        "y": null,
+        "va": null,
+        "x": null,
+        "ha": null,
+        "w": null
+      },
+      "playerMessangersPanel": {
+        "h": null,
+        "debug": false,
+        "a": null,
+        "y": null,
+        "va": null,
+        "x": null,
+        "ha": null,
+        "w": null
+      },
+      "damageInfoPanel": {
+        "h": null,
+        "debug": false,
+        "a": null,
+        "y": null,
+        "va": null,
+        "x": null,
+        "ha": null,
+        "w": null
+      },
+      "leftPanel": {
+        "h": null,
+        "debug": false,
+        "a": null,
+        "y": null,
+        "va": null,
+        "x": null,
+        "ha": null,
+        "w": null
+      },
+      "timerBig": {
+        "h": null,
+        "debug": false,
+        "a": null,
+        "y": null,
+        "va": null,
+        "x": null,
+        "ha": null,
+        "w": null
+      },
+      "rightPanel": {
+        "h": null,
+        "debug": false,
+        "a": null,
+        "y": null,
+        "va": null,
+        "x": null,
+        "ha": null,
+        "w": null
+      },
+      "deathZoneTimer": {
+        "h": null,
+        "debug": false,
+        "a": null,
+        "y": null,
+        "va": null,
+        "x": null,
+        "ha": null,
+        "w": null
+      },
+      "drownTimer": {
+        "h": null,
+        "debug": false,
+        "a": null,
+        "y": null,
+        "va": null,
+        "x": null,
+        "ha": null,
+        "w": null
+      },
+      "switcher_mc": {
+        "h": null,
+        "debug": false,
+        "a": null,
+        "y": null,
+        "va": null,
+        "x": null,
+        "ha": null,
+        "w": null
+      },
+      "overturnedTimer": {
+        "h": null,
+        "debug": false,
+        "a": null,
+        "y": null,
+        "va": null,
+        "x": null,
+        "ha": null,
+        "w": null
+      },
+      "fragCorrelationBar": {
+        "h": null,
+        "debug": false,
+        "a": null,
+        "y": null,
+        "va": null,
+        "x": null,
+        "ha": null,
+        "w": null
+      },
+      "minimap": {
+        "h": null,
+        "debug": false,
+        "a": null,
+        "y": null,
+        "va": null,
+        "x": null,
+        "ha": null,
+        "w": null
+      },
+      "debugPanel": {
+        "h": null,
+        "debug": false,
+        "a": null,
+        "y": null,
+        "va": null,
+        "x": null,
+        "ha": null,
+        "w": null
+      },
+      "langBarPanel": {
+        "h": null,
+        "debug": false,
+        "a": null,
+        "y": null,
+        "va": null,
+        "x": null,
+        "ha": null,
+        "w": null
+      },
+      "battleTimer": {
+        "h": null,
+        "debug": false,
+        "a": null,
+        "y": null,
+        "va": null,
+        "x": null,
+        "ha": null,
+        "w": null
+      },
+      "consumablesPanel": {
+        "h": null,
+        "debug": false,
+        "a": null,
+        "y": null,
+        "va": null,
+        "x": null,
+        "ha": null,
+        "w": null
+      }
+    },
+    "clanIconsFolder": "clanicons",
+    "showPostmortemTips": true,
+    "removePanelsModeSwitcher": false,
+    "highlightVehicleIcon": false,
+    "useStandardMarkers": false
+  },
+  "iconset": {
+    "statisticForm": "../maps/icons/vehicle/contour/",
+    "playersPanel": "../maps/icons/vehicle/contour/",
+    "vehicleMarker": "../maps/icons/vehicle/contour/",
+    "battleLoading": "../maps/icons/vehicle/contour/"
+  },
+  "colors": {
+    "kb": [
+      {
+        "color": "0xFE0E00",
+        "value": 2
+      },
+      {
+        "color": "0xFE7903",
+        "value": 5
+      },
+      {
+        "color": "0xF8F400",
+        "value": 9
+      },
+      {
+        "color": "0x60FF00",
+        "value": 14
+      },
+      {
+        "color": "0x02C9B3",
+        "value": 20
+      },
+      {
+        "color": "0xD042F3",
+        "value": 999
+      }
+    ],
+    "x": [
+      {
+        "color": "0xFE0E00",
+        "value": 17
+      },
+      {
+        "color": "0xFE7903",
+        "value": 34
+      },
+      {
+        "color": "0xF8F400",
+        "value": 53
+      },
+      {
+        "color": "0x60FF00",
+        "value": 76
+      },
+      {
+        "color": "0x02C9B3",
+        "value": 93
+      },
+      {
+        "color": "0xD042F3",
+        "value": 999
+      }
+    ],
+    "dmg_kind": {
+      "ramming": "0x998855",
+      "attack": "0xFFAA55",
+      "world_collision": "0x228855",
+      "fire": "0xFF6655",
+      "other": "0xCCCCCC"
+    },
+    "t_battles": [
+      {
+        "color": "0xFE0E00",
+        "value": 100
+      },
+      {
+        "color": "0xFE7903",
+        "value": 250
+      },
+      {
+        "color": "0xF8F400",
+        "value": 500
+      },
+      {
+        "color": "0x60FF00",
+        "value": 1000
+      },
+      {
+        "color": "0x02C9B3",
+        "value": 1800
+      },
+      {
+        "color": "0xD042F3",
+        "value": 99999
+      }
+    ],
+    "wn": [
+      {
+        "color": "0xFE0E00",
+        "value": 600
+      },
+      {
+        "color": "0xFE7903",
+        "value": 900
+      },
+      {
+        "color": "0xF8F400",
+        "value": 1200
+      },
+      {
+        "color": "0x60FF00",
+        "value": 1500
+      },
+      {
+        "color": "0x02C9B3",
+        "value": 1800
+      },
+      {
+        "color": "0xD042F3",
+        "value": 9999
+      }
+    ],
+    "e": [
+      {
+        "color": "0xFCFCFC",
+        "value": 0.01
+      },
+      {
+        "color": "0xFE0E00",
+        "value": 2
+      },
+      {
+        "color": "0xFE7903",
+        "value": 4
+      },
+      {
+        "color": "0xF8F400",
+        "value": 5
+      },
+      {
+        "color": "0x60FF00",
+        "value": 7
+      },
+      {
+        "color": "0x02C9B3",
+        "value": 9
+      },
+      {
+        "color": "0xD042F3",
+        "value": 20
+      }
+    ],
+    "tdb": [
+      {
+        "color": "0xFCFCFC",
+        "value": 1
+      },
+      {
+        "color": "0xFE0E00",
+        "value": 500
+      },
+      {
+        "color": "0xF8F400",
+        "value": 1000
+      },
+      {
+        "color": "0x60FF00",
+        "value": 2000
+      }
+    ],
+    "system": {
+      "squadman_dead_normal": "0xCA7000",
+      "enemy_alive_blind": "0x8379FE",
+      "squadman_dead_blind": "0xAAAA00",
+      "enemy_dead_normal": "0x840500",
+      "squadman_blowedup_normal": "0xA45A00",
+      "enemy_dead_blind": "0x47407A",
+      "ally_alive_normal": "0x96FF00",
+      "squadman_blowedup_blind": "0x888800",
+      "enemy_blowedup_normal": "0x5A0401",
+      "ally_alive_blind": "0x96FF00",
+      "teamKiller_alive_normal": "0x00EAFF",
+      "enemy_blowedup_blind": "0x3B365F",
+      "ally_dead_normal": "0x009900",
+      "teamKiller_alive_blind": "0x00EAFF",
+      "ally_dead_blind": "0x009900",
+      "teamKiller_dead_normal": "0x097783",
+      "ally_blowedup_normal": "0x007700",
+      "teamKiller_dead_blind": "0x097783",
+      "ally_blowedup_blind": "0x007700",
+      "teamKiller_blowedup_normal": "0x096A75",
+      "squadman_alive_normal": "0xFFB964",
+      "teamKiller_blowedup_blind": "0x096A75",
+      "squadman_alive_blind": "0xFFFF00",
+      "enemy_alive_normal": "0xF50800"
+    },
+    "tfb": [
+      {
+        "color": "0xFCFCFC",
+        "value": 0.01
+      },
+      {
+        "color": "0xFE0E00",
+        "value": 0.6
+      },
+      {
+        "color": "0xFE7903",
+        "value": 0.8
+      },
+      {
+        "color": "0xF8F400",
+        "value": 1
+      },
+      {
+        "color": "0x60FF00",
+        "value": 1.3
+      },
+      {
+        "color": "0x02C9B3",
+        "value": 2
+      },
+      {
+        "color": "0xD042F3",
+        "value": 15
+      }
+    ],
+    "rating": [
+      {
+        "color": "0xFE0E00",
+        "value": 46
+      },
+      {
+        "color": "0xFE7903",
+        "value": 48
+      },
+      {
+        "color": "0xF8F400",
+        "value": 51
+      },
+      {
+        "color": "0x60FF00",
+        "value": 54
+      },
+      {
+        "color": "0x02C9B3",
+        "value": 57
+      },
+      {
+        "color": "0xD042F3",
+        "value": 101
+      }
+    ],
+    "tsb": [
+      {
+        "color": "0xFCFCFC",
+        "value": 0.01
+      },
+      {
+        "color": "0xFE0E00",
+        "value": 0.6
+      },
+      {
+        "color": "0xFE7903",
+        "value": 0.8
+      },
+      {
+        "color": "0xF8F400",
+        "value": 1
+      },
+      {
+        "color": "0x60FF00",
+        "value": 1.3
+      },
+      {
+        "color": "0x02C9B3",
+        "value": 2
+      },
+      {
+        "color": "0xD042F3",
+        "value": 15
+      }
+    ],
+    "damage": {
+      "squadman_enemytk_hit": "0xFFB964",
+      "squadman_enemytk_kill": "0xFFB964",
+      "squadman_enemytk_blowup": "0xFFB964",
+      "enemy_ally_hit": "0x96FF00",
+      "enemy_ally_kill": "0x96FF00",
+      "player_allytk_hit": "0x0066FF",
+      "player_enemytk_hit": "0x0066FF",
+      "player_allytk_kill": "0x0066FF",
+      "player_enemytk_kill": "0x0066FF",
+      "player_allytk_blowup": "0x0066FF",
+      "player_enemytk_blowup": "0x0066FF",
+      "enemy_ally_blowup": "0x96FF00",
+      "enemy_squadman_blowup": "0xFFB964",
+      "enemy_squadman_hit": "0xFFB964",
+      "enemy_enemy_hit": "0xF50800",
+      "enemy_squadman_kill": "0xFFB964",
+      "enemy_enemy_kill": "0xF50800",
+      "enemy_enemy_blowup": "0xF50800",
+      "enemy_allytk_hit": "0x96FF00",
+      "enemy_allytk_kill": "0x96FF00",
+      "enemy_allytk_blowup": "0x96FF00",
+      "enemy_enemytk_hit": "0xF50800",
+      "ally_ally_hit": "0xFF00FF",
+      "enemy_enemytk_kill": "0xF50800",
+      "ally_ally_kill": "0xFF00FF",
+      "enemy_enemytk_blowup": "0xF50800",
+      "ally_ally_blowup": "0xFF00FF",
+      "unknown_ally_hit": "0x96FF00",
+      "ally_squadman_hit": "0xFF00FF",
+      "unknown_ally_kill": "0x96FF00",
+      "ally_squadman_kill": "0xFF00FF",
+      "unknown_ally_blowup": "0x96FF00",
+      "ally_squadman_blowup": "0xFF00FF",
+      "unknown_squadman_hit": "0xFFB964",
+      "ally_enemy_hit": "0xF50800",
+      "unknown_squadman_kill": "0xFFB964",
+      "ally_enemy_kill": "0xF50800",
+      "unknown_squadman_blowup": "0xFFB964",
+      "ally_enemy_blowup": "0xF50800",
+      "unknown_enemy_hit": "0xF50800",
+      "ally_allytk_hit": "0xFF00FF",
+      "unknown_enemy_kill": "0xF50800",
+      "ally_allytk_kill": "0xFF00FF",
+      "unknown_enemy_blowup": "0xF50800",
+      "ally_allytk_blowup": "0xFF00FF",
+      "unknown_allytk_hit": "0x96FF00",
+      "ally_enemytk_hit": "0xF50800",
+      "unknown_allytk_kill": "0x96FF00",
+      "ally_enemytk_kill": "0xF50800",
+      "unknown_allytk_blowup": "0x96FF00",
+      "ally_enemytk_blowup": "0xF50800",
+      "unknown_enemytk_hit": "0xF50800",
+      "squadman_ally_hit": "0xFF00FF",
+      "unknown_enemytk_kill": "0xF50800",
+      "squadman_ally_kill": "0xFF00FF",
+      "unknown_enemytk_blowup": "0xF50800",
+      "squadman_ally_blowup": "0xFF00FF",
+      "player_ally_hit": "0x0066FF",
+      "squadman_squadman_hit": "0xFF00FF",
+      "player_ally_kill": "0x0066FF",
+      "squadman_squadman_kill": "0xFF00FF",
+      "player_ally_blowup": "0x0066FF",
+      "squadman_squadman_blowup": "0xFF00FF",
+      "player_squadman_hit": "0x0066FF",
+      "squadman_enemy_hit": "0xFFB964",
+      "player_squadman_kill": "0x0066FF",
+      "squadman_enemy_kill": "0xFFB964",
+      "player_squadman_blowup": "0x0066FF",
+      "squadman_enemy_blowup": "0xFFB964",
+      "player_enemy_hit": "0x0066FF",
+      "squadman_allytk_hit": "0xFF00FF",
+      "player_enemy_kill": "0x0066FF",
+      "squadman_allytk_kill": "0xFF00FF",
+      "player_enemy_blowup": "0x0066FF",
+      "squadman_allytk_blowup": "0xFF00FF"
+    },
+    "tdv": [
+      {
+        "color": "0xFCFCFC",
+        "value": 0.01
+      },
+      {
+        "color": "0xFE0E00",
+        "value": 0.6
+      },
+      {
+        "color": "0xFE7903",
+        "value": 0.8
+      },
+      {
+        "color": "0xF8F400",
+        "value": 1
+      },
+      {
+        "color": "0x60FF00",
+        "value": 1.3
+      },
+      {
+        "color": "0x02C9B3",
+        "value": 2
+      },
+      {
+        "color": "0xD042F3",
+        "value": 15
+      }
+    ],
+    "hp": [
+      {
+        "color": "0xFF0000",
+        "value": 201
+      },
+      {
+        "color": "0xDD4444",
+        "value": 401
+      },
+      {
+        "color": "0xFFCC22",
+        "value": 1001
+      },
+      {
+        "color": "0xFCFCFC",
+        "value": 9999
+      }
+    ],
+    "twr": [
+      {
+        "color": "0xFE0E00",
+        "value": 46
+      },
+      {
+        "color": "0xFE7903",
+        "value": 48
+      },
+      {
+        "color": "0xF8F400",
+        "value": 51
+      },
+      {
+        "color": "0x60FF00",
+        "value": 54
+      },
+      {
+        "color": "0x02C9B3",
+        "value": 57
+      },
+      {
+        "color": "0xD042F3",
+        "value": 101
+      }
+    ],
+    "vtype": {
+      "SPG": "0xEFAEFF",
+      "TD": "0xA0CFFF",
+      "LT": "0xA2FF9A",
+      "premium": "0xFFCC66",
+      "usePremiumColor": false,
+      "MT": "0xFFF198",
+      "HT": "0xFFACAC"
+    },
+    "hp_ratio": [
+      {
+        "color": "0xFF0000",
+        "value": 10
+      },
+      {
+        "color": "0xDD4444",
+        "value": 25
+      },
+      {
+        "color": "0xFFCC22",
+        "value": 50
+      },
+      {
+        "color": "0xFCFCFC",
+        "value": 101
+      }
+    ],
+    "eff": [
+      {
+        "color": "0xFE0E00",
+        "value": 600
+      },
+      {
+        "color": "0xFE7903",
+        "value": 900
+      },
+      {
+        "color": "0xF8F400",
+        "value": 1200
+      },
+      {
+        "color": "0x60FF00",
+        "value": 1500
+      },
+      {
+        "color": "0x02C9B3",
+        "value": 1800
+      },
+      {
+        "color": "0xD042F3",
+        "value": 9999
+      }
+    ]
+  },
+  "configVersion": "1.5.0",
+  "battleLoading": {
+    "removeSquadIcon": false,
+    "clockFormat": "H:N:S",
+    "formatLeft": "{{vehicle}} <font color='{{c:kb}}'>{{kb:3}}</font> <font color='{{c:eff}}'>{{eff}}</font> <font color='{{c:rating}}'>{{rating}}</font>",
+    "clanIcon": {
+      "h": 16,
+      "y": 6,
+      "show": true,
+      "x": 0,
+      "xr": 0,
+      "yr": 6,
+      "alpha": 90,
+      "w": 16
+    },
+    "formatRight": "<font color='{{c:rating}}'>{{rating}}</font> <font color='{{c:eff}}'>{{eff}}</font> <font color='{{c:kb}}'>{{kb:3}}</font> {{vehicle}}",
+    "showChances": true,
+    "showChancesExp": false
+  },
+  "rating": {
+    "enableStatisticsLog": false,
+    "enableCompanyStatistics": true,
+    "showPlayersStatistics": true,
+    "loadEnemyStatsInFogOfWar": true,
+    "enableUserInfoStatistics": true
+  },
+  "userInfo": {
+    "showEColumn": false
+  },
+  "editorVersion": "0.47",
+  "definition": {
+    "author": "Loretai",
+    "description": "MyCFG",
+    "gameVersion": "0.8.4",
+    "date": "12/10/2013",
+    "modMinVersion": "3.4.0",
+    "url": "http://forum.worldoftanks.eu/index.php?/topic/195763-paczka-modow-autoinstaller/#top"
+  },
+  "turretMarkers": {
+    "lowVulnerability": "'",
+    "highVulnerability": "*"
+  },
+  "statisticForm": {
+    "removeSquadIcon": false,
+    "formatLeft": "{{vehicle}} <font color='{{c:kb}}'>{{kb:3}}</font> <font color='{{c:eff}}'>{{eff}}</font> <font color='{{c:rating}}'>{{rating}}</font>",
+    "clanIcon": {
+      "h": 16,
+      "y": 6,
+      "show": true,
+      "x": 0,
+      "xr": 0,
+      "yr": 6,
+      "alpha": 90,
+      "w": 16
+    },
+    "formatRight": "<font color='{{c:rating}}'>{{rating}}</font> <font color='{{c:eff}}'>{{eff}}</font> <font color='{{c:kb}}'>{{kb:3}}</font> {{vehicle}}",
+    "showChances": true,
+    "showChancesExp": false
+  }
+}

@@ -1,0 +1,572 @@
+﻿<damagePanel>	
+	<!--Настройка включения доп. панели ремонта при нажатии ctrl-->
+	<repairPanelStyle visible="false">
+		<location x="0" y="0"/>
+	</repairPanelStyle>
+
+	<!--Настройка УГН-->
+	<angleStyle visible="false">
+		<size width="30" height="50"/>												<!--Настройка размера УГН-->
+		
+		<graphics>
+			<angle>
+				<normal color="0xC3FF68" alpha="100"/>								<!--Настройка цвета нормального УГН-->
+				<critical color="0xFF0000" alpha="100"/>							<!--Настройка цвета критического УГН-->
+			</angle>
+		</graphics>
+	</angleStyle>	
+	
+	<!--Настройка панели снарядов-->
+	<consumablesPanelStyle>
+		<location x="0" y="92"/>
+	</consumablesPanelStyle>	
+	
+	<!--Настройка сообщений повреждений-->
+	<vehicleMessagesPanelStyle>
+		<location x="0" y="103"/>
+	</vehicleMessagesPanelStyle>	
+	
+	<!--Настройка сообщения о последнем полученном повреждении-->
+	<hitStyle visible="true">
+		<location x="0" y="250"/>
+		<text font="Arial" size="40" color="0xFF0000" alpha="100" align="center"/> 
+		<filter size="2" angle="45" distance="0" color="0x000000" alpha="100" strength="150"/>
+		<advanced>
+			<format>{{dmg-one}}</format>
+			<delay time="3"/>
+			<grid center="true" invert="true"/>										<!--Настройка центрирования координат по Х и инвертирования по У ("true"->да, "false"->нет)-->
+		</advanced>
+	</hitStyle>
+	
+	<!--Настройка сообщения о пожаре-->
+	<fireStyle visible="true">
+		<location x="0" y="450"/>
+		<text font="Palatino Linotype" size="45" color="0xEFA201" alpha="100" align="center"/> 
+		<filter size="9" angle="45" distance="0" color="0xE44501" alpha="100" strength="250"/>
+		<advanced>
+			<message>==Pożar!==</message>
+			<grid center="true" invert="true"/>										<!--Настройка центрирования координат по Х и инвертирования по У ("true"->да, "false"->нет)-->
+		</advanced>
+	</fireStyle>
+	
+	<!--Настройка полосы ХП и надписей на ней-->
+	<hpBarStyle>
+		<size scale="1.0"/>
+		<location x="0" y="36"/>
+		
+		<advanced>
+			<grid center="true" invert="true"/>										<!--Настройка центрирования координат по Х и инвертирования по У ("true"->да, "false"->нет)-->
+		</advanced>
+	
+		<graphics>
+			<bar>																	<!--Настройка цвета полосы ХП-->
+				<full color="0xC3FF68" alpha="100"/>
+				<low color="0xFF0000" alpha="100"/>
+			</bar>
+			<border color="0x000000" alpha="100"/>									<!--Настройка цвета рамки полосы ХП-->
+			<shadow color="0x000000" alpha="85"/>									<!--Настройка тени рамки полосы ХП-->	
+			<fon color="0x333333" alpha="100"/>										<!--Настройка цвета фона-->
+			<lowHP color="0xFF0000" alpha="100"/>									<!--Настройка цвета низкого количества ХП-->
+		</graphics>
+		
+		<!--Настройка надписи ХП-->
+		<hpStyle visible="true">
+			<text font="Cuprum" size="12" color="0xFFFFFF" alpha="100" align="center"/> 
+			<filter size="5" angle="45" distance="0" color="0x000000" alpha="100" strength="350"/>
+			<advanced>
+				<format>{{hp}}/{{hp-max}}</format>
+			</advanced>
+		</hpStyle>
+		
+		<!--Настройка имени игрока-->
+		<playerStyle visible="true">
+			<text font="Cuprum" size="12" color="0xFFFFFF" alpha="100" align="right"/>
+			<filter size="5" angle="45" distance="0" color="0x000000" alpha="100" strength="350"/>
+		</playerStyle>
+		
+		<!--Настройка названия танка-->
+		<vehicleStyle visible="true">
+			<text font="Cuprum" size="12" color="0xFFFFFF" alpha="100" align="left"/>
+			<filter size="5" angle="45" distance="0" color="0x000000" alpha="100" strength="350"/>
+		</vehicleStyle>
+	</hpBarStyle>
+	
+	
+	<!--Настройка панели-->
+	<panelStyle>
+		<size scale="1.0"/>																<!--Кратность панели относительно изначального размера. Диапазон 0.0-3.0, для больших мониторов будет достаточно задать в пределах 1.4-1.6-->
+	
+		<graphics>
+			<border color="0x000000" alpha="100"/>										<!--Настройка цвета рамки панели-->
+			<fon color="0x000000" alpha="100"/>											<!--Настройка цвета фона панели-->
+		</graphics>
+		
+		<!--Настройка лога-->
+		<logStyle>
+			<!--Настройка общего стиля лога-->
+			<log visible="true">
+				<text font="Arial" size="15" color="0xA19E97" alpha="100" align="left"/> 
+				<filter size="2" angle="90" distance="0" color="0x000000" alpha="100" strength="150"/>
+			</log>
+			
+			<!--Настройка последнего попадания-->
+			<last visible="true">
+				<text font="Arial" size="15" color="0xFFFFFF" alpha="100" align="left"/> 
+				<filter size="2" angle="90" distance="0" color="0x000000" alpha="100" strength="150"/>
+			</last>
+			
+			<advanced>
+				<format>{{count}}: {{dmg-one}}  {{dmg-ratio-one}}%</format>
+				<log way="down"/>															<!--Настройка направления записей в логе(up - добавлять запись сверху списка, down - добавлять запись вниз спика)-->
+			</advanced>
+		</logStyle>
+		
+		<!--Настройка панели скоростей-->
+		<cruiseCtrlStyle>
+			<!--Настройка скорости-->
+			<speed>
+				<!--Вперед-->
+				<forward visible="true">
+					<location x="90" y="9"/>
+					<text font="Cuprum" size="15" color="0xC3FF68" alpha="100" align="center"/> 
+					<filter size="2" angle="45" distance="0" color="0x000000" alpha="100" strength="150"/>
+				</forward>
+				
+				<!--Назад-->
+				<backward visible="true">
+					<location x="90" y="9"/>
+					<text font="Cuprum" size="15" color="0xFF5300" alpha="100" align="center"/> 
+					<filter size="2" angle="45" distance="0" color="0x000000" alpha="100" strength="150"/>
+				</backward>
+			</speed>
+			
+			<!--Настройка "км/ч"-->
+			<speedPoints visible="true">
+				<location x="113" y="12"/>
+				<text font="Cuprum" size="8" color="0xC3FF68" alpha="70" align="left"/> 
+				<filter size="2" angle="45" distance="0" color="0x000000" alpha="100" strength="150"/>
+			</speedPoints>
+			
+			<!--Настройка передач-->
+			<gear>
+				<!--Вперед-->
+				<forward  visible="true">
+					<location x="76" y="5"/>
+					<text font="Cuprum" size="20" color="0xC3FF68" alpha="100" align="center"/> 
+					<filter size="2" angle="45" distance="0" color="0x000000" alpha="100" strength="150"/>
+				</forward>
+				
+				<!--Назад-->
+				<backward  visible="true">
+					<location x="76" y="5"/>
+					<text font="Cuprum" size="20" color="0xFF5300" alpha="100" align="center"/> 
+					<filter size="2" angle="45" distance="0" color="0x000000" alpha="100" strength="150"/>
+				</backward>
+			</gear>
+		</cruiseCtrlStyle>
+		
+		<!--Настройка танкового индикатора-->
+		<tankIndicatorStyle>
+			<graphics>
+				<fon color="0x19170E" alpha="100"/>										<!--Настройка цвета фона танкового индикатора-->
+				<angle>
+					<normal color="0x000000" alpha="100"/>								<!--Настройка цвета нормального УГН танкового индикатора-->
+					<critical color="0xFF6600" alpha="100"/>							<!--Настройка цвета критического УГН танкового индикатора-->
+				</angle>
+			</graphics>
+		</tankIndicatorStyle>
+			
+		<!--Настройка модулей-->
+		<module>	
+			<engine>														<!--Двигатель-->
+				<location x="21" y="38"/>
+				
+				<repairPanel>															<!--Настройка панели ремонта-->
+					<location x="-126" y="-102"/>										<!--Настройка положения модуля-->
+					<size scale="1.5"/>													<!--Настройка размера модуля-->
+					
+					<graphics>
+						<fon color="0x000000" alpha="40"/>								<!--Настройка цвета фона модуля-->
+					</graphics>	
+				</repairPanel>
+				
+				<timer visible="true">													<!--Таймер ремонта модуля-->
+					<text font="Cuprum" size="20" color="0xFFFFFF" alpha="100" align="center"/>
+					<filter size="3" angle="45" distance="0" color="0x000000" alpha="100" strength="300"/>
+				</timer>
+				
+				<graphics>
+					<normal>															<!--Настройка нормального модуля-->
+						<glow size="5" color="0xA19D8C" alpha="0" strength="300"/>		<!--Настройка свечения модуля-->
+						<overlay color="0xA19D8C" alpha="0"/>							<!--Настройка наложения цвета на модуль-->
+						<indicator color="0xA19D8C" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</normal>
+					<critical>															<!--Настройка поврежденного модуля-->
+						<glow size="5" color="0xFF6600" alpha="100" strength="300"/>	<!--Настройка свечения модуля-->
+						<overlay color="0xFF6600" alpha="40"/>							<!--Настройка наложения цвета на модуль-->
+						<indicator color="0xFF6600" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</critical>
+					<destroyed>															<!--Настройка разрушенного модуля-->
+						<glow size="5" color="0xFF0000" alpha="100" strength="300"/>	<!--Настройка свечения модуля-->
+						<overlay color="0xFF0000" alpha="40"/>							<!--Настройка наложения цвета на модуль-->
+						<indicator color="0xFF0000" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</destroyed>
+				</graphics>
+			</engine>
+			
+			<fuelTank>														<!--Баки-->
+				<location x="5" y="71"/>
+				
+				<repairPanel>															<!--Настройка панели ремонта-->
+					<location x="-150" y="-52.5"/>												<!--Настройка положения модуля-->
+					<size scale="1.5"/>													<!--Настройка размера модуля-->
+					
+					<graphics>
+						<fon color="0x000000" alpha="40"/>								<!--Настройка цвета фона модуля-->
+					</graphics>
+					
+				</repairPanel>
+				
+				<timer visible="true">													<!--Таймер ремонта модуля-->
+					<text font="Cuprum" size="20" color="0xFFFFFF" alpha="100" align="center"/>
+					<filter size="3" angle="45" distance="0" color="0x000000" alpha="100" strength="300"/>
+				</timer>
+				
+				<graphics>
+					<normal>															<!--Настройка нормального модуля-->
+						<glow size="5" color="0xA19D8C" alpha="0" strength="300"/>		<!--Настройка свечения модуля-->
+						<overlay color="0xA19D8C" alpha="0"/>							<!--Настройка наложения цвета на модуль-->
+						<indicator color="0xA19D8C" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</normal>
+					<critical>															<!--Настройка поврежденного модуля-->
+						<glow size="5" color="0xFF6600" alpha="100" strength="300"/>	<!--Настройка свечения модуля-->
+						<overlay color="0xFF6600" alpha="40"/>							<!--Настройка наложения цвета на модуль-->
+						<indicator color="0xFF6600" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</critical>
+					<destroyed>															<!--Настройка разрушенного модуля-->
+						<glow size="5" color="0xFF0000" alpha="100" strength="300"/>	<!--Настройка свечения модуля-->
+						<overlay color="0xFF0000" alpha="40"/>							<!--Настройка наложения цвета на модуль-->
+						<indicator color="0xFF0000" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</destroyed>
+				</graphics>
+			</fuelTank>
+			
+			<radio>														<!--Рация-->
+				<location x="5" y="107"/>
+				
+				<repairPanel>															<!--Настройка панели ремонта-->
+					<location x="-150" y="7.5"/>										<!--Настройка положения модуля-->
+					<size scale="1.5"/>													<!--Настройка размера модуля-->
+					
+					<graphics>
+						<fon color="0x000000" alpha="40"/>								<!--Настройка цвета фона модуля-->
+					</graphics>
+				</repairPanel>
+				
+				<timer visible="true">													<!--Таймер ремонта модуля-->
+					<text font="Cuprum" size="20" color="0xFFFFFF" alpha="100" align="center"/>
+					<filter size="3" angle="45" distance="0" color="0x000000" alpha="100" strength="300"/>
+				</timer>
+				
+				<graphics>
+					<normal>															<!--Настройка нормального модуля-->
+						<glow size="5" color="0xA19D8C" alpha="0" strength="300"/>		<!--Настройка свечения модуля-->
+						<overlay color="0xA19D8C" alpha="0"/>							<!--Настройка наложения цвета на модуль-->
+						<indicator color="0xA19D8C" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</normal>
+					<critical>															<!--Настройка поврежденного модуля-->
+						<glow size="5" color="0xFF6600" alpha="100" strength="300"/>	<!--Настройка свечения модуля-->
+						<overlay color="0xFF6600" alpha="40"/>							<!--Настройка наложения цвета на модуль-->
+						<indicator color="0xFF6600" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</critical>
+					<destroyed>															<!--Настройка разрушенного модуля-->
+						<glow size="5" color="0xFF0000" alpha="100" strength="300"/>	<!--Настройка свечения модуля-->
+						<overlay color="0xFF0000" alpha="40"/>							<!--Настройка наложения цвета на модуль-->
+						<indicator color="0xFF0000" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</destroyed>
+				</graphics>
+			</radio>
+			
+			<surveyingDevice>												<!--Приборы наблюдения-->
+				<location x="21" y="140"/>
+				
+				<repairPanel>															<!--Настройка панели ремонта-->
+					<location x="-126" y="57"/>											<!--Настройка положения модуля-->
+					<size scale="1.5"/>													<!--Настройка размера модуля-->
+					
+					<graphics>
+						<fon color="0x000000" alpha="40"/>								<!--Настройка цвета фона модуля-->
+					</graphics>
+				</repairPanel>
+				
+				<timer visible="true">													<!--Таймер ремонта модуля-->
+					<text font="Cuprum" size="20" color="0xFFFFFF" alpha="100" align="center"/>
+					<filter size="3" angle="45" distance="0" color="0x000000" alpha="100" strength="300"/>
+				</timer>
+				
+				<graphics>
+					<normal>															<!--Настройка нормального модуля-->
+						<glow size="5" color="0xA19D8C" alpha="0" strength="300"/>		<!--Настройка свечения модуля-->
+						<overlay color="0xA19D8C" alpha="0"/>							<!--Настройка наложения цвета на модуль-->
+						<indicator color="0xA19D8C" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</normal>
+					<critical>															<!--Настройка поврежденного модуля-->
+						<glow size="5" color="0xFF6600" alpha="100" strength="300"/>	<!--Настройка свечения модуля-->
+						<overlay color="0xFF6600" alpha="40"/>							<!--Настройка наложения цвета на модуль-->
+						<indicator color="0xFF6600" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</critical>
+					<destroyed>															<!--Настройка разрушенного модуля-->
+						<glow size="5" color="0xFF0000" alpha="100" strength="300"/>	<!--Настройка свечения модуля-->
+						<overlay color="0xFF0000" alpha="40"/>							<!--Настройка наложения цвета на модуль-->
+						<indicator color="0xFF0000" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</destroyed>
+				</graphics>
+			</surveyingDevice>
+			
+			<ammoBay>														<!--Боеукладка-->
+				<location x="157" y="38"/>
+				
+				<repairPanel>															<!--Настройка панели ремонта-->
+					<location x="81" y="-102"/>											<!--Настройка положения модуля-->
+					<size scale="1.5"/>													<!--Настройка размера модуля-->
+					
+					<graphics>
+						<fon color="0x000000" alpha="40"/>								<!--Настройка цвета фона модуля-->
+					</graphics>
+				</repairPanel>
+				
+				<timer visible="true">													<!--Таймер ремонта модуля-->
+					<text font="Cuprum" size="20" color="0xFFFFFF" alpha="100" align="center"/>
+					<filter size="3" angle="45" distance="0" color="0x000000" alpha="100" strength="300"/>
+				</timer>
+				
+				<graphics>
+					<normal>															<!--Настройка нормального модуля-->
+						<glow size="5" color="0xA19D8C" alpha="0" strength="300"/>		<!--Настройка свечения модуля-->
+						<overlay color="0xA19D8C" alpha="0"/>							<!--Настройка наложения цвета на модуль-->
+						<indicator color="0xA19D8C" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</normal>
+					<critical>															<!--Настройка поврежденного модуля-->
+						<glow size="5" color="0xFF6600" alpha="100" strength="300"/>	<!--Настройка свечения модуля-->
+						<overlay color="0xFF6600" alpha="40"/>							<!--Настройка наложения цвета на модуль-->
+						<indicator color="0xFF6600" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</critical>
+					<destroyed>															<!--Настройка разрушенного модуля-->
+						<glow size="5" color="0xFF0000" alpha="100" strength="300"/>	<!--Настройка свечения модуля-->
+						<overlay color="0xFF0000" alpha="40"/>							<!--Настройка наложения цвета на модуль-->
+						<indicator color="0xFF0000" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</destroyed>
+				</graphics>
+			</ammoBay>
+			
+			<turretRotator>												<!--Механизм вращения башни-->
+				<location x="173" y="71"/>
+				
+				<repairPanel>															<!--Настройка панели ремонта-->
+					<location x="105" y="-52.5"/>										<!--Настройка положения модуля-->
+					<size scale="1.5"/>													<!--Настройка размера модуля-->
+					
+					<graphics>
+						<fon color="0x000000" alpha="40"/>								<!--Настройка цвета фона модуля-->
+					</graphics>
+				</repairPanel>
+				
+				<timer visible="true">													<!--Таймер ремонта модуля-->
+					<text font="Cuprum" size="20" color="0xFFFFFF" alpha="100" align="center"/>
+					<filter size="3" angle="45" distance="0" color="0x000000" alpha="100" strength="300"/>
+				</timer>
+				
+				<graphics>
+					<normal>															<!--Настройка нормального модуля-->
+						<glow size="5" color="0xA19D8C" alpha="0" strength="300"/>		<!--Настройка свечения модуля-->
+						<overlay color="0xA19D8C" alpha="0"/>							<!--Настройка наложения цвета на модуль-->
+						<indicator color="0xA19D8C" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</normal>
+					<critical>															<!--Настройка поврежденного модуля-->
+						<glow size="5" color="0xFF6600" alpha="100" strength="300"/>	<!--Настройка свечения модуля-->
+						<overlay color="0xFF6600" alpha="40"/>							<!--Настройка наложения цвета на модуль-->
+						<indicator color="0xFF6600" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</critical>
+					<destroyed>															<!--Настройка разрушенного модуля-->
+						<glow size="5" color="0xFF0000" alpha="100" strength="300"/>	<!--Настройка свечения модуля-->
+						<overlay color="0xFF0000" alpha="40"/>							<!--Настройка наложения цвета на модуль-->
+						<indicator color="0xFF0000" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</destroyed>
+				</graphics>
+			</turretRotator>
+			
+			<gun>															<!--Орудие-->
+				<location x="173" y="107"/>
+				
+				<repairPanel>															<!--Настройка панели ремонта-->
+					<location x="105" y="7.5"/>											<!--Настройка положения модуля-->
+					<size scale="1.5"/>													<!--Настройка размера модуля-->
+					
+					<graphics>
+						<fon color="0x000000" alpha="40"/>								<!--Настройка цвета фона модуля-->
+					</graphics>
+				</repairPanel>
+				
+				<timer visible="true">													<!--Таймер ремонта модуля-->
+					<text font="Cuprum" size="20" color="0xFFFFFF" alpha="100" align="center"/>
+					<filter size="3" angle="45" distance="0" color="0x000000" alpha="100" strength="300"/>
+				</timer>
+				
+				<graphics>
+					<normal>															<!--Настройка нормального модуля-->
+						<glow size="5" color="0xA19D8C" alpha="0" strength="300"/>		<!--Настройка свечения модуля-->
+						<overlay color="0xA19D8C" alpha="0"/>							<!--Настройка наложения цвета на модуль-->
+						<indicator color="0xA19D8C" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</normal>
+					<critical>															<!--Настройка поврежденного модуля-->
+						<glow size="5" color="0xFF6600" alpha="100" strength="300"/>	<!--Настройка свечения модуля-->
+						<overlay color="0xFF6600" alpha="40"/>							<!--Настройка наложения цвета на модуль-->
+						<indicator color="0xFF6600" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</critical>
+					<destroyed>															<!--Настройка разрушенного модуля-->
+						<glow size="5" color="0xFF0000" alpha="100" strength="300"/>	<!--Настройка свечения модуля-->
+						<overlay color="0xFF0000" alpha="40"/>							<!--Настройка наложения цвета на модуль-->
+						<indicator color="0xFF0000" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</destroyed>
+				</graphics>
+			</gun>
+			
+			<chassis>														<!--Гусеници-->
+				<location x="157" y="140"/>
+				
+				<repairPanel>															<!--Настройка панели ремонта-->
+					<location x="81" y="57"/>											<!--Настройка положения модуля-->
+					<size scale="1.5"/>													<!--Настройка размера модуля-->
+					
+					<graphics>
+						<fon color="0x000000" alpha="40"/>								<!--Настройка цвета фона модуля-->
+					</graphics>
+				</repairPanel>
+				
+				<timer visible="true">													<!--Таймер ремонта модуля-->
+					<text font="Cuprum" size="20" color="0xFFFFFF" alpha="100" align="center"/>
+					<filter size="3" angle="45" distance="0" color="0x000000" alpha="100" strength="300"/>
+				</timer>
+				
+				<graphics>
+					<normal>															<!--Настройка нормального модуля-->
+						<glow size="5" color="0xA19D8C" alpha="0" strength="300"/>		<!--Настройка свечения модуля-->
+						<overlay color="0xA19D8C" alpha="0"/>							<!--Настройка наложения цвета на модуль-->
+						<indicator color="0xA19D8C" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</normal>
+					<critical>															<!--Настройка поврежденного модуля-->
+						<glow size="5" color="0xFF6600" alpha="100" strength="300"/>	<!--Настройка свечения модуля-->
+						<overlay color="0xFF6600" alpha="40"/>							<!--Настройка наложения цвета на модуль-->
+						<indicator color="0xFF6600" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</critical>
+					<destroyed>															<!--Настройка разрушенного модуля-->
+						<glow size="5" color="0xFF0000" alpha="100" strength="300"/>	<!--Настройка свечения модуля-->
+						<overlay color="0xFF0000" alpha="40"/>							<!--Настройка наложения цвета на модуль-->
+						<indicator color="0xFF0000" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</destroyed>
+				</graphics>
+			</chassis>
+			
+			<body>																		<!--Корпус(только для танкового индикатора)-->
+				<graphics>
+					<normal>															<!--Настройка нормального модуля-->
+						<indicator color="0xA19D8C" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</normal>
+					<critical>															<!--Настройка поврежденного модуля-->
+						<indicator color="0xFF6600" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</critical>
+					<destroyed>															<!--Настройка разрушенного модуля-->
+						<indicator color="0xFF0000" alpha="100"/>						<!--Настройка наложения цвета на танковыйиндикатор-->
+					</destroyed>
+				</graphics>
+			</body>
+		</module>
+		
+		<!--Экипаж-->
+		<crew>
+			<location x="104" y="180"/>													<!--Настройка положения панели экипажа-->
+			
+			<repairPanel>																<!--Настройка панели ремонта-->
+				<location x="0" y="125"/>												<!--Настройка положения панели экипажа-->
+				<size scale="1.4"/>														<!--Настройка размера члена экипажа-->
+					
+				<graphics>
+					<fon color="0x000000" alpha="40"/>									<!--Настройка цвета фона члена экипажа-->
+				</graphics>
+			</repairPanel>
+			
+			<commander>																	<!--Коммандир-->
+				<graphics>
+					<normal>															<!--Настройка нормального члена экипажа-->
+						<glow size="2" color="0x000000" alpha="0" strength="300"/>		<!--Настройка свечения члена экипажа-->
+						<overlay color="0x000000" alpha="0"/>							<!--Настройка наложения цвета на члена экипажа-->
+					</normal>
+					<critical>															<!--Настройка контуженного члена экипажа-->
+						<glow size="3" color="0xFF6600" alpha="100" strength="300"/>	<!--Настройка свечения члена экипажа-->
+						<overlay color="0xFF6600" alpha="40"/>							<!--Настройка наложения цвета на члена экипажа-->
+					</critical>
+				</graphics>
+			</commander>
+			
+			<gunner>																	<!--Наводчик-->
+				<graphics>
+					<normal>															<!--Настройка нормального члена экипажа-->
+						<glow size="2" color="0x000000" alpha="0" strength="300"/>		<!--Настройка свечения члена экипажа-->
+						<overlay color="0x000000" alpha="0"/>							<!--Настройка наложения цвета на члена экипажа-->
+					</normal>
+					<critical>															<!--Настройка контуженного члена экипажа-->
+						<glow size="3" color="0xFF6600" alpha="100" strength="300"/>	<!--Настройка свечения члена экипажа-->
+						<overlay color="0xFF6600" alpha="40"/>							<!--Настройка наложения цвета на члена экипажа-->
+					</critical>
+				</graphics>
+			</gunner>
+			
+			<driver>																	<!--Мехвод-->
+				<graphics>
+					<normal>															<!--Настройка нормального члена экипажа-->
+						<glow size="2" color="0x000000" alpha="0" strength="300"/>		<!--Настройка свечения члена экипажа-->
+						<overlay color="0x000000" alpha="0"/>							<!--Настройка наложения цвета на члена экипажа-->
+					</normal>
+					<critical>															<!--Настройка контуженного члена экипажа-->
+						<glow size="3" color="0xFF6600" alpha="100" strength="300"/>	<!--Настройка свечения члена экипажа-->
+						<overlay color="0xFF6600" alpha="40"/>							<!--Настройка наложения цвета на члена экипажа-->
+					</critical>
+				</graphics>
+			</driver>
+			
+			<radioman>																	<!--Радист-->
+				<graphics>
+					<normal>															<!--Настройка нормального члена экипажа-->
+						<glow size="2" color="0x000000" alpha="0" strength="300"/>		<!--Настройка свечения члена экипажа-->
+						<overlay color="0x000000" alpha="0"/>							<!--Настройка наложения цвета на члена экипажа-->
+					</normal>
+					<critical>															<!--Настройка контуженного члена экипажа-->
+						<glow size="3" color="0xFF6600" alpha="100" strength="300"/>	<!--Настройка свечения члена экипажа-->
+						<overlay color="0xFF6600" alpha="40"/>							<!--Настройка наложения цвета на члена экипажа-->
+					</critical>
+				</graphics>
+			</radioman>
+			
+			<loader>																	<!--Заряжающий-->
+				<graphics>
+					<normal>															<!--Настройка нормального члена экипажа-->
+						<glow size="2" color="0x000000" alpha="0" strength="300"/>		<!--Настройка свечения члена экипажа-->
+						<overlay color="0x000000" alpha="0"/>							<!--Настройка наложения цвета на члена экипажа-->
+					</normal>
+					<critical>															<!--Настройка контуженного члена экипажа-->
+						<glow size="3" color="0xFF6600" alpha="100" strength="300"/>	<!--Настройка свечения члена экипажа-->
+						<overlay color="0xFF6600" alpha="40"/>							<!--Настройка наложения цвета на члена экипажа-->
+					</critical>
+				</graphics>
+			</loader>
+		</crew>
+		
+		<!--Фиксация корпуса-->
+		<lock>
+			<graphics>
+				<glow size="20" color="0xFF6600" alpha="100" strength="172"/>		<!--Настройка внутреннего свечения иконки-->
+				<overlay color="0xFF6600" alpha="100"/>								<!--Настройка наложения цвета на иконку-->
+			</graphics>
+		</lock>
+	</panelStyle>
+</damagePanel>

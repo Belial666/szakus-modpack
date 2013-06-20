@@ -1,0 +1,89 @@
+<space.settings>
+  <timeOfDay>system/data/sky_73_asia_korea.xml</timeOfDay>
+  <skyGradientDome>system/data/sky_73_asia_korea.xml</skyGradientDome>
+  <flora>spaces/73_asia_korea/flora.xml</flora>
+  <decals>
+    <fadeStart>	150.000000	</fadeStart>
+    <fadeEnd>	200.000000	</fadeEnd>
+  </decals>
+  <bounds>
+    <minX>	-7	</minX>
+    <maxX>	6	</maxX>
+    <minY>	-7	</minY>
+    <maxY>	6	</maxY>
+  </bounds>
+  <terrain>
+    <version>	200	</version>
+    <lodMapSize>	256	</lodMapSize>
+    <aoMapSize>	256	</aoMapSize>
+    <heightMapSize>	64	</heightMapSize>
+    <normalMapSize>	256	</normalMapSize>
+    <holeMapSize>	64	</holeMapSize>
+    <shadowMapSize>	128	</shadowMapSize>
+    <blendMapSize>	256	</blendMapSize>
+    <lodInfo>
+      <startBias>	0.800000	</startBias>
+      <endBias>	0.990000	</endBias>
+      <lodTextureStart>	600.000000	</lodTextureStart>
+      <lodTextureDistance>	200.000000	</lodTextureDistance>
+      <blendPreloadDistance>	200.000000	</blendPreloadDistance>
+      <bumpFadingStart>	600.000000	</bumpFadingStart>
+      <bumpFadingDistance>	200.000000	</bumpFadingDistance>
+      <lodNormalStart>	1300.000000	</lodNormalStart>
+      <lodNormalDistance>	100.000000	</lodNormalDistance>
+      <normalPreloadDistance>	100.000000	</normalPreloadDistance>
+      <defaultHeightMapLod>	0	</defaultHeightMapLod>
+      <detailHeightMapDistance>	500.000000	</detailHeightMapDistance>
+      <lodDistances>
+        <distance0>	150.000000	</distance0>
+        <distance1>	350.000000	</distance1>
+        <distance2>	1200.000000	</distance2>
+        <distance3>	1400.000000	</distance3>
+        <distance4>	1800.000000	</distance4>
+        <distance5>	1400.000000	</distance5>
+      </lodDistances>
+      <server>
+        <heightMapLod>	0	</heightMapLod>
+      </server>
+    </lodInfo>
+    <soundOcclusion>
+      <directOcclusion>	0.000000	</directOcclusion>
+      <reverbOcclusion>	0.000000	</reverbOcclusion>
+    </soundOcclusion>
+  </terrain>
+  <skyWorld>
+    <row0>	0.469472 0.000000 -0.882948	</row0>
+    <row1>	0.000000 1.000000 0.000000	</row1>
+    <row2>	0.882948 0.000000 0.469472	</row2>
+    <row3>	0.000000 0.000000 0.000000	</row3>
+  </skyWorld>
+  <skyDomePartition>	0	</skyDomePartition>
+  <windSpeed>	2.000000 2.000000	</windSpeed>
+  <windGustiness>	0.000000	</windGustiness>
+  <floraWindFactor>	1.000000	</floraWindFactor>
+  <startPosition>	-246.739100 47.581460 199.868600	</startPosition>
+  <startDirection>	0.000345 0.363599 2.926369	</startDirection>
+  <frost>
+    <enable>	true	</enable>
+    <slope1>	50.000000	</slope1>
+    <slope2>	90.000000	</slope2>
+    <amount>	0.750000	</amount>
+    <specular>	0.000000	</specular>
+    <tiling>	1.500000	</tiling>
+    <tileRotation>	40.000000	</tileRotation>
+    <projectionAltitude1>	-15.000000	</projectionAltitude1>
+    <projectionAltitude2>	-15.000000	</projectionAltitude2>
+    <minAltitude>	15.000000	</minAltitude>
+    <maxAltitude>	200.000000	</maxAltitude>
+    <altitudeFalloff>	50.000000	</altitudeFalloff>
+    <texture>maps/landscape/00_AllTiles/Snow.dds</texture>
+    <normalMap>maps/landscape/00_AllTiles/Snow_NM.dds</normalMap>
+  </frost>
+  <skyDome>maps/skyboxes/73_asia_korea_sky/skydome/skybox.visual</skyDome>
+  <farPlane>
+    <max>	2500.000000	</max>
+    <high>	2000.000000	</high>
+    <medium>	1000.000000	</medium>
+    <low>	600.000000	</low>
+  </farPlane>
+</space.settings>

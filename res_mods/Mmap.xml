@@ -1,26 +1,24 @@
 <?xml version='1.0'  encoding='UTF-8'?>
 <minimap>
-<bigmapsize>800</bigmapsize><!--pixelsize of the big minimap-->
-<keycode>66</keycode><!--keycode to toggle the map. any other code disables-->
-<markerscale>0.1</markerscale><!-- minimap iconsize factor-->
-<fontsize>6</fontsize><!--fontsize of tanknames on map-->
-<shownames>true</shownames><!-- show tanknames on map? Boolean-->
-<allytextcolor>0x9FF781</allytextcolor><!-- ally tankname text color, default 0x9FF781 -->
-<enemytextcolor>0xF78181</enemytextcolor><!-- enemy tankname text color, default 0xF78181 -->
-<squadtextcolor>0xFE9A2E</squadtextcolor><!-- platoon buddy tankname text color, default 0xFE9A2E -->
-<textshadow>5</textshadow><!-- tankname textshadow strength -->
 
+<!-- Big Map settings-->
+<bigmapsize>800</bigmapsize><!-- pixelsize of the big minimap-->
+<bigmapx>0</bigmapx><!-- x coordinate shift of big minimap-->
+<bigmapy>0</bigmapy><!-- y coordinate shift of big minimap-->
+<keycode>17</keycode><!-- keycode to toggle the map. any other code disables-->
+<markerscale>1</markerscale><!-- minimap iconsize factor-->
 
 <!-- View Range Circle Settings-->
-<circlealpha>50</circlealpha><!-- circle alpha value, put 0 to remove circle -->
+<circlealpha>100</circlealpha><!-- circle alpha value, put 0 to remove circle -->
 <circlecolor>0</circlecolor><!-- circle color, write 0 for default, 0xFFFFFF for white -->
 <circlesize>viewrange</circlesize><!-- circle size, any meter range as number or viewrange -->
-<circlestyle>line</circlestyle><!-- style of the view range circle, valid values: line, dots and dashed-->
+<circlestyle>dashed</circlestyle><!-- style of the view range circle, valid values: line, dots and dashed-->
 
-<!-- Artillery Range Circle Settings-->
+<!-- Artillery Settings-->
 <artycirclealpha>100</artycirclealpha><!-- artycircle alpha value, put 0 to remove artycircle -->
 <artycirclestyle>line</artycirclestyle><!-- style of the artillery range circle, valid values: line, dots and dashed-->
 <artycirclecolor>0x50FF50</artycirclecolor><!-- artycircle color, write 0 for default, 0xFFFFFF for white -->
+<artycursorcolor>0x40FF00</artycursorcolor><!-- artillery aim cursor color, write 0 for default, 0xFFFFFF for white -->
 
 <!-- View Direction Laser Settings-->
 <laseralpha>100</laseralpha><!-- laser alpha value, put 0 to remove laser line -->
@@ -33,29 +31,70 @@
 <hlasercolor>0xFFFFFF</hlasercolor><!-- hull laser color, write 0 for default, 0xFFFFFF for black -->
 
 <!-- Minimap Vehicle Icon Descriptor Text Settings-->
-<fontsize>8</fontsize><!-- fontsize of tanknames on map-->
+<fontsize>6</fontsize><!-- fontsize of tanknames on map-->
 <shownames>true</shownames><!-- show tanknames on map? Valid values: bigmap, smallmap, true or false-->
 <allytextcolor>0x9FF781</allytextcolor><!-- ally tankname text color, default 0x9FF781 -->
 <enemytextcolor>0xF78181</enemytextcolor><!-- enemy tankname text color, default 0xF78181 -->
 <squadtextcolor>0xFE9A2E</squadtextcolor><!-- platoon buddy tankname text color, default 0xFE9A2E -->
-<textshadow>5</textshadow><!-- tankname textshadow strength -->
+<textshadow>15</textshadow><!-- tankname textshadow strength -->
 <namecontent>tank</namecontent><!-- set content for textfields, Valid values: player, tank, tankplayer, playertank -->
+
+<!-- 50m X-Ray Spotting Circle Settings-->
+<fiftymalpha>25</fiftymalpha><!-- set alpha for 50m X-ray spotting circle, 0 to disable -->
+<fiftymcolor>0</fiftymcolor><!-- set color for 50m X-ray spotting circle (i.e. 0xFF0000 for red), 0 for default white -->
+
+<!-- Game Engine Dynamic Drawbox Settings-->
+<drawboxcolor>0xFF0000</drawboxcolor><!-- color of the dynamic drawing distance box-->
+<drawboxalpha>50</drawboxalpha><!-- alpha of the dynamic drawing distance box, 0 removes the box-->
+<drawboxstyle>mask</drawboxstyle><!-- style of the dynamic drawing distance box, valid values: line, dots, mask and dashed-->
+
+<!-- General Element display Settings for Big and Small Minimap-->
+<bigmapelements>show:circle,fiftymcircle,drawbox,artycircle,sqlegend,hulllaser,gunconstraints</bigmapelements><!-- delete what you want removed, never leave empty!-->
+<smallmapelements>show:circle,fiftymcircle,drawbox,artycircle,hulllaser,gunconstraints</smallmapelements><!-- delete what you want removed, never leave empty!-->
 </minimap>
+
 <!-- 
 HD Minimap 2nd generation Mod by locastan.
 
-The keycode is the only value not customizeable just now! For some reason the game refuses to register other keys than those it already knows from standard key binding.
+Bigmapsize lets you specify the pixel size of the enlarged minimap. You can use the x and y shifts to move it away from its standard center screen position.
+
+The keycode is the only value not customizeable just now! For some reason the game refuses to register other keys than those it already knows from standard key binding. 
+You can use 20 for Caps Lock key or 56 for the rarely used consumable number 8 key, I think.
 If you want to remove the centered big minimap functionality on CTRL, set keycode to 66 or other number. :P
 
 The markerscale factor can be anything from 0.01 for dot like icons, to 10.0+ for icons as big as the map.
 
 The fontsize is in points, 5 is standard. The font does scale with the minimap icon size, so big values for markerscale also enlarge the visible text. Compensate if necessary. :)
 
-shownames just controls whether the tanknames are visible on minimap and bigmap or not. Just put true or false in there.
+shownames just controls whether the tanknames are visible on minimap and bigmap or not. 
+Put true or false in there to toggle name visibility on both maptypes.
+Put bigmap or smallmap as value to have it only on one of the two.
 
-The circle and laser tags are for alpha transparency (set to 0 to remove circle or laser) and colors. If you put 0 in the color tags, the default color (orange circle, white and orange laser line) are put in place.
+The circle and laser tags are for alpha transparency (set to 0 to remove circle or laser) and colors (in hex code). 
+If you put 0 in the color tags, the default color (orange circle, white and orange laser line) are put in place.
+A good site to get hex color codes is: http://html-color-codes.info/
 
-The textcolor tags are pretty self explaining. 
+The circlesize tag lets you either set the circle size to a specific value in meters, or (with setting viewrange) 
+to your current tank turret viewrange modified by coated optics if you got them.
+
+The textcolor tags are pretty self explaining. Only special option is putting 0 for disabling of text display 
+depending on wheter it is an ally, enemy or platoon member.
 
 textshadow is the shadow strength behind the tanknames.
+
+namecontent lets you configure what text should be displayed next to the icons. 
+player = playername, tank = tankname, or for both use tankplayer or playertank.
+
+fiftymalpha and fiftymcolor are for setting color value and transparency for the 50m X-ray spotting circle around your tank. 
+Same values useable as for laser and circle.
+
+The drawbox tags are for the 500m dynamic drawing box. 
+Tanks models, over target markers and outlines disappear when the target is outside this box, even when they are spotted.
+
+The style tags are switching between dotted, dashed and solid lines for the three minimap elements. 
+I put the mask value for the drawing box in as a bit of nice optical effect, but it may reduce your framerate.
+
+The bigmapelements and smallmapelements part lets you disable elements on bigmap or smallmap, by deleting their name from the list.
+Default value to show all: show:circle,fiftymcircle,drawbox,artycircle,sqlegend,hulllaser,gunconstraints
+Never leave the field completely empty.
 -->
