@@ -1,29 +1,29 @@
 <avatar_input_handler.xml>
   <dynamicCameraCommon>
     <caliberImpulses>
-      <range>0 0.01</range>
-      <range>20 0.03</range>
-      <range>30 0.075</range>
-      <range>50 0.15</range>
-      <range>70 0.35</range>
-      <range>99 0.55</range>
-      <range>104 0.65</range>
-      <range>115 0.8</range>
-      <range>128 1.0</range>
-      <range>145 1.3</range>
-      <range>200 1.5</range>
+      <range>0 0.0</range>
+      <range>0 0.0</range>
+      <range>0 0.0</range>
+      <range>0 0.0</range>
+      <range>0 0.0</range>
+      <range>0 0.0</range>
+      <range>0 0.0</range>
+      <range>0 0.0</range>
+      <range>0 0.0</range>
+      <range>0 0.0</range>
+      <range>0 0.0</range>
     </caliberImpulses>
     <massSensitivity>
-      <range>0 1.5</range>
-      <range>15 1.0</range>
-      <range>20 0.8</range>
-      <range>30 0.6</range>
-      <range>46 0.57</range>
-      <range>60 0.55</range>
-      <range>80 0.5</range>
-      <range>105 0.45</range>
-      <range>120 0.4</range>
-      <range>140 0.3</range>
+      <range>0 0.0</range>
+      <range>0 0.0</range>
+      <range>0 0.0</range>
+      <range>0 0.0</range>
+      <range>0 0.0</range>
+      <range>0 0.0</range>
+      <range>0 0.0</range>
+      <range>0 0.0</range>
+      <range>0 0.0</range>
+      <range>0 0.0</range>
     </massSensitivity>
     <collisionSpeedToImpulseRatio>0.1</collisionSpeedToImpulseRatio>
     <minCollisionSpeed>5.5</minCollisionSpeed>
@@ -55,17 +55,17 @@
           <drag>33.0 33.0 33.0</drag>
           <constraints>10.0 10.0 10.0</constraints>
         </noiseOscillator>
-        <sensitivityToShot>15.0</sensitivityToShot>
-        <sensitivityToHit>30.0</sensitivityToHit>
-        <sensitivityToOtherShot>5.0</sensitivityToOtherShot>
-        <sensitivityToSplash>50.0</sensitivityToSplash>
-        <sensitivityToExplosion>50.0</sensitivityToExplosion>
-        <noiseSensitivityToShot>6.0</noiseSensitivityToShot>
-        <noiseSensitivityToHit>0.4</noiseSensitivityToHit>
-        <noiseSensitivityToOtherShot>5.0</noiseSensitivityToOtherShot>
-        <noiseSensitivityToSplash>10.0</noiseSensitivityToSplash>
-        <noiseSensitivityToCollision>1.0</noiseSensitivityToCollision>
-        <noiseSensitivityToExplosion>15.0</noiseSensitivityToExplosion>
+        <sensitivityToShot>0.0</sensitivityToShot>
+        <sensitivityToHit>0.0</sensitivityToHit>
+        <sensitivityToOtherShot>0.0</sensitivityToOtherShot>
+        <sensitivityToSplash>0.0</sensitivityToSplash>
+        <sensitivityToExplosion>0.0</sensitivityToExplosion>
+        <noiseSensitivityToShot>0.0</noiseSensitivityToShot>
+        <noiseSensitivityToHit>0.0</noiseSensitivityToHit>
+        <noiseSensitivityToOtherShot>0.0</noiseSensitivityToOtherShot>
+        <noiseSensitivityToSplash>0.0</noiseSensitivityToSplash>
+        <noiseSensitivityToCollision>0.0</noiseSensitivityToCollision>
+        <noiseSensitivityToExplosion>0.0</noiseSensitivityToExplosion>
         <accelerationSensitivity>3.0</accelerationSensitivity>
         <frontImpulseToPitchRatio>7.0</frontImpulseToPitchRatio>
         <sideImpulseToRollRatio>2.0</sideImpulseToRollRatio>
@@ -106,17 +106,17 @@
           <drag>33.0 33.0 33.0</drag>
           <constraints>10.0 10.0 10.0</constraints>
         </noiseOscillator>
-        <sensitivityToShot>15.0</sensitivityToShot>
-        <sensitivityToHit>30.0</sensitivityToHit>
-        <sensitivityToOtherShot>5.0</sensitivityToOtherShot>
-        <sensitivityToSplash>50.0</sensitivityToSplash>
-        <sensitivityToExplosion>50.0</sensitivityToExplosion>
-        <noiseSensitivityToShot>6.0</noiseSensitivityToShot>
-        <noiseSensitivityToHit>0.4</noiseSensitivityToHit>
-        <noiseSensitivityToOtherShot>5.0</noiseSensitivityToOtherShot>
-        <noiseSensitivityToSplash>10.0</noiseSensitivityToSplash>
-        <noiseSensitivityToCollision>1.0</noiseSensitivityToCollision>
-        <noiseSensitivityToExplosion>15.0</noiseSensitivityToExplosion>
+        <sensitivityToShot>0.0</sensitivityToShot>
+        <sensitivityToHit>0.0</sensitivityToHit>
+        <sensitivityToOtherShot>0.0</sensitivityToOtherShot>
+        <sensitivityToSplash>0.0</sensitivityToSplash>
+        <sensitivityToExplosion>0.0</sensitivityToExplosion>
+        <noiseSensitivityToShot>0.0</noiseSensitivityToShot>
+        <noiseSensitivityToHit>0.0</noiseSensitivityToHit>
+        <noiseSensitivityToOtherShot>0.0</noiseSensitivityToOtherShot>
+        <noiseSensitivityToSplash>0.0</noiseSensitivityToSplash>
+        <noiseSensitivityToCollision>0.0</noiseSensitivityToCollision>
+        <noiseSensitivityToExplosion>0.0</noiseSensitivityToExplosion>
         <accelerationSensitivity>3.0</accelerationSensitivity>
         <frontImpulseToPitchRatio>7.0</frontImpulseToPitchRatio>
         <sideImpulseToRollRatio>2.0</sideImpulseToRollRatio>
@@ -188,13 +188,13 @@
           <drag>33.0 33.0 33.0</drag>
           <constraints>10.0 10.0 10.0</constraints>
         </noiseOscillator>
-        <sensitivityToShot>4.0</sensitivityToShot>
-        <sensitivityToHit>8.0</sensitivityToHit>
-        <sensitivityToOtherShot>2.0</sensitivityToOtherShot>
-        <sensitivityToSplash>5.0</sensitivityToSplash>
-        <sensitivityToCollision>0.2</sensitivityToCollision>
-        <sensitivityToExplosion>5.2</sensitivityToExplosion>
-        <noiseSensitivity>5.0</noiseSensitivity>
+        <sensitivityToShot>0.0</sensitivityToShot>
+        <sensitivityToHit>0.0</sensitivityToHit>
+        <sensitivityToOtherShot>0.0</sensitivityToOtherShot>
+        <sensitivityToSplash>0.0</sensitivityToSplash>
+        <sensitivityToCollision>0.0</sensitivityToCollision>
+        <sensitivityToExplosion>0.0</sensitivityToExplosion>
+        <noiseSensitivity>0.0</noiseSensitivity>
         <accelerationSensitivity>0.2 0.4 0.2</accelerationSensitivity>
         <accelerationThreshold>2.0</accelerationThreshold>
         <accelerationMax>6.0</accelerationMax>

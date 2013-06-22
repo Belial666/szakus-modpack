@@ -1,0 +1,40 @@
+<space.settings>
+
+  <flora>system/data/noflora.xml</flora>
+  <bounds>
+    <minX>	0	</minX>
+    <maxX>	0	</maxX>
+    <minY>	0	</minY>
+    <maxY>	0	</maxY>
+  </bounds>
+  <terrain>
+    <version>	100	</version>
+    <soundOcclusion>
+      <directOcclusion>	0.000000	</directOcclusion>
+      <reverbOcclusion>	0.000000	</reverbOcclusion>
+    </soundOcclusion>
+  </terrain>
+  <skyDomePartition>	0	</skyDomePartition>
+  <skyWorld>
+    <row0>	-0.833982 0.000000 -0.551791	</row0>
+    <row1>	0.000000 1.000000 0.000000	</row1>
+    <row2>	0.551791 0.000000 -0.833982	</row2>
+    <row3>	0.000000 0.000000 0.000000	</row3>
+  </skyWorld>
+  <windSpeed>	0.000000 0.000000	</windSpeed>
+  <windGustiness>	0.000000	</windGustiness>
+  <floraWindFactor>	0.500000	</floraWindFactor>
+  <decals>
+    <fadeStart>	200.000000	</fadeStart>
+    <fadeEnd>	205.000000	</fadeEnd>
+  </decals>
+<timeOfDay>system/data/sky02_malinovka.xml</timeOfDay>
+ <skyGradientDome>system/data/sky02_malinovka.xml</skyGradientDome>
+ <skyDome>maps/skyboxes/02_malinovka_sky/skydome/skybox.visual</skyDome>
+  <farPlane>
+    <max>	90.000000	</max>
+    <high>	90.000000	</high>
+    <medium>	90.000000	</medium>
+    <low>	90.000000	</low>
+  </farPlane>
+</space.settings>
