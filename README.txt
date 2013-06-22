@@ -1,26 +1,28 @@
-Zapraszam do pobierania i testowania mojej paczki modów. (dostępne 3 wersje lite, normal i max)
+Zapraszam do pobierania i testowania mojej paczki modów. (dostępne 2 wersje lite i normal)
 
 Mody:
-- Nowy XVM 4.0
-- Specjalny garaż 0.8.6
+- XVM 4.0
+- Garaż 0.8.6
 - Kolorowe statystyki z bitew w garażu 0.8.6
 - Zoom Mod dla czołgów i arty 0.8.6
 - Skasowana mgła 0.8.6
 - Statystyki uszkodzeń/otrzymanych obrażeń w grze 0.8.6
 - Skasowane Intro przy uruchamianiu gry 0.8.6
-- Nowa mapa taktyczna 0.8.5
-- Białe wraki czołgów 0.8.5
-- Celownik J1mB0_s_Crosshair_Mod_v1.25 0.8.5
-- Ikonki pod 0.8.6 NikodemskyContourMod_v2.5-086-MF.zip
+- Mapa taktyczna 0.8.5
+- Celownik J1mB0's Crosshair Mod v1.27 0.8.6
+- Ikonki pod 0.8.6
+- Tank carousel 0.8.6
+- NoDynSwing 0.8.6
+TODO: - Białe wraki czołgów 0.8.5
+
 
 Wersje (Branche):
 - lite - wersja Rufioza
-- normal - wersja normalna, ikony 0.8.6, zmienione kolorki więcej informacji na minimapie
+- normal - wersja normalna, ikony 0.8.6, garaż, zmienione kolorki więcej informacji na minimapie
 
 Instalacja:
 -- Dokan Library (http://htcclub.pl/wot/DokanInstall_0.6.0.exe)
 -- Skopiuj folder res_mods i pliki xvm-stat.exe oraz xvm-stat.config z paczki do katalogu gry
--- Skopiuj pliki z Katalogu res_mods/Fonts do C:\Windows\Fonts
 -- Uruchom grę przez xvm-stat.exe
 
 Pozdrawiam Szakus [-7TP-]
@@ -32,7 +34,6 @@ Pozdrawiam Szakus [-7TP-]
 Changelog:
 0.8.6
 - baza paczka rufioza
-+ tank carousel
 + max farplane 
 + garaż
 + ikony
