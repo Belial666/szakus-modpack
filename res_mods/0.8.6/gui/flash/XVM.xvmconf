@@ -2,232 +2,177 @@
   "markers": {
     "enemy": {
       "alive": {
-        "extended": {
-          "contourIcon": {
-            "amount": 0,
-            "y": -65,
-            "x": 6,
-            "alpha": 100,
+        "normal": {
+          "damageText": {
+            "damageMessage": "{{dmg}}",
+            "x": 0,
+            "y": -67,
             "color": null,
+            "font": {
+              "italic": false,
+              "bold": false,
+              "name": "$FieldFont",
+              "align": "center",
+              "size": 18
+            },
+            "speed": 2,
+            "shadow": {
+              "strength": 200,
+              "color": "0x000000",
+              "size": 6,
+              "alpha": 100,
+              "distance": 0,
+              "angle": 45
+            },
+            "maxRange": 40,
+            "alpha": 100,
+            "blowupMessage": "Blow-up!",
+            "visible": true
+          },
+          "actionMarker": {
+            "x": 0,
+            "alpha": 100,
+            "y": -77,
+            "visible": true
+          },
+          "textFields": [
+            {
+              "x": 0,
+              "shadow": {
+                "strength": 200,
+                "color": "0x000000",
+                "size": 6,
+                "alpha": "100",
+                "distance": 0,
+                "angle": 45
+              },
+              "y": -36,
+              "color": null,
+              "font": {
+                "italic": false,
+                "size": 13,
+                "name": "$FieldFont",
+                "align": "center",
+                "bold": false
+              },
+              "format": "{{vehicle}}{{turret}}",
+              "alpha": 100,
+              "visible": true
+            },
+            {
+              "x": 0,
+              "shadow": {
+                "strength": 100,
+                "color": "0x000000",
+                "size": 10,
+                "alpha": "100",
+                "distance": 0,
+                "angle": 45
+              },
+              "y": -20,
+              "color": "0xFFFFFF",
+              "font": {
+                "italic": false,
+                "size": 11,
+                "name": "$FieldFont",
+                "align": "center",
+                "bold": true
+              },
+              "format": "{{hp}} / {{hp-max}}",
+              "alpha": 100,
+              "visible": true
+            }
+          ],
+          "contourIcon": {
+            "x": 6,
+            "y": -65,
+            "color": null,
+            "alpha": 100,
+            "amount": 0,
             "visible": false
           },
+          "levelIcon": {
+            "x": 0,
+            "alpha": 100,
+            "y": -21,
+            "visible": false
+          },
+          "clanIcon": {
+            "h": 16,
+            "y": -67,
+            "x": 0,
+            "alpha": 100,
+            "w": 16,
+            "visible": false
+          },
+          "vehicleIcon": {
+            "showSpeaker": false,
+            "x": 0,
+            "shadow": {
+              "strength": 200,
+              "color": "0x000000",
+              "size": 6,
+              "alpha": 100,
+              "distance": 0,
+              "angle": 45
+            },
+            "scaleX": 0,
+            "color": null,
+            "scaleY": 16,
+            "maxScale": 100,
+            "y": -16,
+            "alpha": 100,
+            "visible": true
+          },
           "healthBar": {
-            "lcolor": null,
+            "fill": {
+              "alpha": 30
+            },
             "x": -41,
             "border": {
-              "color": "0x000000",
+              "size": 1,
               "alpha": 30,
-              "size": 1
+              "color": "0x000000"
             },
             "width": 80,
             "damage": {
               "fade": 1,
-              "color": null,
-              "alpha": 80
+              "alpha": 80,
+              "color": null
             },
+            "color": null,
             "height": 12,
             "y": -33,
-            "fill": {
-              "alpha": 30
-            },
-            "color": null,
+            "lcolor": null,
             "alpha": 100,
-            "visible": true
-          },
-          "damageText": {
-            "speed": 2,
-            "shadow": {
-              "strength": 200,
-              "distance": 0,
-              "alpha": 100,
-              "color": "0x000000",
-              "size": 6,
-              "angle": 45
-            },
-            "blowupMessage": "==BooM==",
-            "y": -67,
-            "damageMessage": "{{dmg}}",
-            "font": {
-              "italic": false,
-              "bold": false,
-              "name": "Palatino Linotype",
-              "size": 22,
-              "align": "center"
-            },
-            "x": 0,
-            "maxRange": 40,
-            "alpha": 100,
-            "color": null,
-            "visible": true
-          },
-          "actionMarker": {
-            "x": 0,
-            "alpha": 100,
-            "y": -67,
-            "visible": true
-          },
-          "textFields": [
-            {
-              "x": 0,
-              "shadow": {
-                "color": "0x000000",
-                "strength": 200,
-                "distance": 0,
-                "alpha": 100,
-                "size": 6,
-                "angle": 45
-              },
-              "y": -36,
-              "format": "{{nick}}",
-              "font": {
-                "align": "center",
-                "bold": false,
-                "name": "Palatino Linotype",
-                "size": 13,
-                "italic": false
-              },
-              "color": null,
-              "alpha": 100,
-              "visible": true
-            },
-            {
-              "x": 0,
-              "shadow": {
-                "color": "0x000000",
-                "strength": 100,
-                "distance": 0,
-                "alpha": 100,
-                "size": 4,
-                "angle": 45
-              },
-              "y": -20,
-              "format": "{{hp-ratio}}\u0025",
-              "font": {
-                "align": "center",
-                "bold": true,
-                "name": "Palatino Linotype",
-                "size": 11,
-                "italic": false
-              },
-              "color": "0xFCFCFC",
-              "alpha": 100,
-              "visible": true
-            },
-            {
-              "x": 0,
-              "shadow": {
-                "color": "0x000000",
-                "strength": 200,
-                "distance": 0,
-                "alpha": 100,
-                "size": 6,
-                "angle": 45
-              },
-              "y": -46,
-              "name": "STATS",
-              "format": "<font color='{{c:kb}}'>{{kb:3}}</font> <font color='{{c:eff}}'>{{eff:4}}</font> <font color='{{c:rating}}'>{{rating}}</font>",
-              "font": {
-                "align": "center",
-                "bold": true,
-                "name": "Palatino Linotype",
-                "size": 11,
-                "italic": false
-              },
-              "color": "{{c:rating}}",
-              "alpha": 100,
-              "visible": true
-            }
-          ],
-          "vehicleIcon": {
-            "x": 0,
-            "shadow": {
-              "strength": 200,
-              "distance": 0,
-              "alpha": 100,
-              "color": "0x000000",
-              "size": 6,
-              "angle": 45
-            },
-            "scaleX": 0,
-            "showSpeaker": true,
-            "scaleY": 16,
-            "maxScale": 100,
-            "y": -16,
-            "color": null,
-            "alpha": 100,
-            "visible": true
-          },
-          "levelIcon": {
-            "x": 0,
-            "alpha": 100,
-            "y": -21,
-            "visible": false
-          },
-          "clanIcon": {
-            "h": 16,
-            "y": -67,
-            "x": 0,
-            "alpha": 100,
-            "w": 16,
             "visible": true
           }
         },
-        "normal": {
-          "contourIcon": {
-            "amount": 0,
-            "y": -65,
-            "x": 6,
-            "alpha": 100,
-            "color": null,
-            "visible": false
-          },
-          "healthBar": {
-            "lcolor": null,
-            "x": -41,
-            "border": {
-              "color": "0x000000",
-              "alpha": 30,
-              "size": 1
-            },
-            "width": 81,
-            "damage": {
-              "fade": 1,
-              "color": null,
-              "alpha": 80
-            },
-            "height": 12,
-            "y": -33,
-            "fill": {
-              "alpha": 30
-            },
-            "color": null,
-            "alpha": 100,
-            "visible": true
-          },
+        "extended": {
           "damageText": {
-            "speed": 2,
-            "shadow": {
-              "strength": 200,
-              "distance": 0,
-              "alpha": 100,
-              "color": "0x000000",
-              "size": 6,
-              "angle": 45
-            },
-            "blowupMessage": "==BooM==",
-            "y": -67,
             "damageMessage": "{{dmg}}",
+            "x": 0,
+            "y": -67,
+            "color": null,
             "font": {
               "italic": false,
               "bold": false,
-              "name": "Palatino Linotype",
-              "size": 22,
-              "align": "center"
+              "name": "$FieldFont",
+              "align": "center",
+              "size": 18
             },
-            "x": 0,
+            "speed": 2,
+            "shadow": {
+              "strength": 200,
+              "color": "0x000000",
+              "size": 6,
+              "alpha": 100,
+              "distance": 0,
+              "angle": 45
+            },
             "maxRange": 40,
             "alpha": 100,
-            "color": null,
+            "blowupMessage": "Blow-up!",
             "visible": true
           },
           "actionMarker": {
@@ -240,68 +185,81 @@
             {
               "x": 0,
               "shadow": {
-                "alpha": 100,
                 "strength": 200,
-                "distance": 0,
                 "color": "0x000000",
                 "size": 6,
+                "alpha": "100",
+                "distance": 0,
                 "angle": 45
               },
-              "y": -38,
-              "format": "{{vehicle}}{{turret}}",
-              "font": {
-                "align": "center",
-                "bold": false,
-                "name": "Palatino Linotype",
-                "size": 15,
-                "italic": false
-              },
-              "alpha": 100,
+              "y": -36,
               "color": null,
+              "font": {
+                "italic": false,
+                "size": 13,
+                "name": "$FieldFont",
+                "align": "center",
+                "bold": false
+              },
+              "format": "{{nick}}",
+              "alpha": 100,
               "visible": true
             },
             {
               "x": 0,
               "shadow": {
-                "alpha": 100,
                 "strength": 100,
-                "distance": 0,
                 "color": "0x000000",
                 "size": 4,
+                "alpha": "100",
+                "distance": 0,
                 "angle": 45
               },
               "y": -20,
-              "format": "{{hp}} / {{hp-max}}",
+              "color": "0xFFFFFF",
               "font": {
-                "align": "center",
-                "bold": true,
-                "name": "Palatino Linotype",
+                "italic": false,
                 "size": 11,
-                "italic": false
+                "name": "$FieldFont",
+                "align": "center",
+                "bold": true
               },
+              "format": "{{hp-ratio}}\u0025",
               "alpha": 100,
-              "color": "0xFCFCFC",
+              "visible": true
+            },
+            {
+              "x": 0,
+              "shadow": {
+                "strength": 200,
+                "color": "0x000000",
+                "size": 6,
+                "alpha": "100",
+                "distance": 0,
+                "angle": 45
+              },
+              "y": -48,
+              "name": "Overall rating for all appliances",
+              "color": "{{c:eff}}",
+              "font": {
+                "italic": false,
+                "size": 11,
+                "name": "$FieldFont",
+                "align": "center",
+                "bold": true
+              },
+              "format": "{{eff}}",
+              "alpha": 100,
               "visible": true
             }
           ],
-          "vehicleIcon": {
-            "x": 0,
-            "shadow": {
-              "strength": 200,
-              "distance": 0,
-              "alpha": 100,
-              "color": "0x000000",
-              "size": 6,
-              "angle": 45
-            },
-            "scaleX": 0,
-            "showSpeaker": true,
-            "scaleY": 16,
-            "maxScale": 100,
-            "y": -16,
+          "contourIcon": {
+            "x": 6,
+            "y": -65,
             "color": null,
             "alpha": 100,
-            "visible": true
+            "amount": 0,
+            "visible": false
           },
           "levelIcon": {
             "x": 0,
@@ -311,246 +269,100 @@
           },
           "clanIcon": {
             "h": 16,
-            "y": -27,
-            "x": -50,
+            "y": -67,
+            "x": 0,
             "alpha": 100,
             "w": 16,
+            "visible": false
+          },
+          "vehicleIcon": {
+            "showSpeaker": false,
+            "x": 0,
+            "shadow": {
+              "strength": 200,
+              "color": "0x000000",
+              "size": 6,
+              "alpha": 100,
+              "distance": 0,
+              "angle": 45
+            },
+            "scaleX": 0,
+            "color": null,
+            "scaleY": 16,
+            "maxScale": 100,
+            "y": -16,
+            "alpha": 100,
+            "visible": true
+          },
+          "healthBar": {
+            "fill": {
+              "alpha": 30
+            },
+            "x": -41,
+            "border": {
+              "size": 1,
+              "alpha": 30,
+              "color": "0x000000"
+            },
+            "width": 80,
+            "damage": {
+              "fade": 1,
+              "alpha": 80,
+              "color": null
+            },
+            "color": null,
+            "height": 12,
+            "y": -33,
+            "lcolor": null,
+            "alpha": 100,
             "visible": true
           }
         }
       },
       "dead": {
-        "extended": {
-          "contourIcon": {
-            "amount": 0,
-            "y": -65,
-            "x": 6,
-            "alpha": 100,
-            "color": null,
-            "visible": false
-          },
-          "healthBar": {
-            "lcolor": null,
-            "x": -41,
-            "border": {
-              "color": "0x000000",
-              "alpha": 30,
-              "size": 1
-            },
-            "width": 80,
-            "damage": {
-              "fade": 1,
-              "color": null,
-              "alpha": 80
-            },
-            "height": 12,
-            "y": -33,
-            "fill": {
-              "alpha": 30
-            },
-            "color": null,
-            "alpha": 100,
-            "visible": false
-          },
-          "damageText": {
-            "speed": 2,
-            "shadow": {
-              "strength": 200,
-              "distance": 0,
-              "alpha": 100,
-              "color": "0x000000",
-              "size": 6,
-              "angle": 45
-            },
-            "blowupMessage": "==BooM==",
-            "y": -67,
-            "damageMessage": "{{dmg}}",
-            "font": {
-              "italic": false,
-              "bold": false,
-              "name": "Palatino Linotype",
-              "size": 22,
-              "align": "center"
-            },
-            "x": 0,
-            "maxRange": 40,
-            "alpha": 100,
-            "color": null,
-            "visible": true
-          },
-          "actionMarker": {
-            "x": 0,
-            "alpha": 100,
-            "y": -67,
-            "visible": true
-          },
-          "textFields": [
-            {
-              "x": 0,
-              "shadow": {
-                "alpha": 100,
-                "strength": 200,
-                "distance": 0,
-                "color": "0x000000",
-                "size": 6,
-                "angle": 45
-              },
-              "y": -34,
-              "format": "{{nick}}",
-              "font": {
-                "align": "center",
-                "bold": false,
-                "name": "Palatino Linotype",
-                "size": 13,
-                "italic": false
-              },
-              "alpha": 80,
-              "color": null,
-              "visible": true
-            },
-            {
-              "x": 0,
-              "shadow": {
-                "alpha": 100,
-                "strength": 200,
-                "distance": 0,
-                "color": "0x000000",
-                "size": 6,
-                "angle": 45
-              },
-              "y": -20,
-              "format": "{{vehicle}}",
-              "font": {
-                "align": "center",
-                "bold": false,
-                "name": "Palatino Linotype",
-                "size": 13,
-                "italic": false
-              },
-              "alpha": 80,
-              "color": null,
-              "visible": true
-            }
-          ],
-          "vehicleIcon": {
-            "x": 0,
-            "shadow": {
-              "strength": 200,
-              "distance": 0,
-              "alpha": 100,
-              "color": "0x000000",
-              "size": 6,
-              "angle": 45
-            },
-            "scaleX": 0,
-            "showSpeaker": false,
-            "scaleY": 16,
-            "maxScale": 100,
-            "y": -16,
-            "color": null,
-            "alpha": 100,
-            "visible": true
-          },
-          "levelIcon": {
-            "x": 0,
-            "alpha": 100,
-            "y": -21,
-            "visible": false
-          },
-          "clanIcon": {
-            "h": 16,
-            "y": -67,
-            "x": 0,
-            "alpha": 100,
-            "w": 16,
-            "visible": true
-          }
-        },
         "normal": {
-          "contourIcon": {
-            "amount": 0,
-            "y": -65,
-            "x": 6,
-            "alpha": 100,
-            "color": null,
-            "visible": false
-          },
-          "healthBar": {
-            "lcolor": null,
-            "x": -41,
-            "border": {
-              "color": "0x000000",
-              "alpha": 30,
-              "size": 1
-            },
-            "width": 80,
-            "damage": {
-              "fade": 1,
-              "color": null,
-              "alpha": 80
-            },
-            "height": 12,
-            "y": -33,
-            "fill": {
-              "alpha": 30
-            },
-            "color": null,
-            "alpha": 100,
-            "visible": false
-          },
           "damageText": {
-            "speed": 2,
-            "shadow": {
-              "strength": 200,
-              "distance": 0,
-              "alpha": 100,
-              "color": "0x000000",
-              "size": 6,
-              "angle": 45
-            },
-            "blowupMessage": "==BooM==",
-            "y": -67,
-            "damageMessage": "{{dmg}}",
+            "damageMessage": "-1 Enemy",
+            "x": 0,
+            "y": -80,
+            "color": null,
             "font": {
               "italic": false,
               "bold": false,
-              "name": "Palatino Linotype",
-              "size": 22,
-              "align": "center"
+              "name": "Comic Sans MS",
+              "align": "center",
+              "size": 12
             },
-            "x": 0,
-            "maxRange": 40,
+            "speed": 3,
+            "shadow": {
+              "strength": 1320,
+              "color": "0x000000",
+              "size": 10,
+              "alpha": 70,
+              "distance": 1,
+              "angle": 45
+            },
+            "maxRange": 80,
             "alpha": 100,
-            "color": null,
+            "blowupMessage": "-1 Enemy(Blow-up!)",
             "visible": true
           },
           "actionMarker": {
             "x": 0,
             "alpha": 100,
-            "y": -67,
+            "y": -77,
             "visible": true
           },
           "textFields": [
 
           ],
-          "vehicleIcon": {
-            "x": 0,
-            "shadow": {
-              "strength": 200,
-              "distance": 0,
-              "alpha": 100,
-              "color": "0x000000",
-              "size": 6,
-              "angle": 45
-            },
-            "scaleX": 0,
-            "showSpeaker": false,
-            "scaleY": 16,
-            "maxScale": 100,
-            "y": -16,
+          "contourIcon": {
+            "x": 6,
+            "y": -65,
             "color": null,
             "alpha": 100,
-            "visible": true
+            "amount": 0,
+            "visible": false
           },
           "levelIcon": {
             "x": 0,
@@ -564,239 +376,372 @@
             "x": 0,
             "alpha": 100,
             "w": 16,
+            "visible": false
+          },
+          "vehicleIcon": {
+            "showSpeaker": false,
+            "x": 0,
+            "shadow": {
+              "strength": 200,
+              "color": "0x000000",
+              "size": 6,
+              "alpha": 100,
+              "distance": 0,
+              "angle": 45
+            },
+            "scaleX": 0,
+            "color": null,
+            "scaleY": 16,
+            "maxScale": 100,
+            "y": -16,
+            "alpha": 100,
             "visible": true
+          },
+          "healthBar": {
+            "fill": {
+              "alpha": 30
+            },
+            "x": -41,
+            "border": {
+              "size": 1,
+              "alpha": 30,
+              "color": "0x000000"
+            },
+            "width": 80,
+            "damage": {
+              "fade": 1,
+              "alpha": 80,
+              "color": null
+            },
+            "color": null,
+            "height": 12,
+            "y": -33,
+            "lcolor": null,
+            "alpha": 100,
+            "visible": false
+          }
+        },
+        "extended": {
+          "damageText": {
+            "damageMessage": "-1 Enemy",
+            "x": 0,
+            "y": -80,
+            "color": null,
+            "font": {
+              "italic": false,
+              "bold": false,
+              "name": "Comic Sans MS",
+              "align": "center",
+              "size": 12
+            },
+            "speed": 3,
+            "shadow": {
+              "strength": 1320,
+              "color": "0x000000",
+              "size": 10,
+              "alpha": 70,
+              "distance": 1,
+              "angle": 45
+            },
+            "maxRange": 80,
+            "alpha": 100,
+            "blowupMessage": "-1 Enemy(Blow-up!)",
+            "visible": true
+          },
+          "actionMarker": {
+            "x": 0,
+            "alpha": 100,
+            "y": -77,
+            "visible": true
+          },
+          "textFields": [
+            {
+              "x": 0,
+              "shadow": {
+                "strength": 200,
+                "color": "0x000000",
+                "size": 6,
+                "alpha": 100,
+                "distance": 0,
+                "angle": 45
+              },
+              "y": -34,
+              "color": null,
+              "font": {
+                "italic": false,
+                "size": 13,
+                "name": "Comic Sans MS",
+                "align": "center",
+                "bold": false
+              },
+              "format": "{{nick}}",
+              "alpha": 80,
+              "visible": true
+            },
+            {
+              "x": 0,
+              "shadow": {
+                "strength": 200,
+                "color": "0x000000",
+                "size": 6,
+                "alpha": 100,
+                "distance": 0,
+                "angle": 45
+              },
+              "y": -20,
+              "color": null,
+              "font": {
+                "italic": false,
+                "size": 13,
+                "name": "Comic Sans MS",
+                "align": "center",
+                "bold": false
+              },
+              "format": "{{vehicle}}",
+              "alpha": 80,
+              "visible": true
+            }
+          ],
+          "contourIcon": {
+            "x": 6,
+            "y": -65,
+            "color": null,
+            "alpha": 100,
+            "amount": 0,
+            "visible": false
+          },
+          "levelIcon": {
+            "x": 0,
+            "alpha": 100,
+            "y": -21,
+            "visible": false
+          },
+          "clanIcon": {
+            "h": 16,
+            "y": -67,
+            "x": 0,
+            "alpha": 100,
+            "w": 16,
+            "visible": false
+          },
+          "vehicleIcon": {
+            "showSpeaker": false,
+            "x": 0,
+            "shadow": {
+              "strength": 200,
+              "color": "0x000000",
+              "size": 6,
+              "alpha": 100,
+              "distance": 0,
+              "angle": 45
+            },
+            "scaleX": 0,
+            "color": null,
+            "scaleY": 16,
+            "maxScale": 100,
+            "y": -16,
+            "alpha": 100,
+            "visible": true
+          },
+          "healthBar": {
+            "fill": {
+              "alpha": 30
+            },
+            "x": -41,
+            "border": {
+              "size": 1,
+              "alpha": 30,
+              "color": "0x000000"
+            },
+            "width": 80,
+            "damage": {
+              "fade": 1,
+              "alpha": 80,
+              "color": null
+            },
+            "color": null,
+            "height": 12,
+            "y": -33,
+            "lcolor": null,
+            "alpha": 100,
+            "visible": false
           }
         }
       }
     },
     "ally": {
       "alive": {
-        "extended": {
-          "contourIcon": {
-            "amount": 0,
-            "y": -65,
-            "x": 6,
-            "alpha": 100,
+        "normal": {
+          "damageText": {
+            "damageMessage": "{{dmg}}",
+            "x": 0,
+            "y": -67,
             "color": null,
+            "font": {
+              "italic": false,
+              "bold": false,
+              "name": "$FieldFont",
+              "align": "center",
+              "size": 18
+            },
+            "speed": 2,
+            "shadow": {
+              "strength": 200,
+              "color": "0x000000",
+              "size": 6,
+              "alpha": 100,
+              "distance": 0,
+              "angle": 45
+            },
+            "maxRange": 40,
+            "alpha": 100,
+            "blowupMessage": "Blow-up!",
+            "visible": true
+          },
+          "actionMarker": {
+            "x": 0,
+            "alpha": 100,
+            "y": -67,
+            "visible": true
+          },
+          "textFields": [
+            {
+              "x": 0,
+              "shadow": {
+                "strength": 200,
+                "color": "0x000000",
+                "size": 6,
+                "alpha": "100",
+                "distance": 0,
+                "angle": 45
+              },
+              "y": -36,
+              "color": null,
+              "font": {
+                "italic": false,
+                "size": 13,
+                "name": "$FieldFont",
+                "align": "center",
+                "bold": false
+              },
+              "format": "{{vehicle}}{{turret}}",
+              "alpha": 100,
+              "visible": true
+            },
+            {
+              "x": 0,
+              "shadow": {
+                "strength": 100,
+                "color": "0x000000",
+                "size": 4,
+                "alpha": "100",
+                "distance": 1,
+                "angle": 45
+              },
+              "y": -20,
+              "color": "0xFFFFFF",
+              "font": {
+                "italic": false,
+                "size": 11,
+                "name": "$FieldFont",
+                "align": "center",
+                "bold": true
+              },
+              "format": "{{hp}} / {{hp-max}}",
+              "alpha": 100,
+              "visible": true
+            }
+          ],
+          "contourIcon": {
+            "x": 6,
+            "y": -65,
+            "color": null,
+            "alpha": 100,
+            "amount": 0,
             "visible": false
           },
+          "levelIcon": {
+            "x": 0,
+            "alpha": 100,
+            "y": -21,
+            "visible": false
+          },
+          "clanIcon": {
+            "h": 16,
+            "y": -67,
+            "x": 0,
+            "alpha": 100,
+            "w": 16,
+            "visible": false
+          },
+          "vehicleIcon": {
+            "showSpeaker": false,
+            "x": 0,
+            "shadow": {
+              "strength": 200,
+              "color": "0x000000",
+              "size": 6,
+              "alpha": 100,
+              "distance": 0,
+              "angle": 45
+            },
+            "scaleX": 0,
+            "color": null,
+            "scaleY": 16,
+            "maxScale": 100,
+            "y": -16,
+            "alpha": 100,
+            "visible": true
+          },
           "healthBar": {
-            "lcolor": null,
+            "fill": {
+              "alpha": 30
+            },
             "x": -41,
             "border": {
-              "color": "0x000000",
+              "size": 1,
               "alpha": 30,
-              "size": 1
+              "color": "0x000000"
             },
             "width": 80,
             "damage": {
               "fade": 1,
-              "color": null,
-              "alpha": 80
+              "alpha": 80,
+              "color": null
             },
+            "color": null,
             "height": 12,
             "y": -33,
-            "fill": {
-              "alpha": 30
-            },
-            "color": null,
+            "lcolor": null,
             "alpha": 100,
-            "visible": true
-          },
-          "damageText": {
-            "speed": 2,
-            "shadow": {
-              "strength": 200,
-              "distance": 0,
-              "alpha": 100,
-              "color": "0x000000",
-              "size": 6,
-              "angle": 45
-            },
-            "blowupMessage": "==BooM==",
-            "y": -67,
-            "damageMessage": "{{dmg}}",
-            "font": {
-              "italic": false,
-              "bold": false,
-              "name": "Palatino Linotype",
-              "size": 22,
-              "align": "center"
-            },
-            "x": 0,
-            "maxRange": 40,
-            "alpha": 100,
-            "color": null,
-            "visible": true
-          },
-          "actionMarker": {
-            "x": 0,
-            "alpha": 100,
-            "y": -67,
-            "visible": true
-          },
-          "textFields": [
-            {
-              "x": 0,
-              "shadow": {
-                "color": "0x000000",
-                "strength": 200,
-                "distance": 0,
-                "alpha": 100,
-                "size": 6,
-                "angle": 45
-              },
-              "y": -36,
-              "format": "{{nick}}",
-              "font": {
-                "align": "center",
-                "bold": false,
-                "name": "Palatino Linotype",
-                "size": 13,
-                "italic": false
-              },
-              "color": null,
-              "alpha": 100,
-              "visible": true
-            },
-            {
-              "x": 0,
-              "shadow": {
-                "color": "0x000000",
-                "strength": 100,
-                "distance": 0,
-                "alpha": 100,
-                "size": 4,
-                "angle": 45
-              },
-              "y": -20,
-              "format": "{{hp-ratio}}\u0025",
-              "font": {
-                "align": "center",
-                "bold": true,
-                "name": "Palatino Linotype",
-                "size": 11,
-                "italic": false
-              },
-              "color": "0xFCFCFC",
-              "alpha": 100,
-              "visible": true
-            },
-            {
-              "x": 0,
-              "shadow": {
-                "color": "0x000000",
-                "strength": 200,
-                "distance": 0,
-                "alpha": 100,
-                "size": 6,
-                "angle": 45
-              },
-              "y": -46,
-              "name": "STATS",
-              "format": "<font color='{{c:kb}}'>{{kb:3}}</font> <font color='{{c:eff}}'>{{eff:4}}</font> <font color='{{c:rating}}'>{{rating}}</font>",
-              "font": {
-                "align": "center",
-                "bold": true,
-                "name": "Palatino Linotype",
-                "size": 11,
-                "italic": false
-              },
-              "color": "{{c:rating}}",
-              "alpha": 100,
-              "visible": true
-            }
-          ],
-          "vehicleIcon": {
-            "x": 0,
-            "shadow": {
-              "strength": 200,
-              "distance": 0,
-              "alpha": 100,
-              "color": "0x000000",
-              "size": 6,
-              "angle": 45
-            },
-            "scaleX": 0,
-            "showSpeaker": true,
-            "scaleY": 16,
-            "maxScale": 100,
-            "y": -16,
-            "color": null,
-            "alpha": 100,
-            "visible": true
-          },
-          "levelIcon": {
-            "x": 0,
-            "alpha": 100,
-            "y": -21,
-            "visible": false
-          },
-          "clanIcon": {
-            "h": 16,
-            "y": -67,
-            "x": 0,
-            "alpha": 100,
-            "w": 16,
             "visible": true
           }
         },
-        "normal": {
-          "contourIcon": {
-            "amount": 0,
-            "y": -65,
-            "x": 6,
-            "alpha": 100,
-            "color": null,
-            "visible": false
-          },
-          "healthBar": {
-            "lcolor": null,
-            "x": -41,
-            "border": {
-              "color": "0x000000",
-              "alpha": 30,
-              "size": 1
-            },
-            "width": 81,
-            "damage": {
-              "fade": 1,
-              "color": null,
-              "alpha": 80
-            },
-            "height": 12,
-            "y": -33,
-            "fill": {
-              "alpha": 30
-            },
-            "color": null,
-            "alpha": 100,
-            "visible": true
-          },
+        "extended": {
           "damageText": {
-            "speed": 2,
-            "shadow": {
-              "strength": 200,
-              "distance": 0,
-              "alpha": 100,
-              "color": "0x000000",
-              "size": 6,
-              "angle": 45
-            },
-            "blowupMessage": "==BooM==",
-            "y": -67,
             "damageMessage": "{{dmg}}",
+            "x": 0,
+            "y": -67,
+            "color": null,
             "font": {
               "italic": false,
               "bold": false,
-              "name": "Palatino Linotype",
-              "size": 22,
-              "align": "center"
+              "name": "$FieldFont",
+              "align": "center",
+              "size": 18
             },
-            "x": 0,
+            "speed": 2,
+            "shadow": {
+              "strength": 200,
+              "color": "0x000000",
+              "size": 6,
+              "alpha": 100,
+              "distance": 0,
+              "angle": 45
+            },
             "maxRange": 40,
             "alpha": 100,
-            "color": null,
+            "blowupMessage": "Blow-up!",
             "visible": true
           },
           "actionMarker": {
@@ -809,68 +754,81 @@
             {
               "x": 0,
               "shadow": {
-                "alpha": 100,
                 "strength": 200,
-                "distance": 0,
                 "color": "0x000000",
                 "size": 6,
+                "alpha": "100",
+                "distance": 0,
                 "angle": 45
               },
-              "y": -38,
-              "format": "{{vehicle}}{{turret}}",
-              "font": {
-                "align": "center",
-                "bold": false,
-                "name": "Palatino Linotype",
-                "size": 15,
-                "italic": false
-              },
-              "alpha": 100,
+              "y": -36,
               "color": null,
+              "font": {
+                "italic": false,
+                "size": 13,
+                "name": "$FieldFont",
+                "align": "center",
+                "bold": false
+              },
+              "format": "{{nick}}",
+              "alpha": 100,
               "visible": true
             },
             {
               "x": 0,
               "shadow": {
-                "alpha": 100,
-                "strength": 100,
-                "distance": 0,
+                "strength": 200,
                 "color": "0x000000",
-                "size": 4,
+                "size": 6,
+                "alpha": "100",
+                "distance": 0,
                 "angle": 45
               },
               "y": -20,
-              "format": "{{hp}} / {{hp-max}}",
+              "color": "0xFFFFFF",
               "font": {
-                "align": "center",
-                "bold": true,
-                "name": "Palatino Linotype",
+                "italic": false,
                 "size": 11,
-                "italic": false
+                "name": "$FieldFont",
+                "align": "center",
+                "bold": true
               },
+              "format": "{{hp-ratio}}\u0025",
               "alpha": 100,
-              "color": "0xFCFCFC",
+              "visible": true
+            },
+            {
+              "x": 0,
+              "shadow": {
+                "strength": 200,
+                "color": "0x000000",
+                "size": 6,
+                "alpha": "100",
+                "distance": 0,
+                "angle": 45
+              },
+              "y": -48,
+              "name": "Overall rating for all appliances",
+              "color": "{{c:eff}}",
+              "font": {
+                "italic": false,
+                "size": 11,
+                "name": "$FieldFont",
+                "align": "center",
+                "bold": true
+              },
+              "format": "{{eff}}",
+              "alpha": 100,
               "visible": true
             }
           ],
-          "vehicleIcon": {
-            "x": 0,
-            "shadow": {
-              "strength": 200,
-              "distance": 0,
-              "alpha": 100,
-              "color": "0x000000",
-              "size": 6,
-              "angle": 45
-            },
-            "scaleX": 0,
-            "showSpeaker": true,
-            "scaleY": 16,
-            "maxScale": 100,
-            "y": -16,
+          "contourIcon": {
+            "x": 6,
+            "y": -65,
             "color": null,
             "alpha": 100,
-            "visible": true
+            "amount": 0,
+            "visible": false
           },
           "levelIcon": {
             "x": 0,
@@ -880,246 +838,100 @@
           },
           "clanIcon": {
             "h": 16,
-            "y": -27,
-            "x": -50,
+            "y": -67,
+            "x": 0,
             "alpha": 100,
             "w": 16,
+            "visible": false
+          },
+          "vehicleIcon": {
+            "showSpeaker": false,
+            "x": 0,
+            "shadow": {
+              "strength": 200,
+              "color": "0x000000",
+              "size": 6,
+              "alpha": 100,
+              "distance": 0,
+              "angle": 45
+            },
+            "scaleX": 0,
+            "color": null,
+            "scaleY": 16,
+            "maxScale": 100,
+            "y": -16,
+            "alpha": 100,
+            "visible": true
+          },
+          "healthBar": {
+            "fill": {
+              "alpha": 30
+            },
+            "x": -41,
+            "border": {
+              "size": 1,
+              "alpha": 30,
+              "color": "0x000000"
+            },
+            "width": 80,
+            "damage": {
+              "fade": 1,
+              "alpha": 80,
+              "color": null
+            },
+            "color": null,
+            "height": 12,
+            "y": -33,
+            "lcolor": null,
+            "alpha": 100,
             "visible": true
           }
         }
       },
       "dead": {
-        "extended": {
-          "contourIcon": {
-            "amount": 0,
-            "y": -65,
-            "x": 6,
-            "alpha": 100,
-            "color": null,
-            "visible": false
-          },
-          "healthBar": {
-            "lcolor": null,
-            "x": -41,
-            "border": {
-              "color": "0x000000",
-              "alpha": 30,
-              "size": 1
-            },
-            "width": 80,
-            "damage": {
-              "fade": 1,
-              "color": null,
-              "alpha": 80
-            },
-            "height": 12,
-            "y": -33,
-            "fill": {
-              "alpha": 30
-            },
-            "color": null,
-            "alpha": 100,
-            "visible": false
-          },
-          "damageText": {
-            "speed": 2,
-            "shadow": {
-              "strength": 200,
-              "distance": 0,
-              "alpha": 100,
-              "color": "0x000000",
-              "size": 6,
-              "angle": 45
-            },
-            "blowupMessage": "==BooM==",
-            "y": -67,
-            "damageMessage": "{{dmg}}",
-            "font": {
-              "italic": false,
-              "bold": false,
-              "name": "Palatino Linotype",
-              "size": 22,
-              "align": "center"
-            },
-            "x": 0,
-            "maxRange": 40,
-            "alpha": 100,
-            "color": null,
-            "visible": true
-          },
-          "actionMarker": {
-            "x": 0,
-            "alpha": 100,
-            "y": -67,
-            "visible": true
-          },
-          "textFields": [
-            {
-              "x": 0,
-              "shadow": {
-                "alpha": 100,
-                "strength": 200,
-                "distance": 0,
-                "color": "0x000000",
-                "size": 6,
-                "angle": 45
-              },
-              "y": -34,
-              "format": "{{nick}}",
-              "font": {
-                "align": "center",
-                "bold": false,
-                "name": "Palatino Linotype",
-                "size": 13,
-                "italic": false
-              },
-              "alpha": 80,
-              "color": null,
-              "visible": true
-            },
-            {
-              "x": 0,
-              "shadow": {
-                "alpha": 100,
-                "strength": 200,
-                "distance": 0,
-                "color": "0x000000",
-                "size": 6,
-                "angle": 45
-              },
-              "y": -20,
-              "format": "{{vehicle}}",
-              "font": {
-                "align": "center",
-                "bold": false,
-                "name": "Palatino Linotype",
-                "size": 13,
-                "italic": false
-              },
-              "alpha": 80,
-              "color": null,
-              "visible": true
-            }
-          ],
-          "vehicleIcon": {
-            "x": 0,
-            "shadow": {
-              "strength": 200,
-              "distance": 0,
-              "alpha": 100,
-              "color": "0x000000",
-              "size": 6,
-              "angle": 45
-            },
-            "scaleX": 0,
-            "showSpeaker": false,
-            "scaleY": 16,
-            "maxScale": 100,
-            "y": -16,
-            "color": null,
-            "alpha": 100,
-            "visible": true
-          },
-          "levelIcon": {
-            "x": 0,
-            "alpha": 100,
-            "y": -21,
-            "visible": false
-          },
-          "clanIcon": {
-            "h": 16,
-            "y": -67,
-            "x": 0,
-            "alpha": 100,
-            "w": 16,
-            "visible": true
-          }
-        },
         "normal": {
-          "contourIcon": {
-            "amount": 0,
-            "y": -65,
-            "x": 6,
-            "alpha": 100,
-            "color": null,
-            "visible": false
-          },
-          "healthBar": {
-            "lcolor": null,
-            "x": -41,
-            "border": {
-              "color": "0x000000",
-              "alpha": 30,
-              "size": 1
-            },
-            "width": 80,
-            "damage": {
-              "fade": 1,
-              "color": null,
-              "alpha": 80
-            },
-            "height": 12,
-            "y": -33,
-            "fill": {
-              "alpha": 30
-            },
-            "color": null,
-            "alpha": 100,
-            "visible": false
-          },
           "damageText": {
-            "speed": 2,
-            "shadow": {
-              "strength": 200,
-              "distance": 0,
-              "alpha": 100,
-              "color": "0x000000",
-              "size": 6,
-              "angle": 45
-            },
-            "blowupMessage": "==BooM==",
-            "y": -67,
-            "damageMessage": "{{dmg}}",
+            "damageMessage": "-1 Ally",
+            "x": 0,
+            "y": -80,
+            "color": null,
             "font": {
               "italic": false,
               "bold": false,
-              "name": "Palatino Linotype",
-              "size": 22,
-              "align": "center"
+              "name": "Comic Sans MS",
+              "align": "center",
+              "size": 12
             },
-            "x": 0,
-            "maxRange": 40,
+            "speed": 3,
+            "shadow": {
+              "strength": 1320,
+              "color": "0x000000",
+              "size": 10,
+              "alpha": 70,
+              "distance": 1,
+              "angle": 45
+            },
+            "maxRange": 80,
             "alpha": 100,
-            "color": null,
+            "blowupMessage": "-1 Ally(Blow-up!)",
             "visible": true
           },
           "actionMarker": {
             "x": 0,
             "alpha": 100,
-            "y": -67,
+            "y": -77,
             "visible": true
           },
           "textFields": [
 
           ],
-          "vehicleIcon": {
-            "x": 0,
-            "shadow": {
-              "strength": 200,
-              "distance": 0,
-              "alpha": 100,
-              "color": "0x000000",
-              "size": 6,
-              "angle": 45
-            },
-            "scaleX": 0,
-            "showSpeaker": false,
-            "scaleY": 16,
-            "maxScale": 100,
-            "y": -16,
+          "contourIcon": {
+            "x": 6,
+            "y": -65,
             "color": null,
             "alpha": 100,
-            "visible": true
+            "amount": 0,
+            "visible": false
           },
           "levelIcon": {
             "x": 0,
@@ -1133,7 +945,195 @@
             "x": 0,
             "alpha": 100,
             "w": 16,
+            "visible": false
+          },
+          "vehicleIcon": {
+            "showSpeaker": false,
+            "x": 0,
+            "shadow": {
+              "strength": 200,
+              "color": "0x000000",
+              "size": 6,
+              "alpha": 100,
+              "distance": 0,
+              "angle": 45
+            },
+            "scaleX": 0,
+            "color": null,
+            "scaleY": 16,
+            "maxScale": 100,
+            "y": -16,
+            "alpha": 100,
             "visible": true
+          },
+          "healthBar": {
+            "fill": {
+              "alpha": 30
+            },
+            "x": -41,
+            "border": {
+              "size": 1,
+              "alpha": 30,
+              "color": "0x000000"
+            },
+            "width": 80,
+            "damage": {
+              "fade": 1,
+              "alpha": 80,
+              "color": null
+            },
+            "color": null,
+            "height": 12,
+            "y": -33,
+            "lcolor": null,
+            "alpha": 100,
+            "visible": false
+          }
+        },
+        "extended": {
+          "damageText": {
+            "damageMessage": "-1 Ally",
+            "x": 0,
+            "y": -67,
+            "color": null,
+            "font": {
+              "italic": false,
+              "bold": false,
+              "name": "Comic Sans MS",
+              "align": "center",
+              "size": 12
+            },
+            "speed": 3,
+            "shadow": {
+              "strength": 1320,
+              "color": "0x000000",
+              "size": 10,
+              "alpha": 70,
+              "distance": 1,
+              "angle": 45
+            },
+            "maxRange": 80,
+            "alpha": 100,
+            "blowupMessage": "-1 Ally(Blow-up!)",
+            "visible": true
+          },
+          "actionMarker": {
+            "x": 0,
+            "alpha": 100,
+            "y": -67,
+            "visible": true
+          },
+          "textFields": [
+            {
+              "x": 0,
+              "shadow": {
+                "strength": 200,
+                "color": "0x000000",
+                "size": 6,
+                "alpha": 100,
+                "distance": 0,
+                "angle": 45
+              },
+              "y": -34,
+              "color": null,
+              "font": {
+                "italic": false,
+                "size": 13,
+                "name": "Comic Sans MS",
+                "align": "center",
+                "bold": false
+              },
+              "format": "{{nick}}",
+              "alpha": 80,
+              "visible": true
+            },
+            {
+              "x": 0,
+              "shadow": {
+                "strength": 200,
+                "color": "0x000000",
+                "size": 6,
+                "alpha": 100,
+                "distance": 0,
+                "angle": 45
+              },
+              "y": -20,
+              "color": null,
+              "font": {
+                "italic": false,
+                "size": 13,
+                "name": "Comic Sans MS",
+                "align": "center",
+                "bold": false
+              },
+              "format": "{{vehicle}}",
+              "alpha": 80,
+              "visible": true
+            }
+          ],
+          "contourIcon": {
+            "x": 6,
+            "y": -65,
+            "color": null,
+            "alpha": 100,
+            "amount": 0,
+            "visible": false
+          },
+          "levelIcon": {
+            "x": 0,
+            "alpha": 100,
+            "y": -21,
+            "visible": false
+          },
+          "clanIcon": {
+            "h": 16,
+            "y": -67,
+            "x": 0,
+            "alpha": 100,
+            "w": 16,
+            "visible": false
+          },
+          "vehicleIcon": {
+            "showSpeaker": false,
+            "x": 0,
+            "shadow": {
+              "strength": 200,
+              "color": "0x000000",
+              "size": 6,
+              "alpha": 100,
+              "distance": 0,
+              "angle": 45
+            },
+            "scaleX": 0,
+            "color": null,
+            "scaleY": 16,
+            "maxScale": 100,
+            "y": -16,
+            "alpha": 100,
+            "visible": true
+          },
+          "healthBar": {
+            "fill": {
+              "alpha": 30
+            },
+            "x": -41,
+            "border": {
+              "size": 1,
+              "alpha": 30,
+              "color": "0x000000"
+            },
+            "width": 80,
+            "damage": {
+              "fade": 1,
+              "alpha": 80,
+              "color": null
+            },
+            "color": null,
+            "height": 12,
+            "y": -33,
+            "lcolor": null,
+            "alpha": 100,
+            "visible": false
           }
         }
       }
@@ -1147,53 +1147,53 @@
     "rightLvlBorder": ""
   },
   "playersPanel": {
-    "removeSquadIcon": false,
-    "medium": {
-      "formatLeft": "<font color='{{c:eff}}'>{{nick}}</font>",
-      "width": 46,
-      "formatRight": "<font color='{{c:eff}}'>{{nick}}</font>"
-    },
     "iconAlpha": 100,
     "enemySpottedMarker": {
-      "Xoffset": -22,
-      "enabled": false,
       "Yoffset": -2,
       "format": {
         "artillery": {
-          "lost": "",
-          "neverSeen": "",
           "revealed": "",
-          "dead": ""
+          "lost": "",
+          "dead": "",
+          "neverSeen": ""
         },
-        "lost": "",
-        "neverSeen": "<FONT FACE=\"$FieldFont\" SIZE=\"24\" COLOR=\"#DDDDDD\">*</FONT>",
         "revealed": "",
-        "dead": ""
-      }
-    },
-    "medium2": {
-      "formatLeft": "<font color='{{c:eff}}'>{{vehicle}}</font>",
-      "width": 65,
-      "formatRight": "<font color='{{c:eff}}'>{{vehicle}}</font>"
+        "lost": "",
+        "dead": "",
+        "neverSeen": "<FONT FACE=\"$FieldFont\" SIZE=\"24\" COLOR=\"#DDDDDD\">*</FONT>"
+      },
+      "Xoffset": -22,
+      "enabled": false
     },
     "alpha": 60,
+    "medium2": {
+      "formatLeft": "<font color='{{c:t-battles}}'>{{vehicle}}</font>",
+      "formatRight": "<font color='{{c:t-battles}}'>{{vehicle}}</font>",
+      "width": 75
+    },
     "clanIcon": {
       "h": 16,
       "y": 6,
-      "show": true,
-      "x": 0,
-      "xr": 0,
+      "xr": 82,
+      "x": 82,
       "yr": 6,
       "alpha": 90,
+      "show": true,
       "w": 16
     },
+    "medium": {
+      "formatLeft": "<font color='{{c:eff}}'>{{nick}}</font>",
+      "formatRight": "<font color='{{c:eff}}'>{{nick}}</font>",
+      "width": 80
+    },
     "large": {
-      "nickFormatLeft": "<font color='{{c:rating}}'>{{rating}}</font> {{nick}}",
-      "vehicleFormatRight": "<font color='{{c:eff}}'>{{vehicle}}</font>",
-      "nickFormatRight": "{{nick}} <font color='{{c:rating}}'>{{rating}}</font>",
-      "width": 170,
-      "vehicleFormatLeft": "<font color='{{c:eff}}'>{{vehicle}}</font>"
-    }
+      "nickFormatRight": "<font color='{{c:eff}}'>{{nick}}</font>",
+      "vehicleFormatLeft": "<font color='{{c:t-battles}}'>{{vehicle}}</font>",
+      "width": 130,
+      "nickFormatLeft": "<font color='{{c:eff}}'>{{nick}}</font>",
+      "vehicleFormatRight": "<font color='{{c:t-battles}}'>{{vehicle}}</font>"
+    },
+    "removeSquadIcon": false
   },
   "finalStatistic": {
     "startPage": 1,
@@ -2578,7 +2578,7 @@
   },
   "battle": {
     "clockFormat": "",
-    "mirroredVehicleIcons": true,
+    "mirroredVehicleIcons": false,
     "elements": {
       "damagePanel": {
         "h": null,
@@ -2806,166 +2806,64 @@
   "colors": {
     "kb": [
       {
-        "color": "0xFE0E00",
-        "value": 2
+        "value": 1,
+        "color": "0xDD0000"
       },
       {
-        "color": "0xFE7903",
-        "value": 5
+        "value": 3,
+        "color": "0xDD3333"
       },
       {
-        "color": "0xF8F400",
-        "value": 9
+        "value": 5,
+        "color": "0xFFCC33"
       },
       {
-        "color": "0x60FF00",
-        "value": 14
+        "value": 8,
+        "color": "0x99FF33"
       },
       {
-        "color": "0x02C9B3",
-        "value": 20
+        "value": 12,
+        "color": "0x33FF33"
       },
       {
-        "color": "0xD042F3",
-        "value": 999
+        "value": 999,
+        "color": "0xCC66CC"
       }
     ],
     "x": [
       {
-        "color": "0xFE0E00",
-        "value": 17
+        "value": 17,
+        "color": "0xFE0E00"
       },
       {
-        "color": "0xFE7903",
-        "value": 34
+        "value": 34,
+        "color": "0xFE7903"
       },
       {
-        "color": "0xF8F400",
-        "value": 53
+        "value": 53,
+        "color": "0xF8F400"
       },
       {
-        "color": "0x60FF00",
-        "value": 76
+        "value": 76,
+        "color": "0x60FF00"
       },
       {
-        "color": "0x02C9B3",
-        "value": 93
+        "value": 93,
+        "color": "0x02C9B3"
       },
       {
-        "color": "0xD042F3",
-        "value": 999
+        "value": 999,
+        "color": "0xD042F3"
       }
     ],
     "dmg_kind": {
-      "ramming": "0x998855",
-      "attack": "0xFFAA55",
       "world_collision": "0x228855",
       "fire": "0xFF6655",
-      "other": "0xCCCCCC"
+      "other": "0xCCCCCC",
+      "ramming": "0x998855",
+      "attack": "0xFFAA55"
     },
-    "t_battles": [
-      {
-        "color": "0xFE0E00",
-        "value": 100
-      },
-      {
-        "color": "0xFE7903",
-        "value": 250
-      },
-      {
-        "color": "0xF8F400",
-        "value": 500
-      },
-      {
-        "color": "0x60FF00",
-        "value": 1000
-      },
-      {
-        "color": "0x02C9B3",
-        "value": 1800
-      },
-      {
-        "color": "0xD042F3",
-        "value": 99999
-      }
-    ],
-    "wn": [
-      {
-        "color": "0xFE0E00",
-        "value": 600
-      },
-      {
-        "color": "0xFE7903",
-        "value": 900
-      },
-      {
-        "color": "0xF8F400",
-        "value": 1200
-      },
-      {
-        "color": "0x60FF00",
-        "value": 1500
-      },
-      {
-        "color": "0x02C9B3",
-        "value": 1800
-      },
-      {
-        "color": "0xD042F3",
-        "value": 9999
-      }
-    ],
-    "e": [
-      {
-        "color": "0xFCFCFC",
-        "value": 0.01
-      },
-      {
-        "color": "0xFE0E00",
-        "value": 2
-      },
-      {
-        "color": "0xFE7903",
-        "value": 4
-      },
-      {
-        "color": "0xF8F400",
-        "value": 5
-      },
-      {
-        "color": "0x60FF00",
-        "value": 7
-      },
-      {
-        "color": "0x02C9B3",
-        "value": 9
-      },
-      {
-        "color": "0xD042F3",
-        "value": 20
-      }
-    ],
-    "tdb": [
-      {
-        "color": "0xFCFCFC",
-        "value": 1
-      },
-      {
-        "color": "0xFE0E00",
-        "value": 500
-      },
-      {
-        "color": "0xF8F400",
-        "value": 1000
-      },
-      {
-        "color": "0x60FF00",
-        "value": 2000
-      }
-    ],
     "system": {
-      "squadman_dead_normal": "0xCA7000",
-      "enemy_alive_blind": "0x8379FE",
       "squadman_dead_blind": "0xAAAA00",
       "enemy_dead_normal": "0x840500",
       "squadman_blowedup_normal": "0xA45A00",
@@ -2987,107 +2885,241 @@
       "squadman_alive_normal": "0xFFB964",
       "teamKiller_blowedup_blind": "0x096A75",
       "squadman_alive_blind": "0xFFFF00",
-      "enemy_alive_normal": "0xF50800"
+      "enemy_alive_normal": "0xF50800",
+      "squadman_dead_normal": "0xCA7000",
+      "enemy_alive_blind": "0x8379FE"
     },
+    "t_battles": [
+      {
+        "value": 10,
+        "color": "0xDD0000"
+      },
+      {
+        "value": 50,
+        "color": "0xDD3333"
+      },
+      {
+        "value": 100,
+        "color": "0xFFCC33"
+      },
+      {
+        "value": 200,
+        "color": "0x99FF33"
+      },
+      {
+        "value": 800,
+        "color": "0x33FF33"
+      },
+      {
+        "value": 9999,
+        "color": "0xCC66CC"
+      }
+    ],
+    "wn": [
+      {
+        "value": 435,
+        "color": "0xFE0E00"
+      },
+      {
+        "value": 805,
+        "color": "0xFE7903"
+      },
+      {
+        "value": 1200,
+        "color": "0xF8F400"
+      },
+      {
+        "value": 1595,
+        "color": "0x60FF00"
+      },
+      {
+        "value": 1900,
+        "color": "0x02C9B3"
+      },
+      {
+        "value": 9999,
+        "color": "0xD042F3"
+      }
+    ],
+    "e": [
+      {
+        "value": 0.1,
+        "color": "0xFCFCFC"
+      },
+      {
+        "value": 2,
+        "color": "0xFE0E00"
+      },
+      {
+        "value": 4,
+        "color": "0xFE7903"
+      },
+      {
+        "value": 5,
+        "color": "0xF8F400"
+      },
+      {
+        "value": 7,
+        "color": "0x60FF00"
+      },
+      {
+        "value": 9,
+        "color": "0x02C9B3"
+      },
+      {
+        "value": 20,
+        "color": "0xD042F3"
+      }
+    ],
+    "tdb": [
+      {
+        "value": 1,
+        "color": "0xFCFCFC"
+      },
+      {
+        "value": 500,
+        "color": "0xFE0E00"
+      },
+      {
+        "value": 1000,
+        "color": "0xF8F400"
+      },
+      {
+        "value": 2000,
+        "color": "0x60FF00"
+      }
+    ],
+    "tdv": [
+      {
+        "value": 0.1,
+        "color": "0xFCFCFC"
+      },
+      {
+        "value": 0.6,
+        "color": "0xFE0E00"
+      },
+      {
+        "value": 0.8,
+        "color": "0xFE7903"
+      },
+      {
+        "value": 1,
+        "color": "0xF8F400"
+      },
+      {
+        "value": 1.3,
+        "color": "0x60FF00"
+      },
+      {
+        "value": 2,
+        "color": "0x02C9B3"
+      },
+      {
+        "value": 15,
+        "color": "0xD042F3"
+      }
+    ],
     "tfb": [
       {
-        "color": "0xFCFCFC",
-        "value": 0.01
+        "value": 0.1,
+        "color": "0xFCFCFC"
       },
       {
-        "color": "0xFE0E00",
-        "value": 0.6
+        "value": 0.6,
+        "color": "0xFE0E00"
       },
       {
-        "color": "0xFE7903",
-        "value": 0.8
+        "value": 0.8,
+        "color": "0xFE7903"
       },
       {
-        "color": "0xF8F400",
-        "value": 1
+        "value": 1,
+        "color": "0xF8F400"
       },
       {
-        "color": "0x60FF00",
-        "value": 1.3
+        "value": 1.3,
+        "color": "0x60FF00"
       },
       {
-        "color": "0x02C9B3",
-        "value": 2
+        "value": 2,
+        "color": "0x02C9B3"
       },
       {
-        "color": "0xD042F3",
-        "value": 15
+        "value": 15,
+        "color": "0xD042F3"
       }
     ],
     "rating": [
       {
-        "color": "0xFE0E00",
-        "value": 46
+        "value": 42,
+        "color": "0xDD0000"
       },
       {
-        "color": "0xFE7903",
-        "value": 48
+        "value": 46,
+        "color": "0xDD3333"
       },
       {
-        "color": "0xF8F400",
-        "value": 51
+        "value": 49,
+        "color": "0xDDDD33"
       },
       {
-        "color": "0x60FF00",
-        "value": 54
+        "value": 51,
+        "color": "0xFFCC33"
       },
       {
-        "color": "0x02C9B3",
-        "value": 57
+        "value": 53,
+        "color": "0x99FF33"
       },
       {
-        "color": "0xD042F3",
-        "value": 101
+        "value": 57,
+        "color": "0x33FF33"
+      },
+      {
+        "value": 101,
+        "color": "0xCC66CC"
       }
     ],
     "tsb": [
       {
-        "color": "0xFCFCFC",
-        "value": 0.01
+        "value": 0.1,
+        "color": "0xFCFCFC"
       },
       {
-        "color": "0xFE0E00",
-        "value": 0.6
+        "value": 0.6,
+        "color": "0xFE0E00"
       },
       {
-        "color": "0xFE7903",
-        "value": 0.8
+        "value": 0.8,
+        "color": "0xFE7903"
       },
       {
-        "color": "0xF8F400",
-        "value": 1
+        "value": 1,
+        "color": "0xF8F400"
       },
       {
-        "color": "0x60FF00",
-        "value": 1.3
+        "value": 1.3,
+        "color": "0x60FF00"
       },
       {
-        "color": "0x02C9B3",
-        "value": 2
+        "value": 2,
+        "color": "0x02C9B3"
       },
       {
-        "color": "0xD042F3",
-        "value": 15
+        "value": 15,
+        "color": "0xD042F3"
       }
     ],
     "damage": {
-      "squadman_enemytk_hit": "0xFFB964",
-      "squadman_enemytk_kill": "0xFFB964",
-      "squadman_enemytk_blowup": "0xFFB964",
+      "squadman_enemytk_kill": "0xF50800",
+      "squadman_enemytk_blowup": "0xF50800",
       "enemy_ally_hit": "0x96FF00",
       "enemy_ally_kill": "0x96FF00",
-      "player_allytk_hit": "0x0066FF",
-      "player_enemytk_hit": "0x0066FF",
-      "player_allytk_kill": "0x0066FF",
-      "player_enemytk_kill": "0x0066FF",
-      "player_allytk_blowup": "0x0066FF",
-      "player_enemytk_blowup": "0x0066FF",
       "enemy_ally_blowup": "0x96FF00",
+      "player_allytk_kill": "0xFFDD33",
+      "player_enemytk_kill": "0xFFDD33",
+      "player_allytk_blowup": "0xFFDD33",
+      "player_enemytk_blowup": "0xFFDD33",
+      "player_enemytk_hit": "0xFFDD33",
       "enemy_squadman_blowup": "0xFFB964",
       "enemy_squadman_hit": "0xFFB964",
       "enemy_enemy_hit": "0xF50800",
@@ -3098,17 +3130,17 @@
       "enemy_allytk_kill": "0x96FF00",
       "enemy_allytk_blowup": "0x96FF00",
       "enemy_enemytk_hit": "0xF50800",
-      "ally_ally_hit": "0xFF00FF",
+      "ally_ally_hit": "0x00EAFF",
       "enemy_enemytk_kill": "0xF50800",
-      "ally_ally_kill": "0xFF00FF",
+      "ally_ally_kill": "0x00EAFF",
       "enemy_enemytk_blowup": "0xF50800",
-      "ally_ally_blowup": "0xFF00FF",
+      "ally_ally_blowup": "0x00EAFF",
       "unknown_ally_hit": "0x96FF00",
-      "ally_squadman_hit": "0xFF00FF",
+      "ally_squadman_hit": "0x00EAFF",
       "unknown_ally_kill": "0x96FF00",
-      "ally_squadman_kill": "0xFF00FF",
+      "ally_squadman_kill": "0x00EAFF",
       "unknown_ally_blowup": "0x96FF00",
-      "ally_squadman_blowup": "0xFF00FF",
+      "ally_squadman_blowup": "0x00EAFF",
       "unknown_squadman_hit": "0xFFB964",
       "ally_enemy_hit": "0xF50800",
       "unknown_squadman_kill": "0xFFB964",
@@ -3116,11 +3148,11 @@
       "unknown_squadman_blowup": "0xFFB964",
       "ally_enemy_blowup": "0xF50800",
       "unknown_enemy_hit": "0xF50800",
-      "ally_allytk_hit": "0xFF00FF",
+      "ally_allytk_hit": "0x00EAFF",
       "unknown_enemy_kill": "0xF50800",
-      "ally_allytk_kill": "0xFF00FF",
+      "ally_allytk_kill": "0x00EAFF",
       "unknown_enemy_blowup": "0xF50800",
-      "ally_allytk_blowup": "0xFF00FF",
+      "ally_allytk_blowup": "0x00EAFF",
       "unknown_allytk_hit": "0x96FF00",
       "ally_enemytk_hit": "0xF50800",
       "unknown_allytk_kill": "0x96FF00",
@@ -3128,176 +3160,148 @@
       "unknown_allytk_blowup": "0x96FF00",
       "ally_enemytk_blowup": "0xF50800",
       "unknown_enemytk_hit": "0xF50800",
-      "squadman_ally_hit": "0xFF00FF",
+      "squadman_ally_hit": "0x00EAFF",
       "unknown_enemytk_kill": "0xF50800",
-      "squadman_ally_kill": "0xFF00FF",
+      "squadman_ally_kill": "0x00EAFF",
       "unknown_enemytk_blowup": "0xF50800",
-      "squadman_ally_blowup": "0xFF00FF",
-      "player_ally_hit": "0x0066FF",
-      "squadman_squadman_hit": "0xFF00FF",
-      "player_ally_kill": "0x0066FF",
-      "squadman_squadman_kill": "0xFF00FF",
-      "player_ally_blowup": "0x0066FF",
-      "squadman_squadman_blowup": "0xFF00FF",
-      "player_squadman_hit": "0x0066FF",
-      "squadman_enemy_hit": "0xFFB964",
-      "player_squadman_kill": "0x0066FF",
-      "squadman_enemy_kill": "0xFFB964",
-      "player_squadman_blowup": "0x0066FF",
-      "squadman_enemy_blowup": "0xFFB964",
-      "player_enemy_hit": "0x0066FF",
-      "squadman_allytk_hit": "0xFF00FF",
-      "player_enemy_kill": "0x0066FF",
-      "squadman_allytk_kill": "0xFF00FF",
-      "player_enemy_blowup": "0x0066FF",
-      "squadman_allytk_blowup": "0xFF00FF"
+      "squadman_ally_blowup": "0x00EAFF",
+      "player_ally_hit": "0xFFDD33",
+      "squadman_squadman_hit": "0x00EAFF",
+      "player_ally_kill": "0xFFDD33",
+      "squadman_squadman_kill": "0x00EAFF",
+      "player_ally_blowup": "0xFFDD33",
+      "squadman_squadman_blowup": "0x00EAFF",
+      "player_squadman_hit": "0xFFDD33",
+      "squadman_enemy_hit": "0xF50800",
+      "player_squadman_kill": "0xFFDD33",
+      "squadman_enemy_kill": "0xF50800",
+      "player_squadman_blowup": "0xFFDD33",
+      "squadman_enemy_blowup": "0xF50800",
+      "player_enemy_hit": "0xFFDD33",
+      "squadman_allytk_hit": "0x00EAFF",
+      "player_enemy_kill": "0xFFDD33",
+      "squadman_allytk_kill": "0x00EAFF",
+      "player_enemy_blowup": "0xFFDD33",
+      "squadman_allytk_blowup": "0x00EAFF",
+      "player_allytk_hit": "0xFFDD33",
+      "squadman_enemytk_hit": "0xF50800"
     },
-    "tdv": [
+    "eff": [
       {
-        "color": "0xFCFCFC",
-        "value": 0.01
+        "value": 600,
+        "color": "0xDD0000"
       },
       {
-        "color": "0xFE0E00",
-        "value": 0.6
+        "value": 900,
+        "color": "0xDD3333"
       },
       {
-        "color": "0xFE7903",
-        "value": 0.8
+        "value": 1200,
+        "color": "0xFFCC33"
       },
       {
-        "color": "0xF8F400",
-        "value": 1
+        "value": 1500,
+        "color": "0x99FF33"
       },
       {
-        "color": "0x60FF00",
-        "value": 1.3
+        "value": 1800,
+        "color": "0x33FF33"
       },
       {
-        "color": "0x02C9B3",
-        "value": 2
-      },
-      {
-        "color": "0xD042F3",
-        "value": 15
+        "value": 9999,
+        "color": "0xCC66CC"
       }
     ],
     "hp": [
       {
-        "color": "0xFF0000",
-        "value": 201
+        "value": 200,
+        "color": "0xDD0000"
       },
       {
-        "color": "0xDD4444",
-        "value": 401
+        "value": 400,
+        "color": "0xDD3333"
       },
       {
-        "color": "0xFFCC22",
-        "value": 1001
+        "value": 1000,
+        "color": "0xFFCC33"
       },
       {
-        "color": "0xFCFCFC",
-        "value": 9999
+        "value": 9999,
+        "color": "0xFFFFFF"
       }
     ],
     "twr": [
       {
-        "color": "0xFE0E00",
-        "value": 46
+        "value": 47,
+        "color": "0xFE0E00"
       },
       {
-        "color": "0xFE7903",
-        "value": 48
+        "value": 49,
+        "color": "0xFE7903"
       },
       {
-        "color": "0xF8F400",
-        "value": 51
+        "value": 52,
+        "color": "0xF8F400"
       },
       {
-        "color": "0x60FF00",
-        "value": 54
+        "value": 57,
+        "color": "0x60FF00"
       },
       {
-        "color": "0x02C9B3",
-        "value": 57
+        "value": 62,
+        "color": "0x02C9B3"
       },
       {
-        "color": "0xD042F3",
-        "value": 101
+        "value": 101,
+        "color": "0xD042F3"
       }
     ],
     "vtype": {
-      "SPG": "0xEFAEFF",
       "TD": "0xA0CFFF",
-      "LT": "0xA2FF9A",
       "premium": "0xFFCC66",
+      "LT": "0xA2FF9A",
       "usePremiumColor": false,
       "MT": "0xFFF198",
-      "HT": "0xFFACAC"
+      "HT": "0xFFACAC",
+      "SPG": "0xEFAEFF"
     },
     "hp_ratio": [
       {
-        "color": "0xFF0000",
-        "value": 10
+        "value": 10,
+        "color": "0xDD0000"
       },
       {
-        "color": "0xDD4444",
-        "value": 25
+        "value": 25,
+        "color": "0xDD3333"
       },
       {
-        "color": "0xFFCC22",
-        "value": 50
+        "value": 50,
+        "color": "0xFFCC33"
       },
       {
-        "color": "0xFCFCFC",
-        "value": 101
-      }
-    ],
-    "eff": [
-      {
-        "color": "0xFE0E00",
-        "value": 600
-      },
-      {
-        "color": "0xFE7903",
-        "value": 900
-      },
-      {
-        "color": "0xF8F400",
-        "value": 1200
-      },
-      {
-        "color": "0x60FF00",
-        "value": 1500
-      },
-      {
-        "color": "0x02C9B3",
-        "value": 1800
-      },
-      {
-        "color": "0xD042F3",
-        "value": 9999
+        "value": 101,
+        "color": "0xFFFFFF"
       }
     ]
   },
   "configVersion": "1.5.0",
   "battleLoading": {
-    "removeSquadIcon": false,
-    "clockFormat": "H:N:S",
-    "formatLeft": "{{vehicle}} <font color='{{c:kb}}'>{{kb:3}}</font> <font color='{{c:eff}}'>{{eff}}</font> <font color='{{c:rating}}'>{{rating}}</font>",
+    "formatLeft": "<font face='Comic Sans MS' size='11'><font color='{{c:kb}}'>{{kb}}</font> <font color='{{c:eff}}'>{{eff}}</font> <font color='{{c:rating}}'>{{rating}}</font></font> | <font face='Comic Sans MS' size='11'><font color='{{c:t-battles}}'>{{t-battles:4}}</font> <font color='{{c:t-rating}}'>{{t-rating:3}}</font></font>",
     "clanIcon": {
       "h": 16,
       "y": 6,
-      "show": true,
-      "x": 0,
-      "xr": 0,
+      "xr": -340,
+      "x": -340,
       "yr": 6,
       "alpha": 90,
+      "show": true,
       "w": 16
     },
-    "formatRight": "<font color='{{c:rating}}'>{{rating}}</font> <font color='{{c:eff}}'>{{eff}}</font> <font color='{{c:kb}}'>{{kb:3}}</font> {{vehicle}}",
+    "formatRight": "<font face='Comic Sans MS' size='11'><font color='{{c:t-battles}}'>{{t-battles:4}}</font> <font color='{{c:t-rating}}'>{{t-rating:3}}</font></font> | <font face='Comic Sans MS'><font face='Comic Sans MS' size='11'><font color='{{c:rating}}'>{{rating}}</font> <font color='{{c:eff}}'>{{eff}}</font> <font color='{{c:kb}}'>{{kb}}</font></font>",
     "showChances": true,
-    "showChancesExp": false
+    "showChancesExp": true,
+    "removeSquadIcon": false,
+    "clockFormat": "H:N:S   config - Shalfey"
   },
   "rating": {
     "enableStatisticsLog": false,
@@ -3323,20 +3327,20 @@
     "highVulnerability": "*"
   },
   "statisticForm": {
-    "removeSquadIcon": false,
-    "formatLeft": "{{vehicle}} <font color='{{c:kb}}'>{{kb:3}}</font> <font color='{{c:eff}}'>{{eff}}</font> <font color='{{c:rating}}'>{{rating}}</font>",
+    "formatLeft": "<font face='Comic Sans MS' size='11'><font color='{{c:kb}}'>{{kb}}</font> <font color='{{c:eff}}'>{{eff}}</font> <font color='{{c:rating}}'>{{rating}}</font></font> | <font face='Comic Sans MS' size='11'><font color='{{c:t-battles}}'>{{t-battles:4}}</font> <font color='{{c:t-rating}}'>{{t-rating:3}}</font></font>",
     "clanIcon": {
       "h": 16,
       "y": 6,
-      "show": true,
-      "x": 0,
-      "xr": 0,
+      "xr": 81,
+      "x": 81,
       "yr": 6,
       "alpha": 90,
+      "show": true,
       "w": 16
     },
-    "formatRight": "<font color='{{c:rating}}'>{{rating}}</font> <font color='{{c:eff}}'>{{eff}}</font> <font color='{{c:kb}}'>{{kb:3}}</font> {{vehicle}}",
+    "formatRight": "<font face='Comic Sans MS' size='11'><font color='{{c:t-battles}}'>{{t-battles:4}}</font> <font color='{{c:t-rating}}'>{{t-rating:3}}</font></font> | <font face='Comic Sans MS' size='11'><font color='{{c:rating}}'>{{rating}}</font> <font color='{{c:eff}}'>{{eff}}</font> <font color='{{c:kb}}'>{{kb}}</font></font> ",
     "showChances": true,
-    "showChancesExp": false
+    "showChancesExp": true,
+    "removeSquadIcon": false
   }
 }
